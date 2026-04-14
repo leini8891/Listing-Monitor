@@ -1,0 +1,58 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.codex/
+
+# Python / local tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.venv/
+venv/
+
+# Logs / runtime artifacts
+*.log
+logs/
+*.pid
+*.out
+*.err
+
+# Local databases / generated stores
+*.sqlite
+*.sqlite3
+*.db
+
+# Generated project data
+data/raw/*
+!data/raw/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
+
+data/marts/*
+!data/marts/.gitkeep
+
+data/audits/*
+!data/audits/.gitkeep
+
+data/history/*
+!data/history/.gitkeep
+
+data/db/*
+!data/db/.gitkeep
