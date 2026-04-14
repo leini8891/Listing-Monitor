@@ -199,6 +199,16 @@ python src/ingestion/fetch_venue_ticker_metrics.py
 输出：
 - `data/processed/venue_ticker_metrics.csv`
 
+当前 resilience 行为：
+- 每个 venue 最多重试 3 次，按 `1s / 2s / 4s` exponential backoff
+- 单个 venue 最终失败时，不会中断整条 ticker pipeline；其他 venue 继续处理
+- 如果本地已有上一份成功的 `venue_ticker_metrics.csv`，失败 venue 会优先复用上一份该 venue 的 rows，并标记为 stale fallback
+- `venue_ticker_metrics.csv` 会额外写出：
+  - `fetch_status`
+  - `snapshot_time`
+  - `data_freshness`
+  - `source_error`
+
 ### Quality Audit
 
 ```bash

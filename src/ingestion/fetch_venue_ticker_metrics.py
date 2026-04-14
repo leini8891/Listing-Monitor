@@ -17,6 +17,7 @@ Important modeling distinction:
 
 import csv
 import sys
+import time
 import warnings
 from datetime import datetime, timezone
 from pathlib import Path
@@ -50,11 +51,15 @@ VENUE_TICKER_COLUMNS = [
     "volume_24h_quote",
     "turnover_24h_usd",
     "open_interest",
+    "fetch_status",
     "snapshot_time",
+    "data_freshness",
+    "source_error",
 ]
 
 USD_LIKE_ASSETS = {"USD", "USDT", "USDC"}
 SUPPORTED_VENUES = ("binance", "bybit", "okx", "bitget", "dydx")
+VENUE_FETCH_RETRIES = 3
 
 
 def log(message: str):
@@ -134,6 +139,13 @@ def load_watchboard_rows(path: Path) -> list[dict]:
         return list(csv.DictReader(handle))
 
 
+def load_existing_output(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    with path.open("r", encoding="utf-8", newline="") as handle:
+        return list(csv.DictReader(handle))
+
+
 def write_csv(rows: list[dict], fieldnames: list[str], output_file: Path):
     with output_file.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
@@ -145,6 +157,54 @@ def fetch_json(url: str, params: dict | None = None):
     response = requests.get(url, params=params, timeout=30)
     response.raise_for_status()
     return response.json()
+
+
+def truncate_error_message(message: str, max_length: int = 300) -> str:
+    text = clean_text(message)
+    if len(text) <= max_length:
+        return text
+    return f"{text[: max_length - 3]}..."
+
+
+def normalize_output_row(
+    row: dict,
+    fetch_status: str,
+    data_freshness: str,
+    source_error: str = "",
+) -> dict:
+    return {
+        "venue": clean_text(row.get("venue")),
+        "symbol_raw": clean_text(row.get("symbol_raw")),
+        "base_token": clean_text(row.get("base_token")).upper(),
+        "quote_asset": clean_text(row.get("quote_asset")).upper(),
+        "last_price": clean_text(row.get("last_price")),
+        "price_change_24h_pct": clean_text(row.get("price_change_24h_pct")),
+        "volume_24h_base": clean_text(row.get("volume_24h_base")),
+        "volume_24h_quote": clean_text(row.get("volume_24h_quote")),
+        "turnover_24h_usd": clean_text(row.get("turnover_24h_usd")),
+        "open_interest": clean_text(row.get("open_interest")),
+        "fetch_status": fetch_status,
+        "snapshot_time": clean_text(row.get("snapshot_time")),
+        "data_freshness": data_freshness,
+        "source_error": truncate_error_message(source_error),
+    }
+
+
+def annotate_success_rows(rows: list[dict]) -> list[dict]:
+    return [normalize_output_row(row, fetch_status="success", data_freshness="fresh") for row in rows]
+
+
+def fallback_rows_for_venue(previous_rows: list[dict], venue: str, source_error: str) -> list[dict]:
+    venue_rows = [row for row in previous_rows if clean_text(row.get("venue")).lower() == venue]
+    return [
+        normalize_output_row(
+            row,
+            fetch_status="fallback_reused",
+            data_freshness="stale_fallback",
+            source_error=source_error,
+        )
+        for row in venue_rows
+    ]
 
 
 def build_universe(rows: list[dict]) -> dict[str, dict[str, dict]]:
@@ -364,28 +424,75 @@ def fetch_dydx_rows(universe: dict[str, dict]) -> list[dict]:
     return rows
 
 
+def fetch_venue_with_retry(
+    venue: str,
+    universe_rows: dict[str, dict],
+    fetcher,
+    previous_rows: list[dict],
+) -> list[dict]:
+    if not universe_rows:
+        log(f"{venue}: no symbols in the cleaned watchboard universe; skipping.")
+        return []
+
+    last_error = ""
+    total_attempts = VENUE_FETCH_RETRIES + 1
+
+    for attempt in range(total_attempts):
+        try:
+            rows = annotate_success_rows(fetcher(universe_rows))
+            log(f"{venue}: fetched {len(rows)} ticker rows successfully.")
+            return rows
+        except Exception as exc:
+            last_error = truncate_error_message(f"{type(exc).__name__}: {exc}")
+            if attempt < VENUE_FETCH_RETRIES:
+                backoff_seconds = 2 ** attempt
+                log(
+                    f"{venue}: fetch attempt {attempt + 1}/{total_attempts} failed; "
+                    f"retrying in {backoff_seconds}s. Reason: {last_error}"
+                )
+                time.sleep(backoff_seconds)
+            else:
+                log(f"{venue}: all {total_attempts} attempts failed. Final reason: {last_error}")
+
+    fallback_rows = fallback_rows_for_venue(previous_rows, venue, last_error)
+    if fallback_rows:
+        log(f"{venue}: reusing {len(fallback_rows)} stale fallback row(s) from the previous output snapshot.")
+        return fallback_rows
+
+    log(f"{venue}: no previous fallback rows available; continuing without ticker rows for this venue.")
+    return []
+
+
 def main():
     if not INPUT_FILE.exists():
         raise FileNotFoundError(f"Input file not found: {INPUT_FILE}")
 
     watchboard_rows = load_watchboard_rows(INPUT_FILE)
+    previous_output_rows = load_existing_output(OUTPUT_FILE)
     universe = build_universe(watchboard_rows)
 
     log(f"Loaded {len(watchboard_rows)} cleaned listing rows from {INPUT_FILE.name}")
 
+    venue_fetchers = [
+        ("binance", fetch_binance_rows),
+        ("bybit", fetch_bybit_rows),
+        ("okx", fetch_okx_rows),
+        ("bitget", fetch_bitget_rows),
+        ("dydx", fetch_dydx_rows),
+    ]
+
     venue_rows = []
-    venue_rows.extend(fetch_binance_rows(universe["binance"]))
-    venue_rows.extend(fetch_bybit_rows(universe["bybit"]))
-    venue_rows.extend(fetch_okx_rows(universe["okx"]))
-    venue_rows.extend(fetch_bitget_rows(universe["bitget"]))
-    venue_rows.extend(fetch_dydx_rows(universe["dydx"]))
+    for venue, fetcher in venue_fetchers:
+        venue_rows.extend(fetch_venue_with_retry(venue, universe[venue], fetcher, previous_output_rows))
 
     venue_rows.sort(key=lambda row: (row["venue"], row["base_token"], row["symbol_raw"]))
     write_csv(venue_rows, VENUE_TICKER_COLUMNS, OUTPUT_FILE)
 
     log(f"Wrote {len(venue_rows)} venue ticker rows to {OUTPUT_FILE.name}")
     for venue in SUPPORTED_VENUES:
-        log(f"{venue}: {sum(1 for row in venue_rows if row['venue'] == venue)} rows")
+        venue_subset = [row for row in venue_rows if row["venue"] == venue]
+        stale_count = sum(1 for row in venue_subset if row["data_freshness"] == "stale_fallback")
+        log(f"{venue}: {len(venue_subset)} rows ({stale_count} stale fallback)")
 
 
 if __name__ == "__main__":

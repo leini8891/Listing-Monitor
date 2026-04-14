@@ -166,7 +166,10 @@ def create_schema(connection: sqlite3.Connection):
             volume_24h_quote REAL,
             turnover_24h_usd REAL,
             open_interest REAL,
+            fetch_status TEXT,
             snapshot_time TEXT,
+            data_freshness TEXT,
+            source_error TEXT,
             PRIMARY KEY (snapshot_date, venue, symbol_raw)
         );
 
@@ -330,8 +333,8 @@ def ingest_venue_ticker_metrics(connection: sqlite3.Connection, snapshot_date: s
         INSERT OR REPLACE INTO venue_ticker_metrics_daily (
             snapshot_date, venue, symbol_raw, base_token, quote_asset, last_price,
             price_change_24h_pct, volume_24h_base, volume_24h_quote, turnover_24h_usd,
-            open_interest, snapshot_time
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            open_interest, fetch_status, snapshot_time, data_freshness, source_error
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         [
             (
@@ -346,7 +349,10 @@ def ingest_venue_ticker_metrics(connection: sqlite3.Connection, snapshot_date: s
                 numeric_value(row.get("volume_24h_quote")),
                 numeric_value(row.get("turnover_24h_usd")),
                 numeric_value(row.get("open_interest")),
+                row.get("fetch_status", ""),
                 row.get("snapshot_time", ""),
+                row.get("data_freshness", ""),
+                row.get("source_error", ""),
             )
             for row in rows
         ],

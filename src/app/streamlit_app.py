@@ -196,6 +196,8 @@ def prepare_token_venue_metrics_table(df: pd.DataFrame) -> pd.DataFrame:
     table["24h Turnover (USD)"] = table["turnover_24h_usd"].apply(format_compact_usd)
     table["Open Interest"] = table["open_interest"].apply(format_number)
     table["Snapshot (SGT)"] = table["snapshot_time"].apply(format_sgt_datetime)
+    table["Fetch Status"] = table["fetch_status"].apply(clean_text)
+    table["Freshness"] = table["data_freshness"].apply(clean_text)
     return table.rename(
         columns={
             "venue": "Venue",
@@ -205,7 +207,20 @@ def prepare_token_venue_metrics_table(df: pd.DataFrame) -> pd.DataFrame:
             "volume_24h_quote": "24h Volume Quote",
         }
     )[
-        ["Venue", "Symbol", "Quote", "Last Price", "24h Price Chg", "24h Volume Base", "24h Volume Quote", "24h Turnover (USD)", "Open Interest", "Snapshot (SGT)"]
+        [
+            "Venue",
+            "Symbol",
+            "Quote",
+            "Last Price",
+            "24h Price Chg",
+            "24h Volume Base",
+            "24h Volume Quote",
+            "24h Turnover (USD)",
+            "Open Interest",
+            "Fetch Status",
+            "Freshness",
+            "Snapshot (SGT)",
+        ]
     ]
 
 
@@ -377,6 +392,9 @@ def render_token_page(snapshot_date: str, selected_token: str):
     if venue_metrics_df.empty:
         st.info("No venue-level perp metrics are available for this token in the selected snapshot.")
     else:
+        stale_rows = int((venue_metrics_df["data_freshness"] == "stale_fallback").sum()) if "data_freshness" in venue_metrics_df.columns else 0
+        if stale_rows:
+            st.warning(f"{stale_rows} venue metric row(s) are using stale fallback data from the previous successful ticker snapshot.")
         st.dataframe(prepare_token_venue_metrics_table(venue_metrics_df), width="stretch", hide_index=True)
 
     st.subheader("Venue Expansion Over Time")
@@ -422,6 +440,9 @@ def render_venue_page(snapshot_date: str, selected_venue: str):
     if venue_ticker_df.empty:
         st.info("No venue ticker metrics are available for this venue in the selected snapshot.")
     else:
+        stale_rows = int((venue_ticker_df["data_freshness"] == "stale_fallback").sum()) if "data_freshness" in venue_ticker_df.columns else 0
+        if stale_rows:
+            st.warning(f"{stale_rows} ticker row(s) are using stale fallback data because the latest venue fetch did not fully succeed.")
         top_turnover_row = top_row_by_numeric(venue_ticker_df, "turnover_24h_usd")
         top_mover_row = top_row_by_numeric(venue_ticker_df, "price_change_24h_pct", absolute=True)
         summary_cols = st.columns(2)

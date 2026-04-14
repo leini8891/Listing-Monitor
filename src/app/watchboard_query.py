@@ -323,7 +323,10 @@ def token_venue_metrics(token: str, snapshot_date: str, db_path: Path = DB_FILE)
             volume_24h_quote,
             turnover_24h_usd,
             open_interest,
-            snapshot_time
+            fetch_status,
+            snapshot_time,
+            data_freshness,
+            source_error
         FROM venue_ticker_metrics_daily
         WHERE snapshot_date = ?
           AND base_token = ?
@@ -412,7 +415,10 @@ def venue_ticker_metrics(venue: str, snapshot_date: str, db_path: Path = DB_FILE
             volume_24h_quote,
             turnover_24h_usd,
             open_interest,
-            snapshot_time
+            fetch_status,
+            snapshot_time,
+            data_freshness,
+            source_error
         FROM venue_ticker_metrics_daily
         WHERE snapshot_date = ?
           AND venue = ?
