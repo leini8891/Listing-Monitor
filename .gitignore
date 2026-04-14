@@ -12,6 +12,7 @@
 Thumbs.db
 .idea/
 .vscode/
+.codex/
 
 # Python / local tooling
 __pycache__/
