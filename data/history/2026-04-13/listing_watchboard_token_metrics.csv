@@ -1,0 +1,728 @@
+token,venue_count,venues,earliest_listing_time_utc,earliest_listing_time_sgt,listing_age_days,coingecko_id,current_price_usd,price_change_24h_pct,volume_24h_usd,market_cap_usd,match_status
+0G,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2025-09-17T15:45:00+00:00,2025-09-17 23:45:00 SGT,207.7,zero-gravity,0.596869,9.57066129896,134918633.389824062586,127324613.055630490184,matched_exact_symbol_unique
+1000000BABYDOGE,1,Bybit,2024-06-11T11:34:12+00:00,2024-06-11 19:34:12 SGT,670.9,,,,,,unmatched_no_symbol_candidate
+1000000BOB,1,Binance,2025-06-05T08:30:00+00:00,2025-06-05 16:30:00 SGT,312,,,,,,unmatched_no_symbol_candidate
+1000000CHEEMS,1,Bybit,2024-11-25T10:40:12+00:00,2024-11-25 18:40:12 SGT,503.9,,,,,,unmatched_ambiguous_symbol_candidates
+1000000MOG,3,"Binance, Bitget, Bybit",2024-05-16T15:43:33+00:00,2024-05-16 23:43:33 SGT,696.7,og-fan-token,2.65,1.738079914288,7510684.436823737808,12297205.70801939629,matched_stripped_multiplier_unique
+10000QUBIC,1,Bybit,2024-12-24T09:53:58+00:00,2024-12-24 17:53:58 SGT,475,qubic-network,0.000000723784,-7.661210843959,2235932.94075726578,98903726.544709965587,matched_stripped_multiplier_unique
+10000SATS,1,Bybit,2023-11-16T09:41:35+00:00,2023-11-16 17:41:35 SGT,879,,,,,,unmatched_ambiguous_symbol_candidates
+1000BONK,3,"Binance, Bitget, Bybit",2023-01-06T02:10:39+00:00,2023-01-06 10:10:39 SGT,1193.3,1000bonk,0.00561629,-1.791958053353,805152.99740815477,0,matched_exact_symbol_unique
+1000BTT,1,Bybit,2022-02-25T06:08:18+00:00,2022-02-25 14:08:18 SGT,1508.1,1000btt,,,,,matched_exact_symbol_unique
+1000CAT,3,"Binance, Bitget, Bybit",2024-09-12T11:35:05+00:00,2024-09-12 19:35:05 SGT,577.9,1000cat,0.00168409,5.013794533167,659711.052820682409,0,matched_exact_symbol_unique
+1000CHEEMS,1,Binance,2024-11-25T11:45:00+00:00,2024-11-25 19:45:00 SGT,503.9,1000chems,0.0004565,6.577581304246,992727.472760360339,0,matched_exact_symbol_unique
+1000FLOKI,2,"Binance, Bybit",2023-02-24T08:56:26+00:00,2023-02-24 16:56:26 SGT,1144,,,,,,unmatched_ambiguous_symbol_candidates
+1000LUNC,2,"Binance, Bybit",2022-09-08T07:00:00+00:00,2022-09-08 15:00:00 SGT,1313.1,,,,,,unmatched_ambiguous_symbol_candidates
+1000NEIROCTO,1,Bybit,2024-09-16T09:47:04+00:00,2024-09-16 17:47:04 SGT,574,,,,,,unmatched_no_symbol_candidate
+1000PEPE,2,"Binance, Bybit",2023-05-03T10:04:31+00:00,2023-05-03 18:04:31 SGT,1076,,,,,,unmatched_ambiguous_symbol_candidates
+1000RATS,3,"Binance, Bitget, Bybit",2023-11-22T06:14:14+00:00,2023-11-22 14:14:14 SGT,873.1,1000rats,,,,,matched_exact_symbol_unique
+1000SATS,2,"Binance, Bitget",2023-12-12T14:00:00+00:00,2023-12-12 22:00:00 SGT,852.8,1000sats-ordinals,0.00001066,-1.968444204164,627738.99848392827,0,matched_exact_symbol_unique
+1000SHIB,1,Binance,2021-05-10T07:00:00+00:00,2021-05-10 15:00:00 SGT,1799.1,1000shib,,,,,matched_exact_symbol_unique
+1000TAG,1,Bybit,2025-07-28T08:37:38+00:00,2025-07-28 16:37:38 SGT,259,tagger,0.0008026,-2.763596228396,10201879.907828621566,87468090.566214814782,matched_stripped_multiplier_unique
+1000TOSHI,1,Bybit,2024-12-05T09:22:42+00:00,2024-12-05 17:22:42 SGT,494,,,,,,unmatched_ambiguous_symbol_candidates
+1000TURBO,1,Bybit,2024-02-29T11:12:19+00:00,2024-02-29 19:12:19 SGT,773.9,,,,,,unmatched_ambiguous_symbol_candidates
+1000XEC,3,"Binance, Bitget, Bybit",2021-09-16T07:00:00+00:00,2021-09-16 15:00:00 SGT,1670.1,ecash,0.00000677,-0.961912434287,3333320.507853410207,135317266.579464256763,matched_stripped_multiplier_unique
+1INCH,5,"Binance, Bitget, Bybit, dYdX, OKX",2020-12-25T02:30:00+00:00,2020-12-25 10:30:00 SGT,1935.3,1inch,0.091832,-0.352745561418,7673547.320054650307,128971090.835260644555,matched_exact_symbol_unique
+1KMON,1,Drift,,,,,,,,,unmatched_ambiguous_symbol_candidates
+1KPUMP,1,Drift,,,,,,,,,unmatched_ambiguous_symbol_candidates
+1MBABYDOGE,2,"Binance, Bitget",2024-09-16T11:35:00+00:00,2024-09-16 19:35:00 SGT,573.9,1mbabydoge,0.00039026,2.188757350408,637095.172314105206,0,matched_exact_symbol_unique
+1MBONK,1,Drift,,,,,,,,,unmatched_ambiguous_symbol_candidates
+1MCHEEMS,1,Bitget,,,,,,,,,unmatched_ambiguous_symbol_candidates
+1MPEPE,1,Drift,,,,,,,,,unmatched_ambiguous_symbol_candidates
+2Z,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2025-10-02T12:30:00+00:00,2025-10-02 20:30:00 SGT,192.9,doublezero,0.07749,0.61387697096,10331569.662223635241,268649581.312956213951,matched_exact_symbol_unique
+4,3,"Binance, Bitget, Bybit",2025-10-08T11:30:00+00:00,2025-10-08 19:30:00 SGT,186.9,4-2,0.01335407,-8.782456983168,3417981.526384573895,13381547.7881401591,matched_exact_symbol_unique
+A,4,"Binance, Bitget, Bybit, OKX",2025-05-28T08:00:00+00:00,2025-05-28 16:00:00 SGT,320.1,vaulta,0.077198,-0.672495513612,12752102.27551715076,126074658.62838357687,matched_exact_symbol_unique
+AAPL,3,"Binance, Bitget, OKX",2026-03-04T08:15:00+00:00,2026-03-04 16:15:00 SGT,40,,,,,,unmatched_no_symbol_candidate
+AAVE,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,aave,94.58,5.055638916999,306368603.712739646435,1434344687.688276529312,matched_exact_symbol_unique
+ACE,4,"Binance, Bitget, Bybit, Hyperliquid",2023-12-18T06:49:35+00:00,2023-12-18 14:49:35 SGT,847.1,,,,,,unmatched_ambiguous_symbol_candidates
+ACH,4,"Binance, Bitget, Bybit, OKX",2022-04-08T08:07:37+00:00,2022-04-08 16:07:37 SGT,1466.1,alchemy-pay,0.00619857,7.716996941546,17807233.33562303707,30642781.558282114565,matched_exact_symbol_unique
+ACN,1,Bitget,,,,,,,,,unmatched_no_symbol_candidate
+ACT,4,"Binance, Bitget, Bybit, OKX",2024-11-11T08:14:12+00:00,2024-11-11 16:14:12 SGT,518,,,,,,unmatched_ambiguous_symbol_candidates
+ACU,4,"Binance, Bitget, Bybit, OKX",2026-01-21T12:45:00+00:00,2026-01-21 20:45:00 SGT,81.9,acurast,0.09563,18.410713332504,5899676.236356491223,23126689.850459679961,matched_exact_symbol_unique
+ACX,3,"Binance, Bitget, Bybit",2024-12-06T09:55:41+00:00,2024-12-06 17:55:41 SGT,493,across-protocol,0.0427805,-1.395223921792,2443667.378339474089,30152090.012500178069,matched_exact_symbol_unique
+ADA,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+AERGO,3,"Binance, Bitget, Bybit",2023-11-16T10:07:26+00:00,2023-11-16 18:07:26 SGT,879,aergo,0.054033,0.786742130667,2345282.866724458523,25526449.981335736811,matched_exact_symbol_unique
+AERO,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2024-07-15T09:05:08+00:00,2024-07-15 17:05:08 SGT,637,aerodrome-finance,0.355135,-3.886690109766,11309602.077351335436,327257414.429344773293,matched_exact_symbol_unique
+AEVO,5,"Binance, Bitget, Bybit, dYdX, OKX",2024-03-13T10:25:20+00:00,2024-03-13 18:25:20 SGT,761,aevo-exchange,0.02259286,-1.224178520771,5082666.112112140283,20701859.824734196067,matched_exact_symbol_unique
+AGI,1,Bybit,2023-11-17T08:27:44+00:00,2023-11-17 16:27:44 SGT,878,,,,,,unmatched_ambiguous_symbol_candidates
+AGLD,4,"Binance, Bitget, Bybit, OKX",2021-09-07T09:57:30+00:00,2021-09-07 17:57:30 SGT,1679,adventure-gold,0.237853,-4.427399030311,2570844.979820205364,20791742.182044759393,matched_exact_symbol_unique
+AGT,1,Binance,2025-05-20T10:30:00+00:00,2025-05-20 18:30:00 SGT,328,,,,,,unmatched_ambiguous_symbol_candidates
+AI,3,"Binance, Bitget, Hyperliquid",2024-01-08T12:30:00+00:00,2024-01-08 20:30:00 SGT,825.9,,,,,,unmatched_ambiguous_symbol_candidates
+AI16Z,1,Hyperliquid,,,,ai16z,0.00051513,-1.123164690764,22588.38360279267,566593.164668291225,matched_exact_symbol_unique
+AIA,1,Binance,2026-01-20T11:15:00+00:00,2026-01-20 19:15:00 SGT,82.9,aia,0.115978,-19.000801382977,9367077.733791006729,11542416.943438053131,matched_exact_symbol_unique
+AIN,2,"Binance, Bitget",2025-07-10T10:45:00+00:00,2025-07-10 18:45:00 SGT,276.9,,,,,,unmatched_ambiguous_symbol_candidates
+AIO,3,"Binance, Bitget, Bybit",2025-08-13T11:30:00+00:00,2025-08-13 19:30:00 SGT,242.9,,,,,,unmatched_ambiguous_symbol_candidates
+AIOT,1,Binance,2025-04-30T12:30:00+00:00,2025-04-30 20:30:00 SGT,347.9,okzoo,0.060041,-15.60106467977,19202238.93350315094,16396709.941726284102,matched_exact_symbol_unique
+AIOZ,1,Bybit,2024-06-13T08:16:01+00:00,2024-06-13 16:16:01 SGT,669,aioz-network,0.053346,-4.083577502032,2509306.2463886193,66389259.040980137885,matched_exact_symbol_unique
+AIXBT,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2024-12-20T08:38:27+00:00,2024-12-20 16:38:27 SGT,479,aixbt,0.02319935,-1.442618748223,8694390.982540130615,23068024.695846110582,matched_exact_symbol_unique
+AKE,2,"Binance, Bybit",2025-09-26T12:30:00+00:00,2025-09-26 20:30:00 SGT,198.9,akedo,0.00056235,6.346368319707,7000138.263978764415,12836977.291956737638,matched_exact_symbol_unique
+AKT,4,"Binance, Bitget, Bybit, dYdX",2024-06-26T08:56:10+00:00,2024-06-26 16:56:10 SGT,656,,,,,,unmatched_ambiguous_symbol_candidates
+ALCH,3,"Binance, Bitget, Bybit",2025-01-07T07:32:11+00:00,2025-01-07 15:32:11 SGT,461.1,alchemist-ai,0.064258,2.213536865894,5158514.54849139601,54611794.331070773304,matched_exact_symbol_unique
+ALGO,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+ALICE,3,"Binance, Bitget, Bybit",2021-03-15T07:00:00+00:00,2021-03-15 15:00:00 SGT,1855.1,,,,,,unmatched_ambiguous_symbol_candidates
+ALL,1,Binance,2025-08-06T09:00:00+00:00,2025-08-06 17:00:00 SGT,250,,,,,,unmatched_ambiguous_symbol_candidates
+ALLO,4,"Binance, Bitget, Bybit, OKX",2025-11-11T14:00:00+00:00,2025-11-11 22:00:00 SGT,152.8,allora,0.110257,2.639118838509,8444279.046148497611,24810358.967185303569,matched_exact_symbol_unique
+ALPINE,2,"Binance, Bybit",2025-05-06T09:45:00+00:00,2025-05-06 17:45:00 SGT,342,alpine-f1-team-fan-token,0.409022,0.103869335152,3207672.612656339072,4637200.094683134928,matched_exact_symbol_unique
+ALT,4,"Binance, Bitget, Bybit, Hyperliquid",2024-01-25T11:17:39+00:00,2024-01-25 19:17:39 SGT,808.9,,,,,,unmatched_ambiguous_symbol_candidates
+AMD,1,OKX,2026-03-11T10:00:00+00:00,2026-03-11 18:00:00 SGT,33,,,,,,unmatched_no_symbol_candidate
+AMZN,3,"Binance, Bitget, OKX",2026-02-09T14:40:00+00:00,2026-02-09 22:40:00 SGT,62.8,,,,,,unmatched_no_symbol_candidate
+ANIME,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2025-01-23T14:20:24+00:00,2025-01-23 22:20:24 SGT,444.8,,,,,,unmatched_ambiguous_symbol_candidates
+ANKR,3,"Binance, Bitget, Bybit",2021-01-25T07:00:00+00:00,2021-01-25 15:00:00 SGT,1904.1,ankr,0.0050911,-3.14339498691,38873920.975776560605,50906713.671525120735,matched_exact_symbol_unique
+APE,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2022-03-17T07:00:00+00:00,2022-03-17 15:00:00 SGT,1488.1,,,,,,unmatched_ambiguous_symbol_candidates
+APEX,2,"Bybit, Hyperliquid",2025-09-28T08:18:13+00:00,2025-09-28 16:18:13 SGT,197,,,,,,unmatched_ambiguous_symbol_candidates
+API3,4,"Binance, Bitget, Bybit, OKX",2022-02-21T07:00:00+00:00,2022-02-21 15:00:00 SGT,1512.1,api3,0.275971,-0.292825470736,4490474.261856066063,39400684.231133326888,matched_exact_symbol_unique
+APP,1,Bitget,,,,moon-app,0.00004875,,9.636203742295,96818.26503599131,matched_exact_symbol_unique
+APR,4,"Binance, Bitget, Bybit, OKX",2025-10-23T10:30:00+00:00,2025-10-23 18:30:00 SGT,172,apriori,0.174299,1.902116777573,4478777.370458453894,37645760.915851250291,matched_exact_symbol_unique
+APT,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2022-10-18T07:00:00+00:00,2022-10-18 15:00:00 SGT,1273.1,aptos,0.819489,-0.497884738393,45420210.983706086874,660343706.906970262527,matched_exact_symbol_unique
+AR,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2021-09-28T07:00:00+00:00,2021-09-28 15:00:00 SGT,1658.1,arweave,1.68,-0.324283430307,13161126.19778528437,110258914.044996023178,matched_exact_symbol_unique
+ARB,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2023-03-23T07:00:00+00:00,2023-03-23 15:00:00 SGT,1117.1,,,,,,unmatched_ambiguous_symbol_candidates
+ARC,3,"Binance, Bitget, Bybit",2025-01-03T08:16:18+00:00,2025-01-03 16:16:18 SGT,465,,,,,,unmatched_ambiguous_symbol_candidates
+ARIA,3,"Binance, Bitget, Bybit",2025-09-03T11:00:00+00:00,2025-09-03 19:00:00 SGT,221.9,,,,,,unmatched_ambiguous_symbol_candidates
+ARK,4,"Binance, Bitget, Bybit, Hyperliquid",2023-08-01T05:55:17+00:00,2023-08-01 13:55:17 SGT,986.1,,,,,,unmatched_ambiguous_symbol_candidates
+ARKM,5,"Binance, Bitget, Bybit, dYdX, OKX",2023-07-28T01:41:11+00:00,2023-07-28 09:41:11 SGT,990.3,arkham,0.096261,-2.089296449815,12548978.673218233511,58207724.911079518497,matched_exact_symbol_unique
+ARM,1,Bitget,,,,,,,,,unmatched_no_symbol_candidate
+ARPA,3,"Binance, Bitget, Bybit",2021-10-18T07:00:00+00:00,2021-10-18 15:00:00 SGT,1638.1,arpa,0.00924104,-0.490990089844,3893561.543742868118,9074327.09431024082,matched_exact_symbol_unique
+ASML,1,Bitget,,,,,,,,,unmatched_no_symbol_candidate
+ASP,1,Bybit,2025-07-24T12:13:05+00:00,2025-07-24 20:13:05 SGT,262.9,aspecta,0.02598495,1.97816779528,218000.873558846855,7949155.246579959057,matched_exact_symbol_unique
+ASR,3,"Binance, Bitget, Bybit",2025-05-06T09:30:00+00:00,2025-05-06 17:30:00 SGT,342,as-roma-fan-token,1.25,0.191331647941,3411734.928099078126,10534434.723507970572,matched_exact_symbol_unique
+ASTER,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2025-09-19T07:46:33+00:00,2025-09-19 15:46:33 SGT,206.1,,,,,,unmatched_ambiguous_symbol_candidates
+ASTR,4,"Binance, Bitget, Bybit, dYdX",2022-04-04T03:48:42+00:00,2022-04-04 11:48:42 SGT,1470.2,,,,,,unmatched_ambiguous_symbol_candidates
+AT,4,"Binance, Bitget, Bybit, OKX",2025-10-29T11:30:00+00:00,2025-10-29 19:30:00 SGT,165.9,apro,0.148713,2.740806287008,4081690.567296561785,34216940.51940484345,matched_exact_symbol_unique
+ATA,2,"Binance, Bitget",2021-08-30T07:00:00+00:00,2021-08-30 15:00:00 SGT,1687.1,,,,,,unmatched_ambiguous_symbol_candidates
+ATH,5,"Binance, Bitget, Bybit, dYdX, OKX",2024-06-13T03:55:00+00:00,2024-06-13 11:55:00 SGT,669.2,,,,,,unmatched_ambiguous_symbol_candidates
+ATOM,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+AUCTION,4,"Binance, Bitget, Bybit, OKX",2023-07-28T06:34:30+00:00,2023-07-28 14:34:30 SGT,990.1,,,,,,unmatched_ambiguous_symbol_candidates
+AVA,3,"Binance, Bitget, Bybit",2024-12-13T13:00:00+00:00,2024-12-13 21:00:00 SGT,485.9,,,,,,unmatched_ambiguous_symbol_candidates
+AVAAI,2,"Binance, Bybit",2025-01-08T08:32:06+00:00,2025-01-08 16:32:06 SGT,460,,,,,,unmatched_no_symbol_candidate
+AVAX,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+AVGO,1,Bitget,,,,,,,,,unmatched_no_symbol_candidate
+AVNT,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2025-09-09T14:05:37+00:00,2025-09-09 22:05:37 SGT,215.8,avantis,0.131124,-4.365868536057,16966748.438922323287,41947205.972367160022,matched_exact_symbol_unique
+AWE,3,"Binance, Bitget, Bybit",2025-05-21T08:00:00+00:00,2025-05-21 16:00:00 SGT,327.1,stp-network,0.050783,-0.944349407514,3711243.588323176373,98625603.690862879157,matched_exact_symbol_unique
+AXL,4,"Binance, Bitget, Bybit, dYdX",2023-12-07T09:32:30+00:00,2023-12-07 17:32:30 SGT,858,axelar,0.04515122,0.816070803632,11497352.756800837815,51925385.803867615759,matched_exact_symbol_unique
+AXS,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,axie-infinity,1.066,-3.023742628225,18472330.78384161368,181143771.166151255369,matched_exact_symbol_unique
+AZTEC,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2026-02-11T04:30:00+00:00,2026-02-11 12:30:00 SGT,61.2,aztec,0.02092733,0.840607232804,5810703.732989280485,61943197.694374255836,matched_exact_symbol_unique
+B,3,"Binance, Bitget, Bybit",2025-05-22T16:30:00+00:00,2025-05-23 00:30:00 SGT,325.7,,,,,,unmatched_ambiguous_symbol_candidates
+B2,3,"Binance, Bitget, Bybit",2025-05-06T13:30:00+00:00,2025-05-06 21:30:00 SGT,341.8,bsquared-network,0.65454,2.350324335032,5840274.531292873435,27242583.124449379742,matched_exact_symbol_unique
+B3,3,"Binance, Bitget, Bybit",2025-02-12T10:16:21+00:00,2025-02-12 18:16:21 SGT,425,b3,0.00031503,3.131524075929,1700130.592538487865,28420425.059253599495,matched_exact_symbol_unique
+BABA,1,Bitget,,,,baba,0.00001855,0.838597358522,74.19015061008,18544.858054001124,matched_exact_symbol_unique
+BABY,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2025-04-03T09:34:35+00:00,2025-04-03 17:34:35 SGT,375,,,,,,unmatched_ambiguous_symbol_candidates
+BADGER,1,Hyperliquid,,,,,,,,,unmatched_ambiguous_symbol_candidates
+BAN,3,"Binance, Bitget, Bybit",2024-11-18T08:39:50+00:00,2024-11-18 16:39:50 SGT,511,,,,,,unmatched_ambiguous_symbol_candidates
+BANANA,4,"Binance, Bitget, Bybit, Hyperliquid",2024-07-19T10:49:43+00:00,2024-07-19 18:49:43 SGT,632.9,,,,,,unmatched_ambiguous_symbol_candidates
+BANANAS31,3,"Binance, Bitget, Bybit",2025-03-22T09:15:00+00:00,2025-03-22 17:15:00 SGT,387,banana-for-scale-2,0.00993861,2.597323397705,21532694.059767775238,99381334.80416727066,matched_exact_symbol_unique
+BAND,4,"Binance, Bitget, Bybit, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,band-protocol,0.204054,-0.329558950387,4342871.185326118954,35529543.67293857038,matched_exact_symbol_unique
+BANK,3,"Binance, Bitget, Bybit",2025-04-18T18:30:00+00:00,2025-04-19 02:30:00 SGT,359.6,,,,,,unmatched_ambiguous_symbol_candidates
+BARD,4,"Binance, Bitget, Bybit, OKX",2025-09-16T09:48:57+00:00,2025-09-16 17:48:57 SGT,209,lombard-protocol,0.331039,-0.069367819689,52111962.062359966338,99970637.536037743092,matched_exact_symbol_unique
+BAS,2,"Binance, Bitget",2025-08-26T13:30:00+00:00,2025-08-26 21:30:00 SGT,229.8,bas,0.00683916,-12.236270423404,7251459.189607079141,16899520.340881034732,matched_exact_symbol_unique
+BASED,4,"Binance, Bitget, Bybit, OKX",2026-03-30T08:23:42+00:00,2026-03-30 16:23:42 SGT,14,,,,,,unmatched_ambiguous_symbol_candidates
+BAT,4,"Binance, Bitget, Bybit, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+BB,3,"Binance, Bitget, Bybit",2024-05-13T12:30:00+00:00,2024-05-13 20:30:00 SGT,699.9,,,,,,unmatched_ambiguous_symbol_candidates
+BCH,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2018-01-01T00:00:00+00:00,2018-01-01 08:00:00 SGT,3024.4,,,,,,unmatched_ambiguous_symbol_candidates
+BEAM,3,"Bitget, Bybit, dYdX",2023-11-14T09:48:16+00:00,2023-11-14 17:48:16 SGT,881,,,,,,unmatched_ambiguous_symbol_candidates
+BEAMX,1,Binance,2023-11-17T13:30:00+00:00,2023-11-17 21:30:00 SGT,877.8,,,,,,unmatched_no_symbol_candidate
+BEAT,4,"Binance, Bitget, Bybit, OKX",2025-11-12T12:15:00+00:00,2025-11-12 20:15:00 SGT,151.9,,,,,,unmatched_ambiguous_symbol_candidates
+BEL,3,"Binance, Bitget, Bybit",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+BERA,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2025-02-06T13:16:28+00:00,2025-02-06 21:16:28 SGT,430.8,berachain-bera,0.40192,-1.423241434713,13685910.20404372178,98326642.997281819582,matched_exact_symbol_unique
+BGB,1,Bitget,,,,bitget-token,1.88,-0.792995526282,21177869.78499763459,1318587292.99006319046,matched_exact_symbol_unique
+BICO,4,"Binance, Bitget, Bybit, OKX",2021-12-02T11:40:17+00:00,2021-12-02 19:40:17 SGT,1592.9,biconomy,0.02126551,-2.445443404901,3033798.300060135778,15443440.884566802531,matched_exact_symbol_unique
+BIGTIME,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2023-10-12T08:35:45+00:00,2023-10-12 16:35:45 SGT,914,big-time,0.01223362,-0.735719379366,5582090.789959867485,23320927.738143257797,matched_exact_symbol_unique
+BIO,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2024-12-24T09:54:54+00:00,2024-12-24 17:54:54 SGT,475,,,,,,unmatched_ambiguous_symbol_candidates
+BIRB,3,"Binance, Bitget, Bybit",2026-01-28T11:12:45+00:00,2026-01-28 19:12:45 SGT,74.9,,,,,,unmatched_ambiguous_symbol_candidates
+BLAST,3,"Bybit, dYdX, Hyperliquid",2024-06-27T09:25:10+00:00,2024-06-27 17:25:10 SGT,655,,,,,,unmatched_ambiguous_symbol_candidates
+BLESS,3,"Binance, Bitget, Bybit",2025-09-23T09:30:00+00:00,2025-09-23 17:30:00 SGT,202,bless-2,0.01188657,42.407322377203,9691603.509052343667,21927187.608877550811,matched_exact_symbol_unique
+BLUAI,2,"Binance, Bybit",2025-10-21T11:30:00+00:00,2025-10-21 19:30:00 SGT,173.9,bluwhale,0.00859656,-6.960628745327,1591345.196522631682,10561203.974426848814,matched_exact_symbol_unique
+BLUR,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2023-02-15T02:33:07+00:00,2023-02-15 10:33:07 SGT,1153.3,blur,0.02109002,-6.938449882487,27534158.475011304021,58489211.535017207265,matched_exact_symbol_unique
+BLZ,1,Hyperliquid,,,,bluzelle,0.00933442,-3.341949952262,154077.446709960961,4387129.418870296329,matched_exact_symbol_unique
+BMT,3,"Binance, Bitget, Bybit",2025-03-13T07:58:44+00:00,2025-03-13 15:58:44 SGT,396.1,,,,,,unmatched_ambiguous_symbol_candidates
+BNB,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+BNT,4,"Binance, Bitget, Bybit, Hyperliquid",2023-08-07T05:18:53+00:00,2023-08-07 13:18:53 SGT,980.2,bancor,0.292916,-0.388673945446,218668.787251284055,31900154.437534913421,matched_exact_symbol_unique
+BOB,2,"Binance, Bitget",2025-11-21T10:45:00+00:00,2025-11-21 18:45:00 SGT,142.9,,,,,,unmatched_ambiguous_symbol_candidates
+BOBA,1,Bybit,2022-04-06T07:56:01+00:00,2022-04-06 15:56:01 SGT,1468.1,,,,,,unmatched_ambiguous_symbol_candidates
+BOBBOB,1,Bybit,2025-11-24T08:29:08+00:00,2025-11-24 16:29:08 SGT,140,,,,,,unmatched_no_symbol_candidate
+BOME,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2024-03-15T08:52:25+00:00,2024-03-15 16:52:25 SGT,759,book-of-meme,0.00038219,0.009577391177,7997586.557673914358,26357986.563783824444,matched_exact_symbol_unique
+BONK,2,"dYdX, OKX",2024-01-08T06:26:57+00:00,2024-01-08 14:26:57 SGT,826.1,,,,,,unmatched_ambiguous_symbol_candidates
+BP,1,Drift,,,,,,,,,unmatched_ambiguous_symbol_candidates
+BR,3,"Binance, Bitget, Bybit",2025-03-20T13:19:48+00:00,2025-03-20 21:19:48 SGT,388.8,bedrock-token,0.12321,4.329369479553,4071921.926663831342,30956447.681560877711,matched_exact_symbol_unique
+BRETT,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2024-04-26T08:17:24+00:00,2024-04-26 16:17:24 SGT,717,,,,,,unmatched_ambiguous_symbol_candidates
+BREV,4,"Binance, Bitget, Bybit, OKX",2025-12-30T10:45:00+00:00,2025-12-30 18:45:00 SGT,103.9,brevis,0.118031,0.259288087555,9321026.985241724178,29472459.449179824442,matched_exact_symbol_unique
+BROCCOLI,2,"Bitget, Bybit",2025-02-14T12:11:51+00:00,2025-02-14 20:11:51 SGT,422.9,,,,,,unmatched_ambiguous_symbol_candidates
+BROCCOLI714,1,Binance,2025-03-21T09:00:00+00:00,2025-03-21 17:00:00 SGT,388,,,,,,unmatched_no_symbol_candidate
+BROCCOLIF3B,1,Binance,2025-03-21T09:15:00+00:00,2025-03-21 17:15:00 SGT,388,,,,,,unmatched_no_symbol_candidate
+BSB,4,"Binance, Bitget, Bybit, OKX",2026-03-25T11:45:00+00:00,2026-03-25 19:45:00 SGT,18.9,,,,,,unmatched_ambiguous_symbol_candidates
+BSU,1,Bybit,2025-08-27T10:30:53+00:00,2025-08-27 18:30:53 SGT,229,baby-shark-universe,0.04456301,-7.052606868643,410785.111340495117,7481752.475018898956,matched_exact_symbol_unique
+BSV,4,"Binance, Bitget, Bybit, Hyperliquid",2021-12-10T03:08:28+00:00,2021-12-10 11:08:28 SGT,1585.3,bitcoin-cash-sv,15.12,-1.692242090722,4039972.20914323302,302713411.415590584278,matched_exact_symbol_unique
+BTC,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2018-08-28T02:43:23+00:00,2018-08-28 10:43:23 SGT,2785.3,,,,,,unmatched_ambiguous_symbol_candidates
+BTCDOM,1,Binance,2021-06-17T07:00:00+00:00,2021-06-17 15:00:00 SGT,1761.1,,,,,,unmatched_no_symbol_candidate
+BTR,2,"Binance, Bybit",2025-08-27T10:30:00+00:00,2025-08-27 18:30:00 SGT,229,,,,,,unmatched_ambiguous_symbol_candidates
+BULLA,1,Binance,2025-07-04T09:00:00+00:00,2025-07-04 17:00:00 SGT,283,,,,,,unmatched_ambiguous_symbol_candidates
+BZ,3,"Binance, Bitget, OKX",2026-03-24T10:00:00+00:00,2026-03-24 18:00:00 SGT,20,,,,,,unmatched_no_symbol_candidate
+C,3,"Binance, Bitget, Bybit",2025-07-15T09:00:00+00:00,2025-07-15 17:00:00 SGT,272,,,,,,unmatched_ambiguous_symbol_candidates
+C98,3,"Binance, Bitget, Bybit",2021-08-23T07:00:00+00:00,2021-08-23 15:00:00 SGT,1694.1,coin98,0.01936935,-6.22955370109,5187793.031199617311,19356048.960403621197,matched_exact_symbol_unique
+CAKE,5,"Binance, Bitget, Bybit, dYdX, Hyperliquid",2023-11-02T12:45:00+00:00,2023-11-02 20:45:00 SGT,892.9,pancakeswap-token,1.5,2.507120823361,24681648.593210659921,493045067.304132401943,matched_exact_symbol_unique
+CAMP,1,Bybit,2025-08-28T08:31:42+00:00,2025-08-28 16:31:42 SGT,228,camp-network,0.00215619,-4.972397526911,2677556.731985944323,4524207.50949326437,matched_exact_symbol_unique
+CANTO,1,Hyperliquid,,,,canto,0.00139278,,15.835940220112,847460.590205201763,matched_exact_symbol_unique
+CARV,3,"Binance, Bitget, Bybit",2024-10-16T08:41:15+00:00,2024-10-16 16:41:15 SGT,544,carv,0.051136,-5.290081045033,4700517.899348303676,27446027.379635483027,matched_exact_symbol_unique
+CATI,4,"Binance, Bitget, Bybit, Hyperliquid",2024-09-09T08:15:12+00:00,2024-09-09 16:15:12 SGT,581,catizen,0.04952634,-5.697665709885,28483617.174515921623,20382185.441976431757,matched_exact_symbol_unique
+CC,4,"Binance, Bybit, Hyperliquid, OKX",2025-10-31T12:00:00+00:00,2025-10-31 20:00:00 SGT,163.9,,,,,,unmatched_ambiguous_symbol_candidates
+CELO,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2021-09-24T10:03:05+00:00,2021-09-24 18:03:05 SGT,1662,celo,0.078142,-2.341094195703,3106736.724542102776,46817645.193062536418,matched_exact_symbol_unique
+CELR,2,"Binance, Bitget",2021-03-29T07:00:00+00:00,2021-03-29 15:00:00 SGT,1841.1,celer-network,0.00234503,-4.180140303989,1540770.634112021886,13237005.84813406691,matched_exact_symbol_unique
+CETUS,3,"Binance, Bitget, Bybit",2024-02-05T03:44:03+00:00,2024-02-05 11:44:03 SGT,798.2,cetus-protocol,0.01921671,-1.568630654691,2035011.267023429042,17732221.208897408098,matched_exact_symbol_unique
+CFG,3,"Binance, Bitget, Bybit",2026-03-16T13:00:00+00:00,2026-03-16 21:00:00 SGT,27.9,,,,,,unmatched_ambiguous_symbol_candidates
+CFX,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2021-03-12T09:00:00+00:00,2021-03-12 17:00:00 SGT,1858,,,,,,unmatched_ambiguous_symbol_candidates
+CGPT,3,"Binance, Bitget, Bybit",2024-12-20T19:15:00+00:00,2024-12-21 03:15:00 SGT,478.6,chaingpt,0.01934083,-0.334207506364,3104693.145768356975,16956827.354078903794,matched_exact_symbol_unique
+CHILLGUY,4,"Binance, Bitget, Bybit, Hyperliquid",2024-11-21T09:38:17+00:00,2024-11-21 17:38:17 SGT,508,,,,,,unmatched_ambiguous_symbol_candidates
+CHR,3,"Binance, Bitget, Bybit",2021-03-12T07:00:00+00:00,2021-03-12 15:00:00 SGT,1858.1,,,,,,unmatched_ambiguous_symbol_candidates
+CHZ,5,"Binance, Bitget, Bybit, dYdX, OKX",2021-01-21T07:00:00+00:00,2021-01-21 15:00:00 SGT,1908.1,chiliz,0.0359436,-5.017404630744,68599386.857792764902,370190852.42441034317,matched_exact_symbol_unique
+CKB,3,"Binance, Bitget, Bybit",2022-02-15T04:59:08+00:00,2022-02-15 12:59:08 SGT,1518.2,nervos-network,0.00147127,1.074789686048,8285787.530419972725,71445225.931682884693,matched_exact_symbol_unique
+CL,4,"Binance, Bitget, Bybit, OKX",2026-03-04T12:15:00+00:00,2026-03-04 20:15:00 SGT,39.9,,,,,,unmatched_no_symbol_candidate
+CLANKER,3,"Binance, Bitget, Bybit",2025-04-28T10:16:10+00:00,2025-04-28 18:16:10 SGT,350,,,,,,unmatched_ambiguous_symbol_candidates
+CLO,3,"Binance, Bitget, Bybit",2025-10-14T11:30:00+00:00,2025-10-14 19:30:00 SGT,180.9,,,,,,unmatched_ambiguous_symbol_candidates
+CLOUD,1,Bybit,2024-07-19T09:28:08+00:00,2024-07-19 17:28:08 SGT,633,,,,,,unmatched_ambiguous_symbol_candidates
+COAI,4,"Binance, Bitget, Bybit, OKX",2025-09-25T07:30:00+00:00,2025-09-25 15:30:00 SGT,200.1,chainopera-ai,0.290003,-5.243670144345,16173175.760161818936,54521065.943680010736,matched_exact_symbol_unique
+COIN,3,"Binance, Bitget, OKX",2026-02-09T15:00:00+00:00,2026-02-09 23:00:00 SGT,62.8,,,,,,unmatched_ambiguous_symbol_candidates
+COLLECT,1,Binance,2025-12-31T13:15:00+00:00,2025-12-31 21:15:00 SGT,102.8,,,,,,unmatched_ambiguous_symbol_candidates
+COMP,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,compound-governance-token,20.18,0.159863978176,43680488.169122487307,195092163.68329051137,matched_exact_symbol_unique
+COOKIE,3,"Binance, Bitget, Bybit",2025-01-07T07:32:59+00:00,2025-01-07 15:32:59 SGT,461.1,,,,,,unmatched_ambiguous_symbol_candidates
+COP,1,Bitget,,,,copiosa,0.00027553,1.876685183276,3680.013672800318,0,matched_exact_symbol_unique
+COPPER,2,"Binance, Bitget",2026-03-06T09:00:00+00:00,2026-03-06 17:00:00 SGT,38,,,,,,unmatched_ambiguous_symbol_candidates
+CORE,2,"Bybit, OKX",2023-02-08T13:55:14+00:00,2023-02-08 21:55:14 SGT,1159.8,,,,,,unmatched_ambiguous_symbol_candidates
+COS,1,Binance,2024-09-30T13:00:00+00:00,2024-09-30 21:00:00 SGT,559.9,,,,,,unmatched_ambiguous_symbol_candidates
+COST,1,Bitget,,,,costco-hot-dog,0.00022491,1.158354888356,312.941006480107,213527.054499005375,matched_exact_symbol_unique
+COTI,3,"Binance, Bitget, Bybit",2021-03-09T07:00:00+00:00,2021-03-09 15:00:00 SGT,1861.1,coti,0.01323085,-3.568658757001,3452920.204082483891,36578745.89007062465,matched_exact_symbol_unique
+COW,3,"Binance, Bitget, Bybit",2024-11-06T13:30:00+00:00,2024-11-06 21:30:00 SGT,522.8,,,,,,unmatched_ambiguous_symbol_candidates
+CRCL,3,"Binance, Bitget, OKX",2026-02-09T14:50:00+00:00,2026-02-09 22:50:00 SGT,62.8,just-a-circle,0.00002262,0.22574075398,3.55667539041,22611.428221749273,matched_exact_symbol_unique
+CRO,4,"Bitget, Bybit, dYdX, OKX",2021-04-08T09:00:00+00:00,2021-04-08 17:00:00 SGT,1831,,,,,,unmatched_ambiguous_symbol_candidates
+CROSS,3,"Binance, Bitget, Bybit",2025-07-10T10:30:00+00:00,2025-07-10 18:30:00 SGT,277,cross-2,0.066488,-9.76961366662,6547535.505264333449,22195338.035486489534,matched_exact_symbol_unique
+CRV,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+CSCO,1,Bitget,,,,,,,,,unmatched_no_symbol_candidate
+CTC,1,Bybit,2022-05-17T07:57:50+00:00,2022-05-17 15:57:50 SGT,1427.1,creditcoin-2,0.142711,-1.364609115088,2487601.354795943014,76444424.982790470123,matched_exact_symbol_unique
+CTK,3,"Binance, Bitget, Bybit",2021-12-02T11:34:07+00:00,2021-12-02 19:34:07 SGT,1592.9,certik,0.171206,0.149893863865,1837868.114188136999,27009875.883224520832,matched_exact_symbol_unique
+CTSI,2,"Binance, Bitget",2021-10-25T07:00:00+00:00,2021-10-25 15:00:00 SGT,1631.1,cartesi,0.03133699,-9.906967683769,31613331.310664698482,28524890.365879125893,matched_exact_symbol_unique
+CVC,3,"Binance, Bitget, Bybit",2021-11-30T15:20:51+00:00,2021-11-30 23:20:51 SGT,1594.8,civic,0.02944108,-1.19743514933,2766212.532130855601,23610534.792596716434,matched_exact_symbol_unique
+CVX,4,"Binance, Bitget, Bybit, OKX",2022-04-20T07:38:02+00:00,2022-04-20 15:38:02 SGT,1454.1,convex-finance,1.71,-2.425469959868,4202983.334266575053,154222395.401173561811,matched_exact_symbol_unique
+CYBER,4,"Binance, Bitget, Bybit, Hyperliquid",2023-08-15T18:26:55+00:00,2023-08-16 02:26:55 SGT,971.6,,,,,,unmatched_ambiguous_symbol_candidates
+CYS,3,"Binance, Bitget, Bybit",2025-12-12T11:00:00+00:00,2025-12-12 19:00:00 SGT,121.9,cysic,0.265766,7.578008426717,20467387.648891258985,42260465.839956305921,matched_exact_symbol_unique
+D,1,Binance,2025-01-09T10:00:00+00:00,2025-01-09 18:00:00 SGT,459,,,,,,unmatched_ambiguous_symbol_candidates
+DAM,1,Binance,2025-08-18T12:30:00+00:00,2025-08-18 20:30:00 SGT,237.9,,,,,,unmatched_ambiguous_symbol_candidates
+DASH,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+DBR,1,Bybit,2024-10-17T10:42:10+00:00,2024-10-17 18:42:10 SGT,542.9,,,,,,unmatched_ambiguous_symbol_candidates
+DEEP,3,"Binance, Bitget, Bybit",2024-10-17T11:49:14+00:00,2024-10-17 19:49:14 SGT,542.9,,,,,,unmatched_ambiguous_symbol_candidates
+DEGEN,3,"Binance, Bitget, Bybit",2024-04-01T11:38:03+00:00,2024-04-01 19:38:03 SGT,741.9,,,,,,unmatched_ambiguous_symbol_candidates
+DEGO,1,Binance,2024-12-13T13:15:00+00:00,2024-12-13 21:15:00 SGT,485.8,dego-finance,0.274965,-6.036578685147,5530137.79227648396,5776611.058102117851,matched_exact_symbol_unique
+DENT,2,"Binance, Bitget",2021-03-23T07:00:00+00:00,2021-03-23 15:00:00 SGT,1847.1,dent,0.00015344,-5.131338185474,2818582.188170983922,14669747.900884097442,matched_exact_symbol_unique
+DEXE,3,"Binance, Bitget, Bybit",2024-07-25T09:08:59+00:00,2024-07-25 17:08:59 SGT,627,dexe,10.14,4.503982221714,11091910.25312429294,473976102.395164728165,matched_exact_symbol_unique
+DIA,3,"Binance, Bitget, Bybit",2024-10-02T12:30:00+00:00,2024-10-02 20:30:00 SGT,557.9,dia-data,0.177383,-1.031486021572,1337098.493590451777,21219613.836442258209,matched_exact_symbol_unique
+DODOX,1,Binance,2023-08-08T12:00:00+00:00,2023-08-08 20:00:00 SGT,978.9,,,,,,unmatched_no_symbol_candidate
+DOG,1,Bybit,2024-06-04T09:58:40+00:00,2024-06-04 17:58:40 SGT,678,,,,,,unmatched_ambiguous_symbol_candidates
+DOGE,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+DOGS,2,"Binance, Bitget",2024-08-26T12:30:00+00:00,2024-08-26 20:30:00 SGT,594.9,,,,,,unmatched_ambiguous_symbol_candidates
+DOLO,3,"Binance, Bitget, Bybit",2025-05-01T03:00:00+00:00,2025-05-01 11:00:00 SGT,347.3,dolomite,0.03193544,-0.185894560703,3293307.726448577363,14808444.529333319515,matched_exact_symbol_unique
+DOOD,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2025-05-09T13:20:33+00:00,2025-05-09 21:20:33 SGT,338.8,doodles,0.00293792,-0.241771736443,7900384.046667247079,22914960.642947990447,matched_exact_symbol_unique
+DOT,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+DRIFT,5,"Binance, Bitget, Bybit, Drift, dYdX",2024-05-21T09:32:48+00:00,2024-05-21 17:32:48 SGT,692,drift-protocol,0.04207541,11.752217068496,27991650.841118983924,25729776.399661369622,matched_exact_symbol_unique
+DUSK,2,"Binance, Bybit",2021-12-16T16:45:30+00:00,2021-12-17 00:45:30 SGT,1578.7,dusk-network,0.158118,6.458779763762,38406373.336857013404,79043206.282502606511,matched_exact_symbol_unique
+DYDX,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2021-09-08T16:11:50+00:00,2021-09-09 00:11:50 SGT,1677.7,,,,,,unmatched_ambiguous_symbol_candidates
+DYM,5,"Binance, Bitget, Bybit, dYdX, Hyperliquid",2024-02-07T02:36:50+00:00,2024-02-07 10:36:50 SGT,796.3,dymension,0.01691668,-6.815661071965,6318083.925435475074,8526108.343266332522,matched_exact_symbol_unique
+EDEN,3,"Binance, Bybit, OKX",2025-09-30T11:00:00+00:00,2025-09-30 19:00:00 SGT,194.9,,,,,,unmatched_ambiguous_symbol_candidates
+EDGE,4,"Binance, Bitget, Bybit, OKX",2026-03-19T14:00:00+00:00,2026-03-19 22:00:00 SGT,24.8,,,,,,unmatched_ambiguous_symbol_candidates
+EDU,2,"Binance, Bybit",2023-04-28T00:00:00+00:00,2023-04-28 08:00:00 SGT,1081.4,edu-coin,0.04663087,6.526855914073,25666127.854939091951,34320140.581752896309,matched_exact_symbol_unique
+EGLD,4,"Binance, Bitget, Bybit, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,elrond-erd-2,3.7,-1.361566725568,5936641.763324972242,109960998.033605396748,matched_exact_symbol_unique
+EIGEN,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2024-08-06T03:43:33+00:00,2024-08-06 11:43:33 SGT,615.2,eigenlayer,0.154229,-0.951544269468,14250076.752804324031,106586563.549319952726,matched_exact_symbol_unique
+ELSA,3,"Binance, Bitget, Bybit",2026-01-22T07:22:15+00:00,2026-01-22 15:22:15 SGT,81.1,elsa,0.064544,0.752169311378,3669155.374434212688,14768096.826140796766,matched_exact_symbol_unique
+ENA,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2024-04-02T09:42:46+00:00,2024-04-02 17:42:46 SGT,741,ethena,0.092008,0.15319648094,91613857.924902528524,805936566.44014954567,matched_exact_symbol_unique
+ENJ,4,"Binance, Bitget, Bybit, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,enjincoin,0.0387996,17.327047832339,271273265.5739107728,75206573.304060712457,matched_exact_symbol_unique
+ENS,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2021-11-11T09:45:46+00:00,2021-11-11 17:45:46 SGT,1614,ethereum-name-service,5.56,-1.115571495887,12467154.261111391708,213534141.05410143733,matched_exact_symbol_unique
+ENSO,4,"Binance, Bitget, Bybit, OKX",2025-10-14T09:00:00+00:00,2025-10-14 17:00:00 SGT,181,enso,0.861829,-3.368618556,11403240.83126080595,17741006.798504307866,matched_exact_symbol_unique
+EPIC,3,"Binance, Bitget, Bybit",2025-03-13T08:00:00+00:00,2025-03-13 16:00:00 SGT,396.1,,,,,,unmatched_ambiguous_symbol_candidates
+ERA,3,"Binance, Bitget, Bybit",2025-07-17T13:30:00+00:00,2025-07-17 21:30:00 SGT,269.8,,,,,,unmatched_ambiguous_symbol_candidates
+ES,1,Bybit,2025-07-16T10:27:33+00:00,2025-07-16 18:27:33 SGT,271,eclipse-3,0.157619,0.034322531168,2283435.516210297123,23550524.682407010347,matched_exact_symbol_unique
+ESP,4,"Binance, Bitget, Bybit, OKX",2026-02-10T08:10:00+00:00,2026-02-10 16:10:00 SGT,62.1,,,,,,unmatched_ambiguous_symbol_candidates
+ESPORTS,3,"Binance, Bitget, Bybit",2025-07-29T10:00:00+00:00,2025-07-29 18:00:00 SGT,258,yooldo-games,0.450341,0.79786513318,5472043.449080201797,68346850.316155403852,matched_exact_symbol_unique
+ETC,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2018-12-21T07:53:47+00:00,2018-12-21 15:53:47 SGT,2670.1,ethereum-classic,8.2,0.080302145037,36377292.951511442661,1280613701.986145496368,matched_exact_symbol_unique
+ETH,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2018-12-21T07:53:47+00:00,2018-12-21 15:53:47 SGT,2670.1,,,,,,unmatched_ambiguous_symbol_candidates
+ETHBTC,1,Bybit,2024-06-07T08:32:58+00:00,2024-06-07 16:32:58 SGT,675,,,,,,unmatched_no_symbol_candidate
+ETHFI,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2024-03-18T12:25:00+00:00,2024-03-18 20:25:00 SGT,755.9,ether-fi,0.4091,-1.827639833674,27349296.962763633579,322055411.650927603245,matched_exact_symbol_unique
+ETHW,3,"Binance, Bitget, OKX",2022-09-16T06:55:31+00:00,2022-09-16 14:55:31 SGT,1305.1,ethereum-pow-iou,0.248678,-0.580512085868,1707493.926435277099,26817043.648524641991,matched_exact_symbol_unique
+EUL,3,"Binance, Bitget, Bybit",2025-10-13T14:30:00+00:00,2025-10-13 22:30:00 SGT,181.8,euler,1.035,3.367665331238,4199867.910972392187,24901173.90304832533,matched_exact_symbol_unique
+EUR,1,dYdX,,,,,,,,,unmatched_no_symbol_candidate
+EVAA,2,"Binance, Bybit",2025-10-03T10:30:00+00:00,2025-10-03 18:30:00 SGT,192,evaa-protocol,0.767894,18.597947116009,3725854.217614122666,5080021.229257600382,matched_exact_symbol_unique
+EWJ,3,"Binance, Bitget, OKX",2026-03-11T10:00:00+00:00,2026-03-11 18:00:00 SGT,33,,,,,,unmatched_no_symbol_candidate
+EWT,1,Bitget,,,,energy-web-token,0.438637,-4.947137567412,339505.436538779584,26556899.894938308746,matched_exact_symbol_unique
+EWY,3,"Binance, Bitget, OKX",2026-03-11T10:00:00+00:00,2026-03-11 18:00:00 SGT,33,,,,,,unmatched_no_symbol_candidate
+F,4,"Binance, Bitget, Bybit, OKX",2024-12-06T10:18:12+00:00,2024-12-06 18:18:12 SGT,493,,,,,,unmatched_ambiguous_symbol_candidates
+FARTCOIN,6,"Binance, Bitget, Bybit, Drift, Hyperliquid, OKX",2024-12-20T08:37:27+00:00,2024-12-20 16:37:27 SGT,479,,,,,,unmatched_ambiguous_symbol_candidates
+"FARTCOIN,RAYDIUM,9BB6NFECJBCTNNLFKO2FQVQBQ8HHM13KCYYCDQBGPUMP",1,dYdX,,,,,,,,,unmatched_no_symbol_candidate
+FET,3,"Binance, Bitget, Hyperliquid",2023-01-15T07:00:00+00:00,2023-01-15 15:00:00 SGT,1184.1,fetch-ai,0.228606,-3.736139845976,57415384.089010842144,516145733.757325291634,matched_exact_symbol_unique
+FF,3,"Binance, Bitget, Bybit",2025-09-29T13:00:00+00:00,2025-09-29 21:00:00 SGT,195.9,,,,,,unmatched_ambiguous_symbol_candidates
+FHE,2,"Binance, Bybit",2025-04-12T15:00:00+00:00,2025-04-12 23:00:00 SGT,365.8,mind-network,0.01665767,6.982814433306,6846318.949827874079,4148937.76734161051,matched_exact_symbol_unique
+FIDA,3,"Binance, Bitget, Bybit",2024-09-19T12:30:00+00:00,2024-09-19 20:30:00 SGT,570.9,bonfida,0.01663586,2.780071789501,52340597.657479181886,16469047.323200194165,matched_exact_symbol_unique
+FIGHT,3,"Binance, Bitget, Bybit",2026-01-23T11:42:16+00:00,2026-01-23 19:42:16 SGT,79.9,,,,,,unmatched_ambiguous_symbol_candidates
+FIL,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2019-08-10T10:12:51+00:00,2019-08-10 18:12:51 SGT,2438,,,,,,unmatched_ambiguous_symbol_candidates
+FIO,2,"Binance, Bybit",2024-09-20T11:30:00+00:00,2024-09-20 19:30:00 SGT,569.9,fio-protocol,0.00368206,-9.408580236959,4638474.786943202838,3119613.19911512034,matched_exact_symbol_unique
+FLOCK,3,"Binance, Bitget, Bybit",2025-01-09T08:50:07+00:00,2025-01-09 16:50:07 SGT,459,,,,,,unmatched_ambiguous_symbol_candidates
+FLOKI,3,"Bitget, dYdX, OKX",2023-02-20T06:55:00+00:00,2023-02-20 14:55:00 SGT,1148.1,,,,,,unmatched_ambiguous_symbol_candidates
+FLOW,3,"Binance, Bybit, OKX",2021-11-25T16:00:00+00:00,2021-11-26 00:00:00 SGT,1599.7,,,,,,unmatched_ambiguous_symbol_candidates
+FLR,1,Bybit,2023-03-16T07:58:28+00:00,2023-03-16 15:58:28 SGT,1124.1,flare-networks,0.00771961,-1.279751479681,2896146.297195449006,661015510.858421802521,matched_exact_symbol_unique
+FLUID,3,"Binance, Bitget, Bybit",2025-09-24T10:15:00+00:00,2025-09-24 18:15:00 SGT,201,instadapp,1.58,-1.350394628419,2106978.844720575493,123188642.048343524337,matched_exact_symbol_unique
+FLUX,3,"Binance, Bitget, Bybit",2024-09-03T07:00:00+00:00,2024-09-03 15:00:00 SGT,587.1,,,,,,unmatched_ambiguous_symbol_candidates
+FOGO,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2026-01-10T14:00:00+00:00,2026-01-10 22:00:00 SGT,92.8,fogo,0.01711585,-1.144411818041,5706864.556010037661,65357764.576364524662,matched_exact_symbol_unique
+FOLKS,3,"Binance, Bitget, Bybit",2025-11-06T12:30:00+00:00,2025-11-06 20:30:00 SGT,157.9,folks,1.04,11.658109704873,4065586.256241292693,14542616.318195359781,matched_exact_symbol_unique
+FORM,3,"Binance, Bitget, Bybit",2025-03-19T08:00:00+00:00,2025-03-19 16:00:00 SGT,390.1,,,,,,unmatched_ambiguous_symbol_candidates
+FRAX,2,"Binance, Bitget",2026-01-15T08:00:00+00:00,2026-01-15 16:00:00 SGT,88.1,,,,,,unmatched_ambiguous_symbol_candidates
+FRIEND,1,Hyperliquid,,,,friend-tech,0.00414238,-4.464279142321,2.718991740049,393049.918039230804,matched_exact_symbol_unique
+FTM,1,Hyperliquid,,,,fantom,0.04591961,5.441335387896,167.779778470164,0,matched_exact_symbol_unique
+FTT,1,Hyperliquid,,,,ftx-token,0.282875,-1.826314135526,2736421.11100616958,0,matched_exact_symbol_unique
+FUN,1,Binance,2025-03-31T08:30:00+00:00,2025-03-31 16:30:00 SGT,378,,,,,,unmatched_ambiguous_symbol_candidates
+FUNTOKEN,1,Bitget,,,,,,,,,unmatched_no_symbol_candidate
+FUTU,1,Bitget,,,,,,,,,unmatched_no_symbol_candidate
+FXS,1,Hyperliquid,,,,,,,,,unmatched_no_symbol_candidate
+G,2,"Binance, Bitget",2024-08-15T12:30:00+00:00,2024-08-15 20:30:00 SGT,605.9,,,,,,unmatched_ambiguous_symbol_candidates
+GALA,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2021-09-17T07:00:00+00:00,2021-09-17 15:00:00 SGT,1669.1,gala,0.00290359,-1.44141100687,14280728.820363352075,138278216.775630801916,matched_exact_symbol_unique
+GAS,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2023-10-23T07:09:12+00:00,2023-10-23 15:09:12 SGT,903.1,,,,,,unmatched_ambiguous_symbol_candidates
+GE,1,Bitget,,,,,,,,,unmatched_no_symbol_candidate
+GIGA,1,Bybit,2024-12-12T07:42:26+00:00,2024-12-12 15:42:26 SGT,487.1,,,,,,unmatched_ambiguous_symbol_candidates
+GIGGLE,4,"Binance, Bitget, Bybit, OKX",2025-10-09T09:45:00+00:00,2025-10-09 17:45:00 SGT,186,giggle-fund,38.56,33.059385627562,84154463.203826546669,38508749.40231975913,matched_exact_symbol_unique
+GLM,4,"Binance, Bitget, Bybit, OKX",2023-08-10T04:57:59+00:00,2023-08-10 12:57:59 SGT,977.2,golem,0.123629,-1.66327655421,4017749.669658006635,123628755.075699001551,matched_exact_symbol_unique
+GME,1,Bitget,,,,,,,,,unmatched_ambiguous_symbol_candidates
+GMT,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2022-03-14T07:00:00+00:00,2022-03-14 15:00:00 SGT,1491.1,,,,,,unmatched_ambiguous_symbol_candidates
+GMX,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2022-10-10T07:06:10+00:00,2022-10-10 15:06:10 SGT,1281.1,gmx,5.86,-4.1688886657,4528117.094277448021,60777556.835735544562,matched_exact_symbol_unique
+GNO,2,"Bybit, dYdX",2024-05-14T11:47:55+00:00,2024-05-14 19:47:55 SGT,698.9,,,,,,unmatched_ambiguous_symbol_candidates
+GOAT,4,"Binance, Bitget, Bybit, Hyperliquid",2024-10-22T10:44:24+00:00,2024-10-22 18:44:24 SGT,537.9,,,,,,unmatched_ambiguous_symbol_candidates
+GODS,1,Bybit,2023-11-22T05:02:21+00:00,2023-11-22 13:02:21 SGT,873.2,,,,,,unmatched_ambiguous_symbol_candidates
+GOOGL,3,"Binance, Bitget, OKX",2026-03-04T07:45:00+00:00,2026-03-04 15:45:00 SGT,40.1,,,,,,unmatched_no_symbol_candidate
+GPS,4,"Binance, Bitget, Bybit, OKX",2025-02-17T17:00:00+00:00,2025-02-18 01:00:00 SGT,419.7,goplus-security,0.00844169,2.978664150175,2811803.748782170471,37245410.842835567892,matched_exact_symbol_unique
+GRASS,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2024-10-15T10:12:03+00:00,2024-10-15 18:12:03 SGT,545,,,,,,unmatched_ambiguous_symbol_candidates
+GRIFFAIN,4,"Binance, Bitget, Bybit, Hyperliquid",2024-12-20T08:39:59+00:00,2024-12-20 16:39:59 SGT,479,griffain,0.01600872,-1.96261829116,2236884.98435967369,15959374.136669257656,matched_exact_symbol_unique
+GRT,5,"Binance, Bitget, Bybit, dYdX, OKX",2020-12-18T07:00:00+00:00,2020-12-18 15:00:00 SGT,1942.1,the-graph,0.02351101,-0.769650583902,11454157.026700837538,253355232.444416701794,matched_exact_symbol_unique
+GTC,1,Binance,2021-03-15T07:00:00+00:00,2021-03-15 15:00:00 SGT,1855.1,,,,,,unmatched_ambiguous_symbol_candidates
+GUA,1,Binance,2025-12-21T10:15:00+00:00,2025-12-21 18:15:00 SGT,113,,,,,,unmatched_ambiguous_symbol_candidates
+GUN,3,"Binance, Bitget, Bybit",2025-03-31T13:00:00+00:00,2025-03-31 21:00:00 SGT,377.9,gunz,0.01592245,-4.2351233307,5951604.573752028868,27522427.456686727703,matched_exact_symbol_unique
+GWEI,2,"Binance, Bitget",2026-01-29T05:30:00+00:00,2026-01-29 13:30:00 SGT,74.2,ethgas-2,0.06509,-6.921869286091,9026044.600240387022,114325190.861531436443,matched_exact_symbol_unique
+H,4,"Binance, Bitget, Bybit, OKX",2025-06-25T09:30:00+00:00,2025-06-25 17:30:00 SGT,292,,,,,,unmatched_ambiguous_symbol_candidates
+HAEDAL,3,"Binance, Bitget, Bybit",2025-04-30T11:29:53+00:00,2025-04-30 19:29:53 SGT,347.9,haedal,0.02772281,4.728807840529,5050655.602039567195,5414093.052922534756,matched_exact_symbol_unique
+HANA,2,"Binance, Bybit",2025-09-26T11:30:00+00:00,2025-09-26 19:30:00 SGT,198.9,,,,,,unmatched_ambiguous_symbol_candidates
+HBAR,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2021-03-17T07:00:00+00:00,2021-03-17 15:00:00 SGT,1853.1,hedera-hashgraph,0.08516,-1.154741006942,48718226.791683219373,3689325786.730059623718,matched_exact_symbol_unique
+HEI,2,"Binance, Bybit",2025-02-13T09:00:00+00:00,2025-02-13 17:00:00 SGT,424,heima,0.089979,0.658585635832,2264677.253302492667,7923901.929742627777,matched_exact_symbol_unique
+HEMI,3,"Binance, Bybit, Hyperliquid",2025-08-29T04:30:00+00:00,2025-08-29 12:30:00 SGT,227.2,hemi,0.00701304,-5.781519395683,5712703.835566494614,6855126.262344121933,matched_exact_symbol_unique
+HFT,3,"Binance, Bitget, Bybit",2023-03-14T06:45:49+00:00,2023-03-14 14:45:49 SGT,1126.1,hashflow,0.01351527,-1.809556502212,2113980.693687081803,10611877.40206986852,matched_exact_symbol_unique
+HIGH,2,"Binance, Bybit",2023-02-03T07:00:00+00:00,2023-02-03 15:00:00 SGT,1165.1,,,,,,unmatched_ambiguous_symbol_candidates
+HIPPO,1,Bybit,2024-11-14T07:56:07+00:00,2024-11-14 15:56:07 SGT,515.1,sudeng,0.00017774,-9.389751746184,954001.16540323256,1779506.700449672993,matched_exact_symbol_unique
+HIVE,3,"Binance, Bitget, Bybit",2024-12-23T10:34:00+00:00,2024-12-23 18:34:00 SGT,476,,,,,,unmatched_ambiguous_symbol_candidates
+HMSTR,4,"Binance, Bybit, Hyperliquid, OKX",2024-09-11T06:08:16+00:00,2024-09-11 14:08:16 SGT,579.1,hamster-kombat,0.00013918,-2.655073752632,2652416.177494390868,8960343.160929068923,matched_exact_symbol_unique
+HNT,3,"Bitget, Bybit, Drift",2022-01-24T06:47:20+00:00,2022-01-24 14:47:20 SGT,1540.1,helium,1.005,-1.67177762763,3203060.304277316667,185175194.391431570053,matched_exact_symbol_unique
+HOLO,3,"Binance, Bitget, Bybit",2025-09-11T12:00:00+00:00,2025-09-11 20:00:00 SGT,213.9,,,,,,unmatched_ambiguous_symbol_candidates
+HOME,4,"Binance, Bitget, Bybit, OKX",2025-06-10T11:15:50+00:00,2025-06-10 19:15:50 SGT,306.9,home,0.0187165,-0.152418415221,2721801.396756719332,65916842.614296965301,matched_exact_symbol_unique
+HOOD,3,"Binance, Bitget, OKX",2026-02-02T14:45:00+00:00,2026-02-02 22:45:00 SGT,69.8,hood,0.00000348,,128.633634441049,2742.242577219125,matched_exact_symbol_unique
+HOT,2,"Binance, Bitget",2021-03-30T07:00:00+00:00,2021-03-30 15:00:00 SGT,1840.1,holotoken,0.00039665,1.589612662969,4930755.601819267496,70443978.811307072639,matched_exact_symbol_unique
+HPOS,1,Hyperliquid,,,,,,,,,unmatched_no_symbol_candidate
+HPOS10I,1,Bybit,2024-10-21T07:56:01+00:00,2024-10-21 15:56:01 SGT,539.1,,,,,,unmatched_no_symbol_candidate
+HUMA,4,"Binance, Bitget, Bybit, OKX",2025-05-26T13:00:00+00:00,2025-05-26 21:00:00 SGT,321.9,huma-finance,0.01704113,3.318196883899,27179421.111567508429,29546067.475174933672,matched_exact_symbol_unique
+HYPE,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2024-12-04T12:52:20+00:00,2024-12-04 20:52:20 SGT,494.9,,,,,,unmatched_ambiguous_symbol_candidates
+HYPER,4,"Binance, Bitget, Bybit, Hyperliquid",2025-04-22T12:07:07+00:00,2025-04-22 20:07:07 SGT,355.9,,,,,,unmatched_ambiguous_symbol_candidates
+IBM,1,Bitget,,,,,,,,,unmatched_no_symbol_candidate
+ICNT,3,"Binance, Bitget, Bybit",2025-07-03T11:00:16+00:00,2025-07-03 19:00:16 SGT,283.9,impossible-cloud-network-token,0.263432,-4.483447721191,3993196.045425980818,66198675.081532724202,matched_exact_symbol_unique
+ICP,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2021-05-14T09:00:00+00:00,2021-05-14 17:00:00 SGT,1795,internet-computer,2.42,-1.647943802713,35336486.426456384361,1331760274.978326559067,matched_exact_symbol_unique
+ICX,4,"Binance, Bitget, Bybit, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,icon,0.0348856,-1.166687386223,748104.158289607614,38227429.427563346922,matched_exact_symbol_unique
+ID,3,"Binance, Bitget, Bybit",2023-03-23T00:00:00+00:00,2023-03-23 08:00:00 SGT,1117.4,,,,,,unmatched_ambiguous_symbol_candidates
+IDOL,2,"Binance, Bitget",2025-07-04T09:15:00+00:00,2025-07-04 17:15:00 SGT,283,meet48,0.02325791,-3.298068210841,2898132.480575031601,41491701.222207084298,matched_exact_symbol_unique
+ILV,4,"Binance, Bitget, Bybit, Hyperliquid",2021-11-26T00:00:00+00:00,2021-11-26 08:00:00 SGT,1599.4,illuvium,4.32,1.830648589261,8451655.252161949873,35754431.418976835907,matched_exact_symbol_unique
+IMX,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2021-11-18T06:50:22+00:00,2021-11-18 14:50:22 SGT,1607.1,immutable-x,0.143595,2.512893231587,23416527.150210447609,120889027.741843014956,matched_exact_symbol_unique
+IN,3,"Binance, Bitget, Bybit",2025-08-07T10:17:01+00:00,2025-08-07 18:17:01 SGT,249,,,,,,unmatched_ambiguous_symbol_candidates
+INIT,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2025-04-14T07:34:53+00:00,2025-04-14 15:34:53 SGT,364.1,,,,,,unmatched_ambiguous_symbol_candidates
+INJ,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2022-08-16T07:00:00+00:00,2022-08-16 15:00:00 SGT,1336.1,injective-protocol,2.91,-0.347313774255,32476247.154992181808,290174711.93728530407,matched_exact_symbol_unique
+INTC,3,"Binance, Bitget, OKX",2026-02-02T14:30:00+00:00,2026-02-02 22:30:00 SGT,69.8,,,,,,unmatched_no_symbol_candidate
+INX,3,"Binance, Bitget, Bybit",2026-01-29T08:39:51+00:00,2026-01-29 16:39:51 SGT,74,,,,,,unmatched_ambiguous_symbol_candidates
+IO,5,"Binance, Bitget, Bybit, dYdX, Hyperliquid",2024-06-11T13:49:00+00:00,2024-06-11 21:49:00 SGT,670.8,io,0.098796,-1.801562402778,5666317.973560620099,31331428.293584354222,matched_exact_symbol_unique
+IOST,4,"Binance, Bitget, Bybit, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,iostoken,0.00107711,2.144987533348,6861350.856489305384,35204166.958710223436,matched_exact_symbol_unique
+IOTA,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,iota,0.05413,-3.203607859393,7940036.999918788671,237149087.978501439095,matched_exact_symbol_unique
+IOTX,3,"Binance, Bitget, Bybit",2021-08-11T07:00:00+00:00,2021-08-11 15:00:00 SGT,1706.1,,,,,,unmatched_ambiguous_symbol_candidates
+IP,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2025-02-07T08:28:16+00:00,2025-02-07 16:28:16 SGT,430,story-2,0.480032,-0.791305279343,33301420.066410008818,169360562.384233057499,matched_exact_symbol_unique
+IR,2,"Binance, Bitget",2025-12-21T10:30:00+00:00,2025-12-21 18:30:00 SGT,113,infrared-finance,0.0443797,-11.46816581385,8850539.315604090691,9183763.845680261031,matched_exact_symbol_unique
+IRYS,3,"Binance, Bitget, Bybit",2025-11-26T16:00:00+00:00,2025-11-27 00:00:00 SGT,137.7,irys,0.03011451,13.852882682453,23029344.64365299046,60718930.711591422558,matched_exact_symbol_unique
+JASMY,3,"Binance, Bitget, Bybit",2022-01-19T06:36:42+00:00,2022-01-19 14:36:42 SGT,1545.1,jasmycoin,0.00524063,-0.314520525568,7675479.87833798863,259023467.263607114553,matched_exact_symbol_unique
+JCT,3,"Binance, Bitget, Bybit",2025-11-10T10:30:00+00:00,2025-11-10 18:30:00 SGT,154,,,,,,unmatched_ambiguous_symbol_candidates
+JD,1,Bitget,,,,,,,,,unmatched_no_symbol_candidate
+JELLY,1,Hyperliquid,,,,,,,,,unmatched_ambiguous_symbol_candidates
+JELLYJELLY,3,"Binance, Bybit, OKX",2025-01-30T06:45:11+00:00,2025-01-30 14:45:11 SGT,438.1,jelly-my-jelly,0.04232665,-2.309485109785,3214492.68336029537,42309218.667418085039,matched_exact_symbol_unique
+JOE,2,"Binance, Bitget",2023-03-28T00:00:00+00:00,2023-03-28 08:00:00 SGT,1112.4,,,,,,unmatched_ambiguous_symbol_candidates
+JST,3,"Binance, Bitget, Bybit",2022-02-18T06:45:41+00:00,2022-02-18 14:45:41 SGT,1515.1,just,0.079707,4.598026748175,79257853.549086987972,702201611.525615811348,matched_exact_symbol_unique
+JTO,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2023-12-07T19:50:19+00:00,2023-12-08 03:50:19 SGT,857.6,jito-governance-token,0.3228,7.068660643435,24484148.808637689799,148013609.198066651821,matched_exact_symbol_unique
+JUP,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2024-01-31T15:51:07+00:00,2024-01-31 23:51:07 SGT,802.7,,,,,,unmatched_ambiguous_symbol_candidates
+KAIA,3,"Binance, Bitget, Bybit",2024-11-01T08:24:34+00:00,2024-11-01 16:24:34 SGT,528,,,,,,unmatched_ambiguous_symbol_candidates
+KAITO,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2025-02-20T13:00:00+00:00,2025-02-20 21:00:00 SGT,416.9,kaito,0.402535,-0.478063533757,18235997.712449170649,97153831.767400830984,matched_exact_symbol_unique
+KAS,5,"Binance, Bitget, Bybit, dYdX, Hyperliquid",2023-08-04T08:34:41+00:00,2023-08-04 16:34:41 SGT,983,kaspa,0.03165824,-2.115181349716,16866991.437659624964,864960309.284940242767,matched_exact_symbol_unique
+KAT,4,"Binance, Bitget, Bybit, OKX",2026-03-02T05:00:00+00:00,2026-03-02 13:00:00 SGT,42.2,,,,,,unmatched_ambiguous_symbol_candidates
+KAVA,3,"Binance, Bitget, Bybit",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,kava,0.051947,-1.483121913405,5658408.000124372542,56248951.625093221664,matched_exact_symbol_unique
+KBONK,1,Hyperliquid,,,,,,,,,unmatched_no_symbol_candidate
+KDOGS,1,Hyperliquid,,,,,,,,,unmatched_no_symbol_candidate
+KERNEL,3,"Binance, Bitget, Bybit",2025-04-14T12:00:00+00:00,2025-04-14 20:00:00 SGT,363.9,kernel-2,0.087666,4.471306545815,12244884.046034991741,25092839.036167327315,matched_exact_symbol_unique
+KFLOKI,1,Hyperliquid,,,,,,,,,unmatched_no_symbol_candidate
+KGEN,4,"Binance, Bitget, Bybit, OKX",2025-10-07T14:30:00+00:00,2025-10-07 22:30:00 SGT,187.8,kgen,0.147167,-12.055222028372,2073822.800813446054,29229034.030657313764,matched_exact_symbol_unique
+KITE,3,"Binance, Bitget, Bybit",2025-10-29T10:30:00+00:00,2025-10-29 18:30:00 SGT,166,,,,,,unmatched_ambiguous_symbol_candidates
+KLUNC,1,Hyperliquid,,,,,,,,,unmatched_no_symbol_candidate
+KMNO,5,"Binance, Bitget, Bybit, Drift, OKX",2024-10-09T08:52:41+00:00,2024-10-09 16:52:41 SGT,551,kamino,0.0190745,-4.183714020698,5806539.886292778887,83253924.819391921163,matched_exact_symbol_unique
+KNC,3,"Binance, Bitget, Bybit",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,kyber-network-crystal,0.1315,-1.072271786017,3423858.763619182631,22373839.580888971686,matched_exact_symbol_unique
+KNEIRO,1,Hyperliquid,,,,,,,,,unmatched_no_symbol_candidate
+KOMA,1,Binance,2024-12-10T12:15:00+00:00,2024-12-10 20:15:00 SGT,488.9,koma-inu,0.00782462,-0.597756573652,663376.729341224302,4741352.675589767285,matched_exact_symbol_unique
+KPEPE,1,Hyperliquid,,,,,,,,,unmatched_no_symbol_candidate
+KSHIB,1,Hyperliquid,,,,,,,,,unmatched_no_symbol_candidate
+KSM,4,"Binance, Bitget, Bybit, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,kusama,4.11,-1.668102097139,4489565.365289970301,74250435.596303150058,matched_exact_symbol_unique
+KWEB,1,Bitget,,,,,,,,,unmatched_no_symbol_candidate
+LA,4,"Binance, Bitget, Bybit, OKX",2025-06-05T05:20:01+00:00,2025-06-05 13:20:01 SGT,312.2,,,,,,unmatched_ambiguous_symbol_candidates
+LAB,4,"Binance, Bitget, Bybit, OKX",2025-10-17T14:30:00+00:00,2025-10-17 22:30:00 SGT,177.8,,,,,,unmatched_ambiguous_symbol_candidates
+LAUNCHCOIN,1,Hyperliquid,,,,,,,,,unmatched_no_symbol_candidate
+LAYER,4,"Binance, Bitget, Hyperliquid, OKX",2025-02-11T14:30:00+00:00,2025-02-11 22:30:00 SGT,425.8,,,,,,unmatched_ambiguous_symbol_candidates
+LDO,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2022-07-20T06:53:39+00:00,2022-07-20 14:53:39 SGT,1363.1,,,,,,unmatched_ambiguous_symbol_candidates
+LIGHT,4,"Binance, Bitget, Bybit, OKX",2025-09-27T11:30:00+00:00,2025-09-27 19:30:00 SGT,197.9,,,,,,unmatched_ambiguous_symbol_candidates
+LINEA,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2025-09-01T08:30:00+00:00,2025-09-01 16:30:00 SGT,224,linea,0.00313846,-1.174247574514,10833380.139283519238,78006627.211172223091,matched_exact_symbol_unique
+LINK,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2018-01-01T00:00:00+00:00,2018-01-01 08:00:00 SGT,3024.4,,,,,,unmatched_ambiguous_symbol_candidates
+LISTA,4,"Binance, Bitget, Bybit, Hyperliquid",2024-06-20T12:30:00+00:00,2024-06-20 20:30:00 SGT,661.9,lista,0.074853,-1.19978342057,4002044.396610783879,24495770.311827778816,matched_exact_symbol_unique
+LIT,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2025-12-23T17:30:00+00:00,2025-12-24 01:30:00 SGT,110.7,,,,,,unmatched_ambiguous_symbol_candidates
+LLY,1,Bitget,,,,,,,,,unmatched_no_symbol_candidate
+LOOM,1,Hyperliquid,,,,loom-network-new,0.00011722,-2.913784734191,73.521383400313,145699.357772517978,matched_exact_symbol_unique
+LPT,4,"Binance, Bitget, Bybit, OKX",2021-04-23T07:00:00+00:00,2021-04-23 15:00:00 SGT,1816.1,livepeer,2.05,-1.409428086786,15913405.784890150651,102042522.932965561748,matched_exact_symbol_unique
+LQTY,4,"Binance, Bitget, Bybit, OKX",2023-03-08T07:00:00+00:00,2023-03-08 15:00:00 SGT,1132.1,liquity,0.275545,-0.193448985658,2273274.032769802026,27187339.8557202667,matched_exact_symbol_unique
+LRC,2,"Bybit, OKX",2020-09-09T10:12:51+00:00,2020-09-09 18:12:51 SGT,2042,loopring,0.01596916,-1.157625021817,2710247.707576305605,19870432.912971027195,matched_exact_symbol_unique
+LSK,3,"Binance, Bitget, Bybit",2024-01-02T15:22:55+00:00,2024-01-02 23:22:55 SGT,831.8,lisk,0.122474,-2.009040819011,1551249.948059045477,27854940.996478483081,matched_exact_symbol_unique
+LTC,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2018-01-01T00:00:00+00:00,2018-01-01 08:00:00 SGT,3024.4,,,,,,unmatched_ambiguous_symbol_candidates
+LUMIA,3,"Binance, Bitget, Bybit",2024-10-25T07:36:02+00:00,2024-10-25 15:36:02 SGT,535.1,lumia,0.082829,7.338069940666,4069819.559685970191,11469364.578524123877,matched_exact_symbol_unique
+LUNA,2,"Bitget, OKX",2022-05-28T13:54:42+00:00,2022-05-28 21:54:42 SGT,1415.8,,,,,,unmatched_ambiguous_symbol_candidates
+LUNA2,2,"Binance, Bybit",2022-05-31T07:50:03+00:00,2022-05-31 15:50:03 SGT,1413.1,,,,,,unmatched_no_symbol_candidate
+LUNC,1,Bitget,,,,,,,,,unmatched_ambiguous_symbol_candidates
+LYN,3,"Binance, Bitget, Bybit",2025-10-06T07:30:00+00:00,2025-10-06 15:30:00 SGT,189.1,,,,,,unmatched_ambiguous_symbol_candidates
+M,3,"Binance, Bitget, Bybit",2025-07-07T09:30:00+00:00,2025-07-07 17:30:00 SGT,280,,,,,,unmatched_ambiguous_symbol_candidates
+MA,1,Bitget,,,,mind-ai,0.00012021,4.325067087803,18149.109475323497,12577.083511287419,matched_exact_symbol_unique
+MAGIC,4,"Binance, Bitget, Bybit, OKX",2022-12-13T02:18:41+00:00,2022-12-13 10:18:41 SGT,1217.3,,,,,,unmatched_ambiguous_symbol_candidates
+MAGMA,3,"Binance, Bitget, Bybit",2025-12-26T07:06:53+00:00,2025-12-26 15:06:53 SGT,108.1,magma-finance,0.181256,-11.142477580757,8424208.277773095295,34507271.861338824034,matched_exact_symbol_unique
+MANA,5,"Binance, Bitget, Bybit, dYdX, OKX",2021-03-12T09:00:00+00:00,2021-03-12 17:00:00 SGT,1858,,,,,,unmatched_ambiguous_symbol_candidates
+MANTA,4,"Binance, Bitget, Bybit, Hyperliquid",2024-01-18T11:02:58+00:00,2024-01-18 19:02:58 SGT,815.9,manta-network,0.06551,2.949235072734,8762327.975096834823,30495069.125662136823,matched_exact_symbol_unique
+MANTRA,2,"Binance, Bitget",2026-03-04T08:00:00+00:00,2026-03-04 16:00:00 SGT,40.1,mantra,0.01065587,2.100845457504,17912843.19939616695,51789684.726402334869,matched_exact_symbol_unique
+MASK,4,"Binance, Bitget, Bybit, OKX",2021-03-04T07:00:00+00:00,2021-03-04 15:00:00 SGT,1866.1,,,,,,unmatched_ambiguous_symbol_candidates
+MATIC,1,Hyperliquid,,,,,,,,,unmatched_ambiguous_symbol_candidates
+MAV,4,"Binance, Bitget, Bybit, Hyperliquid",2023-06-28T09:40:09+00:00,2023-06-28 17:40:09 SGT,1020,maverick-protocol,0.0140707,-3.199372968573,1606037.841093353461,13069899.033479163423,matched_exact_symbol_unique
+MAVIA,3,"Binance, Bybit, Hyperliquid",2024-02-07T09:12:26+00:00,2024-02-07 17:12:26 SGT,796,heroes-of-mavia,0.02969818,-1.570617760953,2157748.790350079071,7268216.670443412848,matched_exact_symbol_unique
+MBOX,3,"Binance, Bitget, Bybit",2024-01-18T10:45:43+00:00,2024-01-18 18:45:43 SGT,815.9,mobox,0.01165248,-2.658686399478,3385573.18068713136,6412679.102580291219,matched_exact_symbol_unique
+MCD,1,Bitget,,,,,,,,,unmatched_no_symbol_candidate
+ME,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2024-11-25T08:03:15+00:00,2024-11-25 16:03:15 SGT,504.1,,,,,,unmatched_ambiguous_symbol_candidates
+MEGA,3,"Binance, Bitget, Hyperliquid",2026-01-30T12:15:00+00:00,2026-01-30 20:15:00 SGT,72.9,,,,,,unmatched_ambiguous_symbol_candidates
+MELANIA,4,"Binance, Bitget, Bybit, Hyperliquid",2025-01-20T05:13:39+00:00,2025-01-20 13:13:39 SGT,448.2,melania-meme,0.102355,0.503444970277,14243656.586762331426,97534832.290232032537,matched_exact_symbol_unique
+MEME,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2023-11-03T08:48:45+00:00,2023-11-03 16:48:45 SGT,892,,,,,,unmatched_ambiguous_symbol_candidates
+MERL,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2024-04-19T10:25:00+00:00,2024-04-19 18:25:00 SGT,724,merlin-chain,0.02321714,-3.084632621687,4829930.746716124937,27814480.160301327705,matched_exact_symbol_unique
+MET,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2025-10-10T08:15:00+00:00,2025-10-10 16:15:00 SGT,185,,,,,,unmatched_ambiguous_symbol_candidates
+META,3,"Binance, Bitget, OKX",2026-03-04T08:30:00+00:00,2026-03-04 16:30:00 SGT,40,,,,,,unmatched_ambiguous_symbol_candidates
+METIS,4,"Binance, Bitget, Bybit, OKX",2023-12-28T09:55:00+00:00,2023-12-28 17:55:00 SGT,837,,,,,,unmatched_ambiguous_symbol_candidates
+MEW,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2024-04-15T08:25:00+00:00,2024-04-15 16:25:00 SGT,728,cat-in-a-dogs-world,0.00056672,-0.471600941931,3850153.871836773586,50351787.032363675535,matched_exact_symbol_unique
+MINA,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2021-06-09T09:00:00+00:00,2021-06-09 17:00:00 SGT,1769,mina-protocol,0.056034,-1.843025221361,4878463.107769358903,71821423.016593843699,matched_exact_symbol_unique
+MIRA,3,"Binance, Bitget, Bybit",2025-09-26T12:00:00+00:00,2025-09-26 20:00:00 SGT,198.9,,,,,,unmatched_ambiguous_symbol_candidates
+MITO,3,"Binance, Bitget, Bybit",2025-08-28T14:30:00+00:00,2025-08-28 22:30:00 SGT,227.8,mitosis,0.03560138,-2.648807920128,2573414.979588591494,11907595.477991512045,matched_exact_symbol_unique
+MKR,1,Hyperliquid,,,,maker,1715.52,-3.342729525912,71257.779633926795,0,matched_exact_symbol_unique
+MLN,3,"Binance, Bitget, Bybit",2025-03-31T08:45:00+00:00,2025-03-31 16:45:00 SGT,378,melon,3.35,2.59931443301,3766893.718898958992,10967418.061593109742,matched_exact_symbol_unique
+MMT,4,"Binance, Bitget, Bybit, OKX",2025-10-27T09:22:23+00:00,2025-10-27 17:22:23 SGT,168,momentum-3,0.126509,4.656127582646,8404912.925109092146,25797533.847134619951,matched_exact_symbol_unique
+MNRY,1,dYdX,,,,,,,,,unmatched_no_symbol_candidate
+MNT,4,"Bybit, Drift, dYdX, Hyperliquid",2023-10-02T05:40:55+00:00,2023-10-02 13:40:55 SGT,924.2,,,,,,unmatched_ambiguous_symbol_candidates
+MOCA,3,"Binance, Bitget, Bybit",2024-07-12T09:57:42+00:00,2024-07-12 17:57:42 SGT,640,,,,,,unmatched_ambiguous_symbol_candidates
+MOG,1,dYdX,,,,,,,,,unmatched_ambiguous_symbol_candidates
+MON,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2025-10-10T07:15:00+00:00,2025-10-10 15:15:00 SGT,185.1,,,,,,unmatched_ambiguous_symbol_candidates
+MOODENG,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2024-10-01T06:59:06+00:00,2024-10-01 14:59:06 SGT,559.1,,,,,,unmatched_ambiguous_symbol_candidates
+MORPHO,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2024-11-22T08:35:59+00:00,2024-11-22 16:35:59 SGT,507,,,,,,unmatched_ambiguous_symbol_candidates
+MOVE,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2024-12-09T12:06:17+00:00,2024-12-09 20:06:17 SGT,489.9,,,,,,unmatched_ambiguous_symbol_candidates
+MOVR,3,"Binance, Bitget, Bybit",2023-11-23T06:09:22+00:00,2023-11-23 14:09:22 SGT,872.1,moonriver,1.18,0.580083087944,630745.822712096386,13442623.495636219159,matched_exact_symbol_unique
+MRVL,1,Bitget,,,,,,,,,unmatched_no_symbol_candidate
+MSFT,2,"Bitget, OKX",2026-03-04T08:00:00+00:00,2026-03-04 16:00:00 SGT,40.1,,,,,,unmatched_no_symbol_candidate
+MSTR,3,"Binance, Bitget, OKX",2026-02-09T14:30:00+00:00,2026-02-09 22:30:00 SGT,62.8,,,,,,unmatched_ambiguous_symbol_candidates
+MTL,3,"Binance, Bitget, Bybit",2021-03-31T07:00:00+00:00,2021-03-31 15:00:00 SGT,1839.1,metal,0.281327,-0.859536661278,920527.131833062042,25504799.588368684053,matched_exact_symbol_unique
+MU,3,"Binance, Bitget, OKX",2026-03-04T07:15:00+00:00,2026-03-04 15:15:00 SGT,40.1,,,,,,unmatched_ambiguous_symbol_candidates
+MUBARAK,4,"Binance, Bitget, Bybit, OKX",2025-03-17T07:41:36+00:00,2025-03-17 15:41:36 SGT,392.1,,,,,,unmatched_ambiguous_symbol_candidates
+MYRO,1,Hyperliquid,,,,myro,0.00313449,-0.396818600817,390770.256339803687,3135163.147929000668,matched_exact_symbol_unique
+MYX,3,"Binance, Bitget, Bybit",2025-06-18T12:30:00+00:00,2025-06-18 20:30:00 SGT,298.9,myx-finance,0.211791,-5.657946282134,11195926.804122509435,40288259.191291376948,matched_exact_symbol_unique
+NAORIS,3,"Binance, Bitget, Bybit",2025-07-31T12:14:10+00:00,2025-07-31 20:14:10 SGT,255.9,naoris,0.062809,-0.212037898609,2067974.719615444308,37641127.394124172628,matched_exact_symbol_unique
+NATGAS,2,"Binance, Bitget",2026-04-01T09:20:00+00:00,2026-04-01 17:20:00 SGT,12,,,,,,unmatched_no_symbol_candidate
+NEAR,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+NEIRO,2,"Binance, OKX",2024-09-16T11:30:00+00:00,2024-09-16 19:30:00 SGT,573.9,,,,,,unmatched_ambiguous_symbol_candidates
+NEIROCTO,1,Bitget,,,,,,,,,unmatched_no_symbol_candidate
+NEIROETH,1,Hyperliquid,,,,,,,,,unmatched_no_symbol_candidate
+NEO,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+NEWT,3,"Binance, Bitget, Bybit",2025-06-19T14:30:00+00:00,2025-06-19 22:30:00 SGT,297.8,newton-protocol,0.066066,-1.21391818408,4941707.033345110714,14198534.061852989718,matched_exact_symbol_unique
+NFLX,1,OKX,2026-03-11T10:00:00+00:00,2026-03-11 18:00:00 SGT,33,,,,,,unmatched_no_symbol_candidate
+NFP,2,"Binance, Bybit",2023-12-27T10:30:25+00:00,2023-12-27 18:30:25 SGT,838,nfprompt-token,0.01329549,0.382917919346,1484079.978314975044,7117536.806502714753,matched_exact_symbol_unique
+NFTI,1,Hyperliquid,,,,,,,,,unmatched_no_symbol_candidate
+NG,1,OKX,2026-03-10T09:00:00+00:00,2026-03-10 17:00:00 SGT,34,,,,,,unmatched_no_symbol_candidate
+NIGHT,4,"Binance, Bitget, Bybit, OKX",2025-12-09T10:21:35+00:00,2025-12-09 18:21:35 SGT,125,,,,,,unmatched_ambiguous_symbol_candidates
+NIL,4,"Binance, Bitget, Bybit, Hyperliquid",2025-03-20T10:55:46+00:00,2025-03-20 18:55:46 SGT,388.9,nillion,0.03234819,-3.514117258725,2223079.225162189454,13888439.011971985921,matched_exact_symbol_unique
+NMR,4,"Binance, Bitget, Bybit, OKX",2023-06-22T12:00:00+00:00,2023-06-22 20:00:00 SGT,1025.9,numeraire,8.61,0.613915904528,12530769.155830126256,59850185.905812256038,matched_exact_symbol_unique
+NOM,3,"Binance, Bitget, Bybit",2025-10-01T08:00:00+00:00,2025-10-01 16:00:00 SGT,194.1,,,,,,unmatched_ambiguous_symbol_candidates
+NOT,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2024-05-16T12:27:45+00:00,2024-05-16 20:27:45 SGT,696.9,,,,,,unmatched_ambiguous_symbol_candidates
+NTRN,1,Hyperliquid,,,,neutron-3,0.00244624,-2.058904030248,237080.774383784417,2047113.704641703516,matched_exact_symbol_unique
+NVDA,3,"Binance, Bitget, OKX",2026-03-04T07:00:00+00:00,2026-03-04 15:00:00 SGT,40.1,,,,,,unmatched_no_symbol_candidate
+NXPC,4,"Binance, Bitget, Bybit, Hyperliquid",2025-05-15T06:19:25+00:00,2025-05-15 14:19:25 SGT,333.1,,,,,,unmatched_ambiguous_symbol_candidates
+OG,3,"Binance, Bitget, Bybit",2023-08-28T08:19:57+00:00,2023-08-28 16:19:57 SGT,959,og-fan-token,2.65,1.738079914288,7510684.436823737808,12297205.70801939629,matched_exact_symbol_unique
+OGN,4,"Binance, Bitget, Bybit, Hyperliquid",2021-03-31T07:00:00+00:00,2021-03-31 15:00:00 SGT,1839.1,origin-protocol,0.02110442,-0.435813546887,2451545.555913547985,13999376.877598648891,matched_exact_symbol_unique
+OKB,2,"Bybit, OKX",2025-09-04T02:00:00+00:00,2025-09-04 10:00:00 SGT,221.3,okb,82.81,-0.911221145513,12099600.610485617071,1739060827.676296949387,matched_exact_symbol_unique
+OL,3,"Bitget, Bybit, OKX",2024-11-21T08:49:56+00:00,2024-11-21 16:49:56 SGT,508,open-loot,0.00663482,-3.909338892063,860838.011925654951,5176371.910773850046,matched_exact_symbol_unique
+OM,1,Hyperliquid,,,,mantra-dao,0.01714541,10.558552968851,7125.577791076696,83265171.616034820676,matched_exact_symbol_unique
+OMNI,1,Hyperliquid,,,,,,,,,unmatched_ambiguous_symbol_candidates
+ON,1,Binance,2025-10-24T08:30:00+00:00,2025-10-24 16:30:00 SGT,171,orochi-network,0.120082,42.762935414752,5157708.41281744279,17314114.866649545729,matched_exact_symbol_unique
+ONDO,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2024-01-20T13:00:00+00:00,2024-01-20 21:00:00 SGT,813.9,ondo-finance,0.246254,-0.373571668036,61534033.239441171288,1198841606.08270072937,matched_exact_symbol_unique
+ONE,4,"Binance, Bitget, Bybit, OKX",2021-03-17T07:00:00+00:00,2021-03-17 15:00:00 SGT,1853.1,,,,,,unmatched_ambiguous_symbol_candidates
+ONG,3,"Binance, Bitget, Bybit",2023-11-27T13:00:00+00:00,2023-11-27 21:00:00 SGT,867.9,ong,0.090676,0.3068536564,11719953.393622197211,42421449.520059637725,matched_exact_symbol_unique
+ONT,4,"Binance, Bitget, Bybit, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+OP,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2022-06-01T03:55:17+00:00,2022-06-01 11:55:17 SGT,1412.2,,,,,,unmatched_ambiguous_symbol_candidates
+OPEN,3,"Binance, Bitget, Bybit",2025-09-08T13:00:00+00:00,2025-09-08 21:00:00 SGT,216.9,,,,,,unmatched_ambiguous_symbol_candidates
+OPN,4,"Binance, Bitget, Bybit, OKX",2026-02-11T09:49:29+00:00,2026-02-11 17:49:29 SGT,61,,,,,,unmatched_ambiguous_symbol_candidates
+ORBS,2,"Bybit, Hyperliquid",2023-10-09T07:45:42+00:00,2023-10-09 15:45:42 SGT,917.1,,,,,,unmatched_ambiguous_symbol_candidates
+ORCA,3,"Binance, Bitget, Bybit",2024-04-01T09:22:09+00:00,2024-04-01 17:22:09 SGT,742,orca,0.867019,-2.058963918553,6873533.827043035068,52609124.178240254521,matched_exact_symbol_unique
+ORCL,2,"Bitget, OKX",2026-03-11T10:00:00+00:00,2026-03-11 18:00:00 SGT,33,oracle-3,0.00139217,-1.074682514605,14.611351730762,29235.524445029343,matched_exact_symbol_unique
+ORDER,4,"Binance, Bitget, Bybit, OKX",2024-08-27T09:02:16+00:00,2024-08-27 17:02:16 SGT,594,,,,,,unmatched_ambiguous_symbol_candidates
+ORDI,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2023-05-21T09:55:00+00:00,2023-05-21 17:55:00 SGT,1058,ordinals,2.21,-3.334331551837,8330801.033472852781,46459754.959042295814,matched_exact_symbol_unique
+OX,1,Hyperliquid,,,,ox-fun,0.0000217,0.553250783627,39.498781952441,56762.470545567172,matched_exact_symbol_unique
+OXT,3,"Binance, Bitget, Bybit",2023-08-10T04:52:51+00:00,2023-08-10 12:52:51 SGT,977.2,orchid-protocol,0.01066423,-5.396585070819,3481653.638963561039,6308356.360268815421,matched_exact_symbol_unique
+OXY,1,Bitget,,,,oxygen,0.00044008,-1.88270321133,3.452462935908,89054.738616116665,matched_exact_symbol_unique
+PANDORA,1,Hyperliquid,,,,pandora,102.59,-6.736712288758,493.564358727003,1025855.845828889986,matched_exact_symbol_unique
+PARTI,4,"Binance, Bitget, Bybit, OKX",2025-03-25T13:00:00+00:00,2025-03-25 21:00:00 SGT,383.9,particle-network,0.04466474,-8.771244809621,25609796.439733210951,10407969.242074351758,matched_exact_symbol_unique
+PAXG,6,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid",2022-03-14T08:07:06+00:00,2022-03-14 16:07:06 SGT,1491.1,,,,,,unmatched_ambiguous_symbol_candidates
+PAYP,1,Binance,2026-03-23T14:30:00+00:00,2026-03-23 22:30:00 SGT,20.8,,,,,,unmatched_no_symbol_candidate
+PEAQ,1,Bybit,2024-11-19T08:31:41+00:00,2024-11-19 16:31:41 SGT,510,peaq-2,0.01293211,-3.359579139308,669562.332653145771,26013931.471104539931,matched_exact_symbol_unique
+PENDLE,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2023-07-05T07:26:42+00:00,2023-07-05 15:26:42 SGT,1013.1,pendle,1.051,-1.399990982127,19250317.293756879866,175279114.832098871469,matched_exact_symbol_unique
+PENGU,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2024-12-17T14:22:26+00:00,2024-12-17 22:22:26 SGT,481.8,,,,,,unmatched_ambiguous_symbol_candidates
+PEOPLE,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2021-12-02T06:51:29+00:00,2021-12-02 14:51:29 SGT,1593.1,,,,,,unmatched_ambiguous_symbol_candidates
+PEP,1,Bitget,,,,,,,,,unmatched_ambiguous_symbol_candidates
+PEPE,3,"Bitget, dYdX, OKX",2023-05-03T03:55:01+00:00,2023-05-03 11:55:01 SGT,1076.2,,,,,,unmatched_ambiguous_symbol_candidates
+PHA,3,"Binance, Bitget, Bybit",2024-05-31T10:02:00+00:00,2024-05-31 18:02:00 SGT,682,pha,0.03939592,-5.34545573619,9688722.483231382445,32900755.883789077401,matched_exact_symbol_unique
+PHB,2,"Binance, Bitget",2023-02-15T07:00:00+00:00,2023-02-15 15:00:00 SGT,1153.1,,,,,,unmatched_ambiguous_symbol_candidates
+PI,3,"Bitget, dYdX, OKX",2025-02-20T09:00:00+00:00,2025-02-20 17:00:00 SGT,417,,,,,,unmatched_ambiguous_symbol_candidates
+PIEVERSE,4,"Binance, Bitget, Bybit, OKX",2025-11-14T11:30:00+00:00,2025-11-14 19:30:00 SGT,149.9,pieverse,0.4079,-17.056320678359,11238751.963138720021,87619992.94172911346,matched_exact_symbol_unique
+PIPPIN,4,"Binance, Bitget, Bybit, OKX",2025-01-17T08:38:42+00:00,2025-01-17 16:38:42 SGT,451,pippin,0.02624605,-10.523274720168,12571793.743724137545,26264442.073349233717,matched_exact_symbol_unique
+PIXEL,4,"Binance, Bitget, Bybit, Hyperliquid",2024-02-19T15:00:00+00:00,2024-02-19 23:00:00 SGT,783.8,,,,,,unmatched_ambiguous_symbol_candidates
+PLAY,1,Binance,2025-07-31T09:30:00+00:00,2025-07-31 17:30:00 SGT,256,,,,,,unmatched_ambiguous_symbol_candidates
+PLAYSOUT,1,Bybit,2026-01-20T09:55:12+00:00,2026-01-20 17:55:12 SGT,83,,,,,,unmatched_no_symbol_candidate
+PLTR,3,"Binance, Bitget, OKX",2026-02-09T15:10:00+00:00,2026-02-09 23:10:00 SGT,62.8,,,,,,unmatched_no_symbol_candidate
+PLUME,4,"Binance, Bitget, Bybit, OKX",2025-01-24T06:45:00+00:00,2025-01-24 14:45:00 SGT,444.1,plume,0.01027078,7.143322999108,33378620.617988001555,54671912.39964915067,matched_exact_symbol_unique
+PNUT,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2024-11-11T08:16:46+00:00,2024-11-11 16:16:46 SGT,518,,,,,,unmatched_ambiguous_symbol_candidates
+POL,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2024-09-05T08:30:13+00:00,2024-09-05 16:30:13 SGT,585,,,,,,unmatched_ambiguous_symbol_candidates
+POLYX,4,"Binance, Bitget, Bybit, Hyperliquid",2023-10-24T06:46:36+00:00,2023-10-24 14:46:36 SGT,902.1,polymesh,0.04786679,-3.991835994915,3843967.458750490565,60547468.316045828164,matched_exact_symbol_unique
+PONKE,1,Bybit,2024-06-07T08:35:07+00:00,2024-06-07 16:35:07 SGT,675,ponke,0.02739555,-1.152715302973,1428016.551529876655,15234760.520661279559,matched_exact_symbol_unique
+POPCAT,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2024-03-28T07:01:59+00:00,2024-03-28 15:01:59 SGT,746.1,popcat,0.04953839,-1.586021967875,10959834.883923051879,48544727.019643731415,matched_exact_symbol_unique
+PORTAL,3,"Binance, Bitget, Bybit",2024-02-29T15:00:00+00:00,2024-02-29 23:00:00 SGT,773.8,portal-2,0.0081637,-1.268732962449,2071849.755102730356,6248593.179104243405,matched_exact_symbol_unique
+POWER,3,"Binance, Bitget, Bybit",2025-12-06T09:00:00+00:00,2025-12-06 17:00:00 SGT,128,,,,,,unmatched_ambiguous_symbol_candidates
+POWR,3,"Binance, Bitget, Bybit",2023-10-24T07:01:22+00:00,2023-10-24 15:01:22 SGT,902.1,power-ledger,0.065341,0.661986838744,2458866.698596787173,34656230.040721341968,matched_exact_symbol_unique
+PRL,3,"Binance, Bitget, Bybit",2026-03-27T04:50:57+00:00,2026-03-27 12:50:57 SGT,17.2,,,,,,unmatched_ambiguous_symbol_candidates
+PROM,3,"Binance, Bitget, Bybit",2023-09-05T05:29:56+00:00,2023-09-05 13:29:56 SGT,951.2,prometeus,1.33,15.839695278189,5627145.324318124913,24292905.951387759298,matched_exact_symbol_unique
+PROMPT,3,"Binance, Bybit, Hyperliquid",2025-04-10T14:06:05+00:00,2025-04-10 22:06:05 SGT,367.8,,,,,,unmatched_ambiguous_symbol_candidates
+PROVE,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2025-08-05T17:00:00+00:00,2025-08-06 01:00:00 SGT,250.7,succinct,0.219618,-0.42623255609,6473757.830387431197,42818096.703896827996,matched_exact_symbol_unique
+PTB,2,"Binance, Bybit",2025-09-03T12:30:00+00:00,2025-09-03 20:30:00 SGT,221.9,portal-to-bitcoin,0.00088239,-9.511813199144,2172607.866332078353,1827270.990206350572,matched_exact_symbol_unique
+PUFFER,2,"Bitget, Bybit",2024-10-14T12:37:01+00:00,2024-10-14 20:37:01 SGT,545.9,puffer-finance,0.0241113,-2.10013096365,2839854.492812853307,10000383.173459837213,matched_exact_symbol_unique
+PUMP,5,"Binance, Bitget, dYdX, Hyperliquid, OKX",2025-07-10T07:30:00+00:00,2025-07-10 15:30:00 SGT,277.1,,,,,,unmatched_ambiguous_symbol_candidates
+PUMPBTC,2,"Binance, Bybit",2025-04-11T08:16:34+00:00,2025-04-11 16:16:34 SGT,367,pumpbtc,70032,0.785491328849,8238.909823864213,48172810.040934473276,matched_exact_symbol_unique
+PUMPFUN,1,Bybit,2025-07-10T03:45:32+00:00,2025-07-10 11:45:32 SGT,277.2,,,,,,unmatched_no_symbol_candidate
+PUNDIX,3,"Binance, Bitget, Bybit",2025-04-30T10:00:00+00:00,2025-04-30 18:00:00 SGT,348,pundi-x-2,0.143672,-0.987244976475,2328634.932084875647,37122894.990570947528,matched_exact_symbol_unique
+PURR,1,Hyperliquid,,,,,,,,,unmatched_ambiguous_symbol_candidates
+PYR,1,Bybit,2024-10-07T08:19:21+00:00,2024-10-07 16:19:21 SGT,553,vulcan-forged,0.26471,1.195538848215,7247536.980462443084,12436372.934833055362,matched_exact_symbol_unique
+PYTH,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2023-11-20T14:55:00+00:00,2023-11-20 22:55:00 SGT,874.8,pyth-network,0.04263292,-3.859749412456,8554783.243014588952,245126862.759547710419,matched_exact_symbol_unique
+Q,3,"Binance, Bitget, Bybit",2025-09-02T07:30:00+00:00,2025-09-02 15:30:00 SGT,223.1,,,,,,unmatched_ambiguous_symbol_candidates
+QNT,3,"Binance, Bitget, Bybit",2022-10-18T07:00:00+00:00,2022-10-18 15:00:00 SGT,1273.1,quant-network,74.52,-3.124687575588,11637445.592204693705,1083788620.330660581589,matched_exact_symbol_unique
+QQQ,3,"Binance, Bitget, OKX",2026-03-04T08:45:00+00:00,2026-03-04 16:45:00 SGT,40,,,,,,unmatched_no_symbol_candidate
+QTUM,4,"Binance, Bitget, Bybit, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,qtum,0.887311,-0.776081486475,3735623.540255817119,94054057.290482670069,matched_exact_symbol_unique
+RARE,3,"Binance, Bitget, Bybit",2023-11-27T06:48:04+00:00,2023-11-27 14:48:04 SGT,868.1,,,,,,unmatched_ambiguous_symbol_candidates
+RAVE,4,"Binance, Bitget, Bybit, OKX",2025-12-14T15:30:00+00:00,2025-12-14 23:30:00 SGT,119.7,ravedao,8.64,210.922232559078,600017550.329825043678,2142328816.77071595192,matched_exact_symbol_unique
+RAY,3,"Bitget, Drift, OKX",2024-03-12T10:25:00+00:00,2024-03-12 18:25:00 SGT,762,raydium,0.628972,-0.809164660369,13199911.94337525405,169045085.852520883083,matched_exact_symbol_unique
+RAYDIUM,1,Bybit,2024-06-04T09:11:59+00:00,2024-06-04 17:11:59 SGT,678,,,,,,unmatched_no_symbol_candidate
+RAYSOL,1,Binance,2024-12-10T12:00:00+00:00,2024-12-10 20:00:00 SGT,488.9,,,,,,unmatched_no_symbol_candidate
+RDDT,1,Bitget,,,,,,,,,unmatched_no_symbol_candidate
+RDNT,2,"Bybit, Hyperliquid",2023-04-17T07:05:07+00:00,2023-04-17 15:05:07 SGT,1092.1,radiant-capital,0.00210206,-5.677398513569,966071.182568814256,2716510.231896861922,matched_exact_symbol_unique
+RECALL,4,"Binance, Bitget, Bybit, OKX",2025-10-15T12:21:09+00:00,2025-10-15 20:21:09 SGT,179.9,recall,0.0453587,-0.172549500588,9775702.494385330006,11218545.902661589906,matched_exact_symbol_unique
+RED,3,"Binance, Bitget, Bybit",2025-02-26T06:50:52+00:00,2025-02-26 14:50:52 SGT,411.1,,,,,,unmatched_ambiguous_symbol_candidates
+RENDER,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2024-07-26T08:26:47+00:00,2024-07-26 16:26:47 SGT,626,render-token,1.86,-2.511007229617,66256664.852899953723,964575214.715253591537,matched_exact_symbol_unique
+REQ,2,"Bybit, Hyperliquid",2021-12-06T00:00:00+00:00,2021-12-06 08:00:00 SGT,1589.4,request-network,0.065818,-2.835052338879,1413968.832190225832,48987855.577084086835,matched_exact_symbol_unique
+RESOLV,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2025-06-10T13:11:39+00:00,2025-06-10 21:11:39 SGT,306.8,resolv,0.03833556,-3.718789783105,15378229.032181890681,14837668.408241461962,matched_exact_symbol_unique
+REZ,4,"Binance, Bitget, Bybit, Hyperliquid",2024-04-30T14:00:00+00:00,2024-04-30 22:00:00 SGT,712.8,renzo,0.00355973,-2.037877868137,3966130.98556541279,29204514.751921270043,matched_exact_symbol_unique
+RIF,1,Binance,2023-10-21T12:30:00+00:00,2023-10-21 20:30:00 SGT,904.9,,,,,,unmatched_ambiguous_symbol_candidates
+RIVER,4,"Binance, Bitget, Bybit, OKX",2025-10-17T14:45:00+00:00,2025-10-17 22:45:00 SGT,177.8,river,8.59,-2.267735048025,19827377.661103576422,168328542.006708800793,matched_exact_symbol_unique
+RLB,1,Hyperliquid,,,,rollbit-coin,0.06293,-4.006233056186,224046.138730467967,107421411.711039304733,matched_exact_symbol_unique
+RLC,2,"Binance, Bybit",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,iexec-rlc,0.408148,-1.713408969881,2683957.904374747537,29551087.254220720381,matched_exact_symbol_unique
+RLS,2,"Bybit, OKX",2025-12-02T09:54:12+00:00,2025-12-02 17:54:12 SGT,132,rayls,0.00238311,2.324726144295,1424168.944798401324,3383453.728845193516,matched_exact_symbol_unique
+RLUSD,1,Bybit,2025-09-26T14:05:35+00:00,2025-09-26 22:05:35 SGT,198.8,ripple-usd,1.001,0.047264806228,56402467.431823454797,1421350790.521229028702,matched_exact_symbol_unique
+RNDR,1,Hyperliquid,,,,,,,,,unmatched_no_symbol_candidate
+ROAM,1,Bybit,2025-03-07T07:40:31+00:00,2025-03-07 15:40:31 SGT,402.1,roam-token,0.02050209,-10.811942908053,797339.575341548305,7073285.410205651075,matched_exact_symbol_unique
+ROBO,4,"Binance, Bitget, Bybit, OKX",2026-02-25T09:31:02+00:00,2026-02-25 17:31:02 SGT,47,robo-token-2,0.01977015,11.638441085079,38074955.179577685893,43980590.083374910057,matched_exact_symbol_unique
+RONIN,2,"Binance, Bybit",2024-02-06T04:30:00+00:00,2024-02-06 12:30:00 SGT,797.2,,,,,,unmatched_no_symbol_candidate
+ROSE,3,"Binance, Bitget, Bybit",2021-12-31T07:00:00+00:00,2021-12-31 15:00:00 SGT,1564.1,,,,,,unmatched_ambiguous_symbol_candidates
+RPL,3,"Binance, Bitget, Bybit",2023-03-01T07:32:26+00:00,2023-03-01 15:32:26 SGT,1139.1,rocket-pool,1.72,-0.682526295691,2115255.556646248791,38366493.861592419446,matched_exact_symbol_unique
+RSR,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,reserve-rights-token,0.00145621,-1.266726942555,4892946.375258330256,91091669.524809613824,matched_exact_symbol_unique
+RUNE,5,"Binance, Bitget, Bybit, dYdX, Hyperliquid",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+RVN,4,"Binance, Bitget, Bybit, OKX",2021-02-23T07:00:00+00:00,2021-02-23 15:00:00 SGT,1875.1,ravencoin,0.00560683,0.325222102415,4971782.541442542337,90800941.495595782995,matched_exact_symbol_unique
+S,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2025-01-15T08:47:20+00:00,2025-01-15 16:47:20 SGT,453,,,,,,unmatched_ambiguous_symbol_candidates
+SAFE,3,"Binance, Bitget, Bybit",2024-04-29T09:24:49+00:00,2024-04-29 17:24:49 SGT,714,,,,,,unmatched_ambiguous_symbol_candidates
+SAGA,4,"Binance, Bitget, Bybit, Hyperliquid",2024-04-09T10:30:00+00:00,2024-04-09 18:30:00 SGT,734,saga-2,0.02781522,0.439665155509,3837783.892392295878,10551607.45769039169,matched_exact_symbol_unique
+SAHARA,4,"Binance, Bitget, Bybit, OKX",2025-06-20T11:11:33+00:00,2025-06-20 19:11:33 SGT,296.9,sahara-ai,0.02145837,-2.314706950729,7022542.126434443519,67380650.817301556468,matched_exact_symbol_unique
+SAND,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2021-01-18T07:00:00+00:00,2021-01-18 15:00:00 SGT,1911.1,,,,,,unmatched_ambiguous_symbol_candidates
+SANTOS,2,"Binance, Bitget",2024-10-28T14:00:00+00:00,2024-10-28 22:00:00 SGT,531.8,santos-fc-fan-token,1.044,-1.341610574135,1876509.116924113594,16814554.920801520348,matched_exact_symbol_unique
+SAPIEN,4,"Binance, Bitget, Bybit, OKX",2025-08-20T17:19:38+00:00,2025-08-21 01:19:38 SGT,235.7,sapien-2,0.074397,3.320111418668,4958788.506468496285,18600533.324890334159,matched_exact_symbol_unique
+SATS,1,OKX,2023-12-18T08:55:00+00:00,2023-12-18 16:55:00 SGT,847,,,,,,unmatched_ambiguous_symbol_candidates
+SC,1,Bybit,2021-11-30T15:25:58+00:00,2021-11-30 23:25:58 SGT,1594.7,,,,,,unmatched_ambiguous_symbol_candidates
+SCR,3,"Binance, Bybit, Hyperliquid",2024-10-08T12:25:58+00:00,2024-10-08 20:25:58 SGT,551.9,,,,,,unmatched_ambiguous_symbol_candidates
+SCRT,3,"Binance, Bitget, Bybit",2022-03-30T09:50:43+00:00,2022-03-30 17:50:43 SGT,1475,secret,0.091449,0.103556375638,1896776.792014063103,30843048.131779361516,matched_exact_symbol_unique
+SEI,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2023-08-16T03:28:47+00:00,2023-08-16 11:28:47 SGT,971.2,,,,,,unmatched_ambiguous_symbol_candidates
+SENT,4,"Binance, Bitget, Bybit, OKX",2025-11-14T12:45:00+00:00,2025-11-14 20:45:00 SGT,149.9,,,,,,unmatched_ambiguous_symbol_candidates
+SFP,3,"Binance, Bitget, Bybit",2021-02-24T07:00:00+00:00,2021-02-24 15:00:00 SGT,1874.1,safepal,0.28882,-0.058766170503,1626967.135856779758,144409250.795527100563,matched_exact_symbol_unique
+SHELL,4,"Binance, Bitget, Bybit, OKX",2025-02-17T07:33:43+00:00,2025-02-17 15:33:43 SGT,420.1,,,,,,unmatched_ambiguous_symbol_candidates
+SHIA,1,Hyperliquid,,,,shiba-saga,0.00011657,1.428840370606,471.063439280165,32649.893933072384,matched_exact_symbol_unique
+SHIB,3,"Bitget, dYdX, OKX",2021-05-09T09:00:00+00:00,2021-05-09 17:00:00 SGT,1800,,,,,,unmatched_ambiguous_symbol_candidates
+SHIB1000,1,Bybit,2021-10-20T00:00:00+00:00,2021-10-20 08:00:00 SGT,1636.4,,,,,,unmatched_no_symbol_candidate
+SIGN,4,"Binance, Bitget, Bybit, OKX",2025-04-28T11:00:00+00:00,2025-04-28 19:00:00 SGT,349.9,sign-global,0.03237315,0.347181215023,17266058.879539050162,52988712.921277463436,matched_exact_symbol_unique
+SIREN,3,"Binance, Bitget, Bybit",2025-03-22T03:20:42+00:00,2025-03-22 11:20:42 SGT,387.3,siren-2,0.788938,-6.806843391838,23033459.602571725845,573962473.773580908775,matched_exact_symbol_unique
+SKL,3,"Binance, Bitget, Bybit",2020-08-24T07:00:00+00:00,2020-08-24 15:00:00 SGT,2058.1,skale,0.00621855,-1.107955601295,3812300.421679301187,37892911.003581695259,matched_exact_symbol_unique
+SKR,4,"Binance, Bitget, Bybit, Hyperliquid",2026-01-20T10:29:47+00:00,2026-01-20 18:29:47 SGT,83,,,,,,unmatched_ambiguous_symbol_candidates
+SKY,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2025-08-11T08:28:06+00:00,2025-08-11 16:28:06 SGT,245,,,,,,unmatched_ambiguous_symbol_candidates
+SKYAI,2,"Binance, Bitget",2025-05-13T09:45:00+00:00,2025-05-13 17:45:00 SGT,335,skyai,0.120793,-4.927414789,25739031.530886910856,120415653.704924628139,matched_exact_symbol_unique
+SLP,3,"Binance, Bitget, Bybit",2021-11-17T16:00:00+00:00,2021-11-18 00:00:00 SGT,1607.7,smooth-love-potion,0.00059408,-0.72941146652,2307542.78225189168,21603330.641222693026,matched_exact_symbol_unique
+SNDK,2,"Binance, OKX",2026-03-04T07:30:00+00:00,2026-03-04 15:30:00 SGT,40.1,,,,,,unmatched_no_symbol_candidate
+SNT,1,Bybit,2023-11-02T08:28:14+00:00,2023-11-02 16:28:14 SGT,893,status,0.0097252,0.433620880142,1416491.508326254785,38516532.770080015063,matched_exact_symbol_unique
+SNX,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,havven,0.28222,-1.991047639234,7927963.847840446979,97214608.179556950927,matched_exact_symbol_unique
+SOL,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+SOLAYER,1,Bybit,2025-02-11T14:12:56+00:00,2025-02-11 22:12:56 SGT,425.8,,,,,,unmatched_no_symbol_candidate
+SOLV,2,"Binance, Bybit",2025-01-17T10:21:51+00:00,2025-01-17 18:21:51 SGT,451,solv-protocol,0.00430203,-6.878091181565,24395164.124328304082,6374688.020554904826,matched_exact_symbol_unique
+SOMI,3,"Binance, Bitget, Bybit",2025-08-25T09:30:00+00:00,2025-08-25 17:30:00 SGT,231,somnia,0.160819,0.630548497804,4373507.475379182957,25756044.573919758201,matched_exact_symbol_unique
+SONIC,3,"Binance, Bitget, Bybit",2025-01-07T12:24:55+00:00,2025-01-07 20:24:55 SGT,460.9,,,,,,unmatched_ambiguous_symbol_candidates
+SOON,4,"Binance, Bitget, Bybit, OKX",2025-05-23T08:30:00+00:00,2025-05-23 16:30:00 SGT,325,,,,,,unmatched_ambiguous_symbol_candidates
+SOPH,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2025-05-28T13:00:00+00:00,2025-05-28 21:00:00 SGT,319.9,,,,,,unmatched_ambiguous_symbol_candidates
+SOSO,1,Bybit,2025-06-26T11:07:59+00:00,2025-06-26 19:07:59 SGT,290.9,sosovalue,0.415501,2.406350966088,4216297.50160256587,129632796.349719330668,matched_exact_symbol_unique
+SPACE,4,"Binance, Bitget, Bybit, OKX",2026-01-23T11:45:00+00:00,2026-01-23 19:45:00 SGT,79.9,,,,,,unmatched_ambiguous_symbol_candidates
+SPELL,3,"Binance, Bitget, Bybit",2021-12-13T01:21:09+00:00,2021-12-13 09:21:09 SGT,1582.3,,,,,,unmatched_ambiguous_symbol_candidates
+SPK,4,"Binance, Bitget, Bybit, OKX",2025-06-17T09:00:00+00:00,2025-06-17 17:00:00 SGT,300,spark-2,0.02057735,-1.087203392812,9439118.379741059616,52382402.48467259109,matched_exact_symbol_unique
+SPORTFUN,2,"Binance, Bybit",2026-01-16T13:45:00+00:00,2026-01-16 21:45:00 SGT,86.8,,,,,,unmatched_no_symbol_candidate
+SPX,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2024-10-29T06:31:37+00:00,2024-10-29 14:31:37 SGT,531.1,spx6900,0.303229,-1.176266032429,4598436.237791371532,282247701.840859949589,matched_exact_symbol_unique
+SPY,3,"Binance, Bitget, OKX",2026-03-04T09:00:00+00:00,2026-03-04 17:00:00 SGT,40,smarty-pay,0.00023062,-0.079317330458,25.14157257127,0,matched_exact_symbol_unique
+SQD,3,"Binance, Bitget, Bybit",2025-06-11T11:23:25+00:00,2025-06-11 19:23:25 SGT,305.9,,,,,,unmatched_ambiguous_symbol_candidates
+SQQQ,1,Bitget,,,,,,,,,unmatched_no_symbol_candidate
+SSV,4,"Binance, Bitget, Bybit, OKX",2023-02-23T07:00:00+00:00,2023-02-23 15:00:00 SGT,1145.1,ssv-network,2.12,-2.562947207068,7181868.290585485287,31099660.635143715888,matched_exact_symbol_unique
+STABLE,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2025-11-06T12:00:00+00:00,2025-11-06 20:00:00 SGT,157.9,,,,,,unmatched_ambiguous_symbol_candidates
+STBL,4,"Binance, Bitget, Bybit, Hyperliquid",2025-09-17T05:45:00+00:00,2025-09-17 13:45:00 SGT,208.2,,,,,,unmatched_ambiguous_symbol_candidates
+STEEM,3,"Binance, Bitget, Bybit",2023-10-25T06:29:42+00:00,2023-10-25 14:29:42 SGT,901.1,steem,0.057057,-1.364493807961,4020407.635683794972,31080506.542196352035,matched_exact_symbol_unique
+STG,4,"Binance, Bitget, Bybit, Hyperliquid",2022-08-24T07:00:00+00:00,2022-08-24 15:00:00 SGT,1328.1,stargate-finance,0.231394,0.415185523851,19855943.469507161528,26966526.568134739995,matched_exact_symbol_unique
+STO,3,"Binance, Bitget, Bybit",2025-04-12T14:45:00+00:00,2025-04-12 22:45:00 SGT,365.8,stakestone,0.116452,-4.05833780039,27910522.841161843389,26321029.565709874034,matched_exact_symbol_unique
+STORJ,3,"Binance, Bitget, Bybit",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,storj,0.09687,-1.37734364615,4668236.63158445619,13922131.546981653199,matched_exact_symbol_unique
+STRAX,1,Hyperliquid,,,,stratis,0.01265241,-1.812549494137,669812.49354622094,27239966.618005994707,matched_exact_symbol_unique
+STRK,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2024-02-20T12:55:00+00:00,2024-02-20 20:55:00 SGT,782.9,starknet,0.03302936,-1.726078283529,11653836.022822130471,187999655.57947704196,matched_exact_symbol_unique
+STX,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2021-11-30T07:59:43+00:00,2021-11-30 15:59:43 SGT,1595.1,blockstack,0.212701,-0.827643626501,10386348.625050421804,391557716.065835893154,matched_exact_symbol_unique
+SUI,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2023-05-02T12:15:24+00:00,2023-05-02 20:15:24 SGT,1076.9,sui,0.902936,-1.091058465613,216055161.335257530212,3569326185.024644374847,matched_exact_symbol_unique
+SUN,3,"Binance, Bitget, Bybit",2022-02-18T06:38:34+00:00,2022-02-18 14:38:34 SGT,1515.1,sun-token,0.01800707,-3.875010481457,77982545.829117521644,346158279.351113021374,matched_exact_symbol_unique
+SUPER,4,"Binance, Bitget, Bybit, Hyperliquid",2023-11-23T06:16:26+00:00,2023-11-23 14:16:26 SGT,872.1,,,,,,unmatched_ambiguous_symbol_candidates
+SUSHI,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+SWARMS,2,"Binance, Bybit",2025-01-06T08:31:58+00:00,2025-01-06 16:31:58 SGT,462,swarms,0.01748592,-0.076800977474,4975012.355447229929,17491298.425718411803,matched_exact_symbol_unique
+SXT,3,"Binance, Bitget, Bybit",2025-05-02T08:30:00+00:00,2025-05-02 16:30:00 SGT,346,space-and-time,0.01624875,-1.820034113547,2126811.011591184419,42232772.520952917635,matched_exact_symbol_unique
+SYN,3,"Binance, Bitget, Bybit",2024-08-16T12:30:00+00:00,2024-08-16 20:30:00 SGT,604.9,,,,,,unmatched_ambiguous_symbol_candidates
+SYRUP,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2025-05-07T08:30:00+00:00,2025-05-07 16:30:00 SGT,341,syrup,0.226604,-2.36253540682,4994228.153221084736,262716256.006837278605,matched_exact_symbol_unique
+SYS,1,Binance,2024-08-19T12:30:00+00:00,2024-08-19 20:30:00 SGT,601.9,syscoin,0.01043918,-11.694662666327,3369318.374176872894,9155908.345621922985,matched_exact_symbol_unique
+T,3,"Binance, Bitget, Bybit",2023-01-31T07:00:00+00:00,2023-01-31 15:00:00 SGT,1168.1,,,,,,unmatched_ambiguous_symbol_candidates
+TA,2,"Binance, Bybit",2025-07-21T07:30:00+00:00,2025-07-21 15:30:00 SGT,266.1,trusta-ai,0.04119357,0.45343521809,517536.665405945096,7448958.332468949258,matched_exact_symbol_unique
+TAC,3,"Binance, Bitget, Bybit",2025-07-15T10:30:00+00:00,2025-07-15 18:30:00 SGT,272,tac,0.00618567,22.560663941939,2659531.984098881483,18246083.810743734241,matched_exact_symbol_unique
+TAG,2,"Binance, Bitget",2025-07-25T11:15:00+00:00,2025-07-25 19:15:00 SGT,261.9,tagger,0.0008026,-2.763596228396,10201879.907828621566,87468090.566214814782,matched_exact_symbol_unique
+TAIKO,3,"Binance, Bitget, Bybit",2024-06-05T14:17:35+00:00,2024-06-05 22:17:35 SGT,676.8,taiko,0.114916,-1.053192004872,3160625.230218945071,22020563.364696588367,matched_exact_symbol_unique
+TAKE,1,Binance,2025-09-03T11:15:00+00:00,2025-09-03 19:15:00 SGT,221.9,overtake,0.02115724,-4.007253914705,801613.087632031413,5246703.712696714327,matched_exact_symbol_unique
+TAO,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2024-01-30T07:51:21+00:00,2024-01-30 15:51:21 SGT,804.1,,,,,,unmatched_ambiguous_symbol_candidates
+THE,3,"Binance, Bitget, Bybit",2024-11-27T08:50:04+00:00,2024-11-27 16:50:04 SGT,502,,,,,,unmatched_ambiguous_symbol_candidates
+THETA,4,"Binance, Bitget, Bybit, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,theta-token,0.167971,0.047077281985,9951991.778715981171,167984486.018496185541,matched_exact_symbol_unique
+TIA,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2023-10-31T16:12:29+00:00,2023-11-01 00:12:29 SGT,894.7,,,,,,unmatched_ambiguous_symbol_candidates
+TLM,3,"Binance, Bitget, Bybit",2021-11-22T00:00:00+00:00,2021-11-22 08:00:00 SGT,1603.4,alien-worlds,0.00161054,-0.732263251062,7562610.267455662601,10524570.369467217475,matched_exact_symbol_unique
+TNSR,5,"Binance, Bitget, Bybit, Drift, Hyperliquid",2024-04-08T17:00:00+00:00,2024-04-09 01:00:00 SGT,734.7,,,,,,unmatched_ambiguous_symbol_candidates
+TON,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2022-12-28T06:54:11+00:00,2022-12-28 14:54:11 SGT,1202.1,,,,,,unmatched_ambiguous_symbol_candidates
+TOSHI,2,"Binance, Bitget",2025-09-17T05:30:00+00:00,2025-09-17 13:30:00 SGT,208.2,,,,,,unmatched_ambiguous_symbol_candidates
+TOWNS,3,"Binance, Bitget, Bybit",2025-08-05T14:30:00+00:00,2025-08-05 22:30:00 SGT,250.8,towns,0.00297868,-6.259130494299,6057241.87751397863,6285279.214579679072,matched_exact_symbol_unique
+TQQQ,1,Bitget,,,,,,,,,unmatched_no_symbol_candidate
+TRADOOR,1,Binance,2025-09-19T12:30:00+00:00,2025-09-19 20:30:00 SGT,205.9,tradoor,5.07,31.683317597132,82099941.48275886476,74245796.168448403478,matched_exact_symbol_unique
+TRB,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,tellor,15.04,-2.057584504097,9024885.08180452697,41669707.853717789054,matched_exact_symbol_unique
+TREE,3,"Binance, Bitget, Bybit",2025-07-29T14:00:00+00:00,2025-07-29 22:00:00 SGT,257.8,,,,,,unmatched_ambiguous_symbol_candidates
+TRIA,4,"Binance, Bitget, Bybit, OKX",2026-02-05T07:30:00+00:00,2026-02-05 15:30:00 SGT,67.1,tria,0.02733362,11.681243571288,9183948.484595848247,58763150.923520714045,matched_exact_symbol_unique
+TRU,2,"Binance, Bybit",2023-03-06T07:00:00+00:00,2023-03-06 15:00:00 SGT,1134.1,,,,,,unmatched_ambiguous_symbol_candidates
+TRUMP,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2025-01-18T06:31:47+00:00,2025-01-18 14:31:47 SGT,450.1,,,,,,unmatched_ambiguous_symbol_candidates
+TRUST,4,"Binance, Bitget, Bybit, OKX",2025-11-05T09:30:00+00:00,2025-11-05 17:30:00 SGT,159,,,,,,unmatched_ambiguous_symbol_candidates
+TRUTH,3,"Binance, Bybit, OKX",2025-10-01T12:30:00+00:00,2025-10-01 20:30:00 SGT,193.9,,,,,,unmatched_ambiguous_symbol_candidates
+TRX,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+TSLA,3,"Binance, Bitget, OKX",2026-01-28T14:30:00+00:00,2026-01-28 22:30:00 SGT,74.8,tsla6900,0.000000034738,,5.091353593948,14613.759416461435,matched_exact_symbol_unique
+TSLAX,1,dYdX,,,,tesla-xstock,346.27,-0.726913038708,5191199.142235207371,50675165.706758894026,matched_exact_symbol_unique
+TSM,3,"Binance, Bitget, OKX",2026-03-11T10:00:00+00:00,2026-03-11 18:00:00 SGT,33,,,,,,unmatched_no_symbol_candidate
+TST,2,"Binance, Hyperliquid",2025-02-09T13:00:00+00:00,2025-02-09 21:00:00 SGT,427.9,,,,,,unmatched_ambiguous_symbol_candidates
+TSTBSC,1,Bybit,2025-02-09T10:28:14+00:00,2025-02-09 18:28:14 SGT,428,,,,,,unmatched_no_symbol_candidate
+TURBO,4,"Binance, Bitget, Hyperliquid, OKX",2023-12-14T09:55:00+00:00,2023-12-14 17:55:00 SGT,851,,,,,,unmatched_ambiguous_symbol_candidates
+TURTLE,2,"Binance, Bybit",2025-10-22T15:00:00+00:00,2025-10-22 23:00:00 SGT,172.8,,,,,,unmatched_ambiguous_symbol_candidates
+TUT,3,"Binance, Bitget, Bybit",2025-03-19T09:13:16+00:00,2025-03-19 17:13:16 SGT,390,tutorial,0.00949065,3.309766657184,5007623.057290414348,7936361.657135482877,matched_exact_symbol_unique
+TWT,2,"Binance, Bybit",2022-11-17T06:24:21+00:00,2022-11-17 14:24:21 SGT,1243.1,trust-wallet-token,0.410137,-1.273793698126,6229581.349870952778,170736749.122624456882,matched_exact_symbol_unique
+UAI,3,"Binance, Bitget, Bybit",2025-11-06T11:30:00+00:00,2025-11-06 19:30:00 SGT,157.9,,,,,,unmatched_ambiguous_symbol_candidates
+UB,3,"Binance, Bitget, Bybit",2025-09-12T09:16:09+00:00,2025-09-12 17:16:09 SGT,213,unibase,0.02392531,0.964026347842,9771706.9028212782,59803244.618032872677,matched_exact_symbol_unique
+UMA,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2020-09-04T10:12:51+00:00,2020-09-04 18:12:51 SGT,2047,uma,0.411803,0.656883272144,3830934.599450415466,37343781.900557674468,matched_exact_symbol_unique
+UNH,1,Bitget,,,,,,,,,unmatched_no_symbol_candidate
+UNI,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+UNIBOT,1,Hyperliquid,,,,unibot,0.849588,-1.705618195584,11567.300555580969,849588.334384168847,matched_exact_symbol_unique
+US,3,"Binance, Bitget, Bybit",2025-12-12T10:45:00+00:00,2025-12-12 18:45:00 SGT,121.9,,,,,,unmatched_ambiguous_symbol_candidates
+USD1,1,Bybit,2025-07-16T10:49:56+00:00,2025-07-16 18:49:56 SGT,270.9,,,,,,unmatched_ambiguous_symbol_candidates
+USDC,4,"Binance, Bitget, Bybit, OKX",2022-06-28T07:00:12+00:00,2022-06-28 15:00:12 SGT,1385.1,,,,,,unmatched_ambiguous_symbol_candidates
+USDE,1,Bybit,2024-08-07T10:14:45+00:00,2024-08-07 18:14:45 SGT,614,,,,,,unmatched_ambiguous_symbol_candidates
+USELESS,5,"Binance, Bitget, Bybit, dYdX, OKX",2025-07-10T10:56:18+00:00,2025-07-10 18:56:18 SGT,276.9,,,,,,unmatched_ambiguous_symbol_candidates
+USTC,4,"Binance, Bitget, Bybit, Hyperliquid",2023-11-27T06:42:34+00:00,2023-11-27 14:42:34 SGT,868.1,,,,,,unmatched_ambiguous_symbol_candidates
+USUAL,5,"Binance, Bitget, Bybit, dYdX, Hyperliquid",2024-11-18T09:19:43+00:00,2024-11-18 17:19:43 SGT,511,,,,,,unmatched_ambiguous_symbol_candidates
+VANA,4,"Binance, Bitget, Bybit, OKX",2024-12-16T11:43:42+00:00,2024-12-16 19:43:42 SGT,482.9,vana,1.26,-1.873595281153,1424935.110376790399,38635046.146872624755,matched_exact_symbol_unique
+VANRY,3,"Binance, Bitget, Bybit",2024-03-13T17:30:00+00:00,2024-03-14 01:30:00 SGT,760.7,vanar-chain,0.0049216,-4.652312569976,1670578.239603095455,10581522.715459981933,matched_exact_symbol_unique
+VELO,2,"Bitget, Bybit",2024-05-20T09:21:53+00:00,2024-05-20 17:21:53 SGT,693,,,,,,unmatched_ambiguous_symbol_candidates
+VELODROME,3,"Binance, Bitget, Bybit",2024-12-13T09:26:44+00:00,2024-12-13 17:26:44 SGT,486,,,,,,unmatched_no_symbol_candidate
+VELVET,3,"Binance, Bitget, Bybit",2025-07-15T09:15:00+00:00,2025-07-15 17:15:00 SGT,272,velvet,0.093139,19.720271990161,4500031.17932348419,34140727.176851905882,matched_exact_symbol_unique
+VET,3,"Binance, Bitget, Bybit",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,vechain,0.00677039,-1.194263275555,15159594.17959410511,582196465.438027977943,matched_exact_symbol_unique
+VIC,1,Binance,2025-03-12T17:00:00+00:00,2025-03-13 01:00:00 SGT,396.7,tomochain,0.04628506,-1.496697887571,642379.82153459487,5834709.747531873174,matched_exact_symbol_unique
+VINE,4,"Binance, Bitget, Bybit, Hyperliquid",2025-01-23T11:46:18+00:00,2025-01-23 19:46:18 SGT,444.9,,,,,,unmatched_ambiguous_symbol_candidates
+VIRTUAL,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2024-11-01T08:25:51+00:00,2024-11-01 16:25:51 SGT,528,virtual-protocol,0.645616,-0.980638676339,41608359.264878571033,423648293.004063844681,matched_exact_symbol_unique
+VTHO,2,"Binance, Bitget",2025-01-22T09:30:00+00:00,2025-01-22 17:30:00 SGT,446,vethor-token,0.00055435,0.119678518575,1374052.129294701852,55024737.717963568866,matched_exact_symbol_unique
+VVV,5,"Binance, Bitget, Bybit, dYdX, Hyperliquid",2025-01-28T04:31:45+00:00,2025-01-28 12:31:45 SGT,440.2,venice-token,8.24,2.619749970477,14951205.956081874669,374530089.453455805779,matched_exact_symbol_unique
+W,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2024-04-03T12:25:00+00:00,2024-04-03 20:25:00 SGT,739.9,,,,,,unmatched_ambiguous_symbol_candidates
+WAL,4,"Binance, Bitget, Bybit, OKX",2025-03-27T10:05:56+00:00,2025-03-27 18:05:56 SGT,382,walrus-2,0.068696,-3.32923185398,6556406.532736593857,157728010.665169090033,matched_exact_symbol_unique
+WAVES,2,"Bitget, Bybit",2022-01-05T07:33:46+00:00,2022-01-05 15:33:46 SGT,1559.1,waves,0.403591,-1.918441006508,3549653.574002231006,40361292.095875367522,matched_exact_symbol_unique
+WAXP,3,"Binance, Bitget, Bybit",2023-10-10T06:21:49+00:00,2023-10-10 14:21:49 SGT,916.1,wax,0.00639098,-1.046445246984,1041354.727928074542,29303808.927612744272,matched_exact_symbol_unique
+WCT,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2025-04-15T11:00:00+00:00,2025-04-15 19:00:00 SGT,362.9,connect-token-wct,0.052958,0.055715085069,7154244.020934505388,9844511.193142127246,matched_exact_symbol_unique
+WET,4,"Binance, Bitget, Bybit, OKX",2025-12-04T10:59:56+00:00,2025-12-04 18:59:56 SGT,129.9,,,,,,unmatched_ambiguous_symbol_candidates
+WHITEWHALE,1,Bybit,2026-01-06T12:08:08+00:00,2026-01-06 20:08:08 SGT,96.9,,,,,,unmatched_ambiguous_symbol_candidates
+WIF,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2024-01-11T09:31:44+00:00,2024-01-11 17:31:44 SGT,823,,,,,,unmatched_ambiguous_symbol_candidates
+WLD,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2023-07-24T07:48:40+00:00,2023-07-24 15:48:40 SGT,994.1,worldcoin-wld,0.291931,0.237806701704,117481192.460076257586,953282063.719448566437,matched_exact_symbol_unique
+WLFI,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2025-08-23T08:30:00+00:00,2025-08-23 16:30:00 SGT,233,,,,,,unmatched_ambiguous_symbol_candidates
+WMT,1,Bitget,,,,,,,,,unmatched_no_symbol_candidate
+WOO,5,"Binance, Bitget, Bybit, dYdX, OKX",2021-11-09T00:00:00+00:00,2021-11-09 08:00:00 SGT,1616.4,,,,,,unmatched_ambiguous_symbol_candidates
+WTI,1,dYdX,,,,,,,,,unmatched_no_symbol_candidate
+XAG,4,"Binance, Bitget, Bybit, OKX",2026-01-07T10:00:00+00:00,2026-01-07 18:00:00 SGT,96,,,,,,unmatched_no_symbol_candidate
+XAI,4,"Binance, Bitget, Bybit, Hyperliquid",2024-01-09T14:00:00+00:00,2024-01-09 22:00:00 SGT,824.8,,,,,,unmatched_ambiguous_symbol_candidates
+XAN,3,"Binance, Bitget, Bybit",2025-09-29T10:30:00+00:00,2025-09-29 18:30:00 SGT,196,anoma,0.00755133,-3.269594418362,4046606.457046997733,18881112.350989423692,matched_exact_symbol_unique
+XAU,4,"Binance, Bitget, Bybit, OKX",2025-04-09T10:00:00+00:00,2025-04-09 18:00:00 SGT,369,,,,,,unmatched_ambiguous_symbol_candidates
+XAUT,4,"Binance, Bitget, Bybit, dYdX",2025-04-03T11:05:59+00:00,2025-04-03 19:05:59 SGT,374.9,tether-gold,4694.92,-0.233245421943,261042080.492018043995,2627639113.975729465485,matched_exact_symbol_unique
+XCN,1,Bybit,2022-04-28T07:53:51+00:00,2022-04-28 15:53:51 SGT,1446.1,chain-2,0.0046526,-2.36722165682,4970967.755013061687,175846799.406203299761,matched_exact_symbol_unique
+XCU,1,OKX,2026-03-04T12:00:00+00:00,2026-03-04 20:00:00 SGT,39.9,,,,,,unmatched_no_symbol_candidate
+XDC,1,Bybit,2025-02-10T09:24:47+00:00,2025-02-10 17:24:47 SGT,427,xdce-crowd-sale,0.0307696,1.761013731158,18233950.023414563388,613597457.880930542946,matched_exact_symbol_unique
+XION,1,Bybit,2024-12-05T10:20:14+00:00,2024-12-05 18:20:14 SGT,494,xion-2,0.117168,-4.215067702976,4078162.948924495839,8496610.461571097374,matched_exact_symbol_unique
+XLM,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,stellar,0.151237,-0.032180643903,61438636.816971741617,5004704181.446691513062,matched_exact_symbol_unique
+XMR,5,"Binance, Bitget, Bybit, dYdX, Hyperliquid",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,monero,346.47,1.148793194138,99594247.723307579756,6393896962.327991485596,matched_exact_symbol_unique
+XNY,2,"Binance, Bybit",2025-08-13T11:45:00+00:00,2025-08-13 19:45:00 SGT,242.9,codatta,0.00473163,47.956794278186,19014638.039261639118,11863734.296151867136,matched_exact_symbol_unique
+XOM,1,Bitget,,,,,,,,,unmatched_no_symbol_candidate
+XPD,3,"Binance, Bitget, OKX",2026-01-30T10:15:00+00:00,2026-01-30 18:15:00 SGT,73,petrodollar-2,0.00002728,5.656026072729,2152.38004804722,27192.347708139991,matched_exact_symbol_unique
+XPIN,3,"Binance, Bitget, Bybit",2025-09-12T08:00:00+00:00,2025-09-12 16:00:00 SGT,213.1,xpin-network,0.00120211,-5.512122030625,3148838.324559446424,18588409.156638320535,matched_exact_symbol_unique
+XPL,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2025-08-22T09:27:14+00:00,2025-08-22 17:27:14 SGT,234,,,,,,unmatched_ambiguous_symbol_candidates
+XPT,3,"Binance, Bitget, OKX",2026-01-30T10:00:00+00:00,2026-01-30 18:00:00 SGT,73,xpt,0.00434596,-1.746819627746,3169.174047441657,4345937.367508009076,matched_exact_symbol_unique
+XRP,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2018-12-21T07:53:47+00:00,2018-12-21 15:53:47 SGT,2670.1,,,,,,unmatched_ambiguous_symbol_candidates
+XTZ,4,"Binance, Bitget, Bybit, OKX",2018-01-01T00:00:00+00:00,2018-01-01 08:00:00 SGT,3024.4,,,,,,unmatched_ambiguous_symbol_candidates
+XVG,3,"Binance, Bitget, Bybit",2023-07-05T07:18:06+00:00,2023-07-05 15:18:06 SGT,1013.1,,,,,,unmatched_ambiguous_symbol_candidates
+XVS,3,"Binance, Bitget, Bybit",2023-04-12T00:00:00+00:00,2023-04-12 08:00:00 SGT,1097.4,venus,2.64,1.079287074467,3651550.945374676492,44330818.485245995224,matched_exact_symbol_unique
+YB,4,"Binance, Bitget, Bybit, OKX",2025-10-10T14:45:00+00:00,2025-10-10 22:45:00 SGT,184.8,yield-basis,0.116575,6.182025675158,19871114.200592432171,10245329.23782434687,matched_exact_symbol_unique
+YFI,3,"Binance, Bybit, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+YGG,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2021-08-06T09:00:00+00:00,2021-08-06 17:00:00 SGT,1711,yield-guild-games,0.03760432,1.063200876855,6244811.439926688559,27473075.498087648302,matched_exact_symbol_unique
+YZY,2,"Bybit, Hyperliquid",2025-08-21T04:18:05+00:00,2025-08-21 12:18:05 SGT,235.2,,,,,,unmatched_ambiguous_symbol_candidates
+ZAMA,4,"Binance, Bitget, Bybit, OKX",2026-01-09T09:00:00+00:00,2026-01-09 17:00:00 SGT,94,zama,0.02599703,4.966385031092,46002232.723362877965,57407180.461282454431,matched_exact_symbol_unique
+ZBCN,1,Bybit,2024-04-17T07:42:45+00:00,2024-04-17 15:42:45 SGT,726.1,zebec-network,0.00257609,-1.62308895357,5464239.821159551851,252332779.993492335081,matched_exact_symbol_unique
+ZBT,4,"Binance, Bitget, Bybit, OKX",2025-10-17T11:30:00+00:00,2025-10-17 19:30:00 SGT,177.9,zerobase,0.095464,-9.630106056178,8909824.535220516846,23372703.853499229997,matched_exact_symbol_unique
+ZEC,7,"Binance, Bitget, Bybit, Drift, dYdX, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+ZEN,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+ZEREBRO,3,"Binance, Bybit, Hyperliquid",2024-12-30T08:16:48+00:00,2024-12-30 16:16:48 SGT,469,zerebro,0.0090547,-3.873874787345,4630564.602557283826,8988558.439380319789,matched_exact_symbol_unique
+ZETA,5,"Binance, Bitget, Bybit, Hyperliquid, OKX",2024-02-01T03:25:00+00:00,2024-02-01 11:25:00 SGT,802.3,zetachain,0.04925272,-1.801192951105,3789313.605472733267,67167485.083638995886,matched_exact_symbol_unique
+ZIL,4,"Binance, Bitget, Bybit, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,zilliqa,0.00382935,-0.515778621781,6536128.081066141836,74662128.964153394103,matched_exact_symbol_unique
+ZK,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2024-06-17T11:00:00+00:00,2024-06-17 19:00:00 SGT,664.9,zksync,0.01523973,-2.729695504261,11008805.301632748917,146418939.789708971977,matched_exact_symbol_unique
+ZKC,3,"Binance, Bitget, Bybit",2025-09-15T14:00:00+00:00,2025-09-15 22:00:00 SGT,209.8,,,,,,unmatched_ambiguous_symbol_candidates
+ZKJ,2,"Binance, Bitget",2025-05-13T09:30:00+00:00,2025-05-13 17:30:00 SGT,335,polyhedra-network,0.01918164,-0.643291442025,1290940.412724187598,9136904.070468796417,matched_exact_symbol_unique
+ZKP,4,"Binance, Bitget, Bybit, OKX",2025-12-21T10:00:00+00:00,2025-12-21 18:00:00 SGT,113,,,,,,unmatched_ambiguous_symbol_candidates
+ZORA,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2025-04-25T09:17:30+00:00,2025-04-25 17:17:30 SGT,353,zora,0.01367571,-2.13452450132,5920606.88444509916,61020566.147276207805,matched_exact_symbol_unique
+ZRO,6,"Binance, Bitget, Bybit, dYdX, Hyperliquid, OKX",2024-06-20T12:25:00+00:00,2024-06-20 20:25:00 SGT,661.9,layerzero,1.94,0.243663638857,29898865.795079268515,488988637.553584575653,matched_exact_symbol_unique
+ZRX,4,"Binance, Bitget, Bybit, OKX",2019-09-25T08:00:00+00:00,2019-09-25 16:00:00 SGT,2392.1,,,,,,unmatched_ambiguous_symbol_candidates
+币安人生,1,Binance,2025-10-20T11:00:00+00:00,2025-10-20 19:00:00 SGT,174.9,,,,,,unmatched_no_symbol_candidate
+我踏马来了,1,Binance,2026-01-21T14:30:00+00:00,2026-01-21 22:30:00 SGT,81.8,,,,,,unmatched_no_symbol_candidate
+龙虾,2,"Binance, Bitget",2026-03-11T11:30:00+00:00,2026-03-11 19:30:00 SGT,32.9,,,,,,unmatched_no_symbol_candidate

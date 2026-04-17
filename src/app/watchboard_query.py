@@ -109,7 +109,8 @@ def query_layer_status(db_path: Path = DB_FILE, history_root: Path = HISTORY_ROO
 
 
 def rebuild_query_layer(db_path: Path = DB_FILE):
-    subprocess.run([sys.executable, str(ARCHIVE_SNAPSHOT_SCRIPT), "--overwrite"], cwd=str(PROJECT_ROOT), check=True)
+    if current_pipeline_files():
+        subprocess.run([sys.executable, str(ARCHIVE_SNAPSHOT_SCRIPT), "--overwrite"], cwd=str(PROJECT_ROOT), check=True)
     subprocess.run([sys.executable, str(BUILD_HISTORY_SCRIPT), "--db", str(db_path)], cwd=str(PROJECT_ROOT), check=True)
 
 
@@ -239,6 +240,73 @@ def snapshot_market_data_as_of(snapshot_date: str, db_path: Path = DB_FILE) -> s
     return clean_text(df.iloc[0].get("market_data_as_of"))
 
 
+def token_rwa_labels(snapshot_date: str, db_path: Path = DB_FILE) -> pd.DataFrame:
+    return read_sql(
+        """
+        SELECT
+            token,
+            COALESCE(coingecko_id, '') AS coingecko_id,
+            COALESCE(rwa_label, '') AS rwa_label,
+            COALESCE(rwa_category, '') AS rwa_category,
+            COALESCE(protocol, '') AS protocol,
+            confidence,
+            COALESCE(evidence_type, '') AS evidence_type,
+            COALESCE(evidence_detail_json, '') AS evidence_detail_json,
+            COALESCE(label_source, '') AS label_source,
+            COALESCE(labeled_at, '') AS labeled_at
+        FROM token_rwa_labels_daily
+        WHERE snapshot_date = ?
+        ORDER BY token ASC
+        """,
+        [snapshot_date],
+        db_path=db_path,
+    )
+
+
+def rwa_review_queue(snapshot_date: str, limit: int = 250, db_path: Path = DB_FILE) -> pd.DataFrame:
+    df = read_sql(
+        """
+        SELECT
+            tr.token,
+            COALESCE(tr.coingecko_id, '') AS coingecko_id,
+            COALESCE(tr.rwa_label, '') AS rwa_label,
+            COALESCE(tr.rwa_category, '') AS rwa_category,
+            COALESCE(tr.label_source, '') AS label_source,
+            COALESCE(tr.evidence_type, '') AS evidence_type,
+            COALESCE(tr.evidence_detail_json, '') AS evidence_detail_json,
+            tm.current_price_usd,
+            tm.volume_24h_usd,
+            tm.market_cap_usd,
+            COALESCE(tm.market_data_as_of, '') AS market_data_as_of
+        FROM token_rwa_labels_daily tr
+        LEFT JOIN token_market_metrics_daily tm
+          ON tr.snapshot_date = tm.snapshot_date
+         AND tr.token = tm.token
+        WHERE tr.snapshot_date = ?
+          AND tr.rwa_label = 'review_pending'
+        """,
+        [snapshot_date],
+        db_path=db_path,
+    )
+    if df.empty:
+        return df
+
+    df["volume_24h_usd"] = pd.to_numeric(df["volume_24h_usd"], errors="coerce")
+    df["market_cap_usd"] = pd.to_numeric(df["market_cap_usd"], errors="coerce")
+    df["has_signal_evidence"] = df["evidence_type"].fillna("").isin(
+        ["coingecko_categories_conflict", "keyword_conflict", "keyword_ambiguous"]
+    ) | df["evidence_detail_json"].fillna("").str.contains(
+        "matched_terms|matched_category|matched_text|core_matches|related_matches|core_hits|related_hits",
+        case=False,
+        regex=True,
+    )
+    df = df.sort_values(
+        ["volume_24h_usd", "market_cap_usd", "has_signal_evidence", "token"],
+        ascending=[False, False, False, True],
+    )
+    return df.head(limit)
+
+
 def token_options(snapshot_date: str, db_path: Path = DB_FILE) -> list[str]:
     df = read_sql(
         """
@@ -269,12 +337,22 @@ def token_profile(token: str, snapshot_date: str, db_path: Path = DB_FILE) -> pd
             mm.price_change_24h_pct,
             mm.volume_24h_usd,
             mm.market_cap_usd,
-            mm.market_data_as_of,
-            COALESCE(mm.match_status, tm.match_status) AS match_status
+            COALESCE(mm.market_data_as_of, '') AS market_data_as_of,
+            COALESCE(mm.match_status, tm.match_status) AS match_status,
+            COALESCE(rl.rwa_label, '') AS rwa_label,
+            COALESCE(rl.rwa_category, '') AS rwa_category,
+            COALESCE(rl.protocol, '') AS protocol,
+            COALESCE(rl.label_source, '') AS label_source,
+            COALESCE(rl.evidence_type, '') AS evidence_type,
+            COALESCE(rl.evidence_detail_json, '') AS evidence_detail_json,
+            COALESCE(rl.labeled_at, '') AS labeled_at
         FROM token_metrics_daily tm
         LEFT JOIN token_market_metrics_daily mm
           ON tm.snapshot_date = mm.snapshot_date
          AND tm.token = mm.token
+        LEFT JOIN token_rwa_labels_daily rl
+          ON tm.snapshot_date = rl.snapshot_date
+         AND tm.token = rl.token
         WHERE tm.snapshot_date = ?
           AND tm.token = ?
         """,
@@ -323,10 +401,10 @@ def token_venue_metrics(token: str, snapshot_date: str, db_path: Path = DB_FILE)
             volume_24h_quote,
             turnover_24h_usd,
             open_interest,
-            fetch_status,
+            COALESCE(fetch_status, '') AS fetch_status,
             snapshot_time,
-            data_freshness,
-            source_error
+            COALESCE(data_freshness, '') AS data_freshness,
+            COALESCE(source_error, '') AS source_error
         FROM venue_ticker_metrics_daily
         WHERE snapshot_date = ?
           AND base_token = ?
@@ -415,10 +493,10 @@ def venue_ticker_metrics(venue: str, snapshot_date: str, db_path: Path = DB_FILE
             volume_24h_quote,
             turnover_24h_usd,
             open_interest,
-            fetch_status,
+            COALESCE(fetch_status, '') AS fetch_status,
             snapshot_time,
-            data_freshness,
-            source_error
+            COALESCE(data_freshness, '') AS data_freshness,
+            COALESCE(source_error, '') AS source_error
         FROM venue_ticker_metrics_daily
         WHERE snapshot_date = ?
           AND venue = ?

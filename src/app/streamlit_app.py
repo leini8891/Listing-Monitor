@@ -4,6 +4,7 @@ import math
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+import json
 
 import pandas as pd
 import streamlit as st
@@ -18,6 +19,11 @@ from src.common.paths import (
     LISTING_COVERAGE_AUDIT_FILE,
     TOKEN_MATCH_AUDIT_FILE as TOKEN_MATCH_AUDIT_PATH,
     TOKEN_METRICS_AUDIT_FILE,
+)
+from src.common.rwa_public_categories import (
+    resolve_public_category,
+    supported_public_categories,
+    top_level_reference_definitions,
 )
 
 
@@ -34,6 +40,7 @@ LABEL_TO_PAGE = {label: key for key, label in PAGE_LABELS.items()}
 LOOKBACK_HOURS = 24
 TOKEN_MARKET_SCOPE_NOTE = "CoinGecko token-level aggregated market data. Use this for token ranking, not venue-specific exchange volume."
 VENUE_PERP_SCOPE_NOTE = "Exchange-specific perp / swap / futures metrics. Use this for venue drill-down and venue market activity."
+RWA_FILTER_OPTIONS = ["All", "RWA", "Non-RWA", "Review Pending"]
 LISTING_AUDIT_FILE = LISTING_COVERAGE_AUDIT_FILE
 TOKEN_AUDIT_FILE = TOKEN_METRICS_AUDIT_FILE
 TOKEN_MATCH_AUDIT_FILE = TOKEN_MATCH_AUDIT_PATH
@@ -125,20 +132,461 @@ def format_sgt_date(dt_value) -> str:
     return timestamp.strftime("%Y-%m-%d")
 
 
-def route_caption(page: str, snapshot_date: str, token: str = "", venue: str = ""):
+def route_caption(page: str, snapshot_date: str, token: str = "", venue: str = "", rwa: str = ""):
     parts = [f"page={page}", f"snapshot={snapshot_date}"]
     if token:
         parts.append(f"token={token}")
     if venue:
         parts.append(f"venue={venue}")
+    if rwa and rwa != "All":
+        parts.append(f"rwa={rwa}")
     st.caption(f"Stable deep-link params for Lark links: `?{'&'.join(parts)}`")
 
 
-def prepare_recent_listings_table(df: pd.DataFrame) -> pd.DataFrame:
+def rwa_badge(label: str) -> str:
+    normalized = clean_text(label)
+    return {
+        "core": "RWA Core",
+        "related": "RWA Related",
+        "review_pending": "Review Pending",
+        "non_rwa": "Non-RWA",
+    }.get(normalized, "")
+
+
+def rwa_badge_or_default(label: str, historical_unavailable: bool = False) -> str:
+    badge = rwa_badge(label)
+    if badge:
+        return badge
+    if historical_unavailable:
+        return "Not labeled"
+    return "Not labeled"
+
+
+def safe_series(df: pd.DataFrame, column: str, default="") -> pd.Series:
+    if column in df.columns:
+        return df[column].fillna(default)
+    return pd.Series([default] * len(df), index=df.index, dtype="object")
+
+
+def parse_json_dict(value) -> dict:
+    text = clean_text(value)
+    if not text:
+        return {}
+    try:
+        parsed = json.loads(text)
+    except json.JSONDecodeError:
+        return {}
+    return parsed if isinstance(parsed, dict) else {}
+
+
+def humanize_slug(value: str) -> str:
+    text = clean_text(value).replace("-", " ").replace("_", " ")
+    if not text:
+        return ""
+    parts = [part for part in text.split() if part]
+    return " ".join(part.upper() if part.isupper() else part.capitalize() for part in parts)
+
+
+def public_entity_name(row) -> str:
+    for candidate in [row.get("protocol"), row.get("name"), row.get("display_name")]:
+        text = clean_text(candidate)
+        if text:
+            return text
+    coin_id = clean_text(row.get("coingecko_id"))
+    if coin_id:
+        return humanize_slug(coin_id)
+    token = clean_text(row.get("token"))
+    if token:
+        return token
+    return "This token"
+
+
+def rwa_public_definitions() -> list[str]:
+    return [f"{item.public_category_name}: {item.short_definition}" for item in top_level_reference_definitions()]
+
+
+def public_reference_category(row) -> str:
+    category = resolve_public_category(
+        rwa_label=clean_text(row.get("rwa_label")),
+        rwa_category=clean_text(row.get("rwa_category")),
+        evidence_type=clean_text(row.get("evidence_type")),
+    )
+    if not category:
+        return ""
+    return category.public_category_name
+
+
+def public_reference_definition(row) -> str:
+    category = resolve_public_category(
+        rwa_label=clean_text(row.get("rwa_label")),
+        rwa_category=clean_text(row.get("rwa_category")),
+        evidence_type=clean_text(row.get("evidence_type")),
+    )
+    if not category:
+        return ""
+    if category.family_name:
+        return f"{category.short_definition} Part of: {category.family_name}."
+    return category.short_definition
+
+
+def rwa_source_label(source: str) -> str:
+    normalized = clean_text(source)
+    return {
+        "manual_override": "Manual override",
+        "seed_allowlist": "Seed allowlist",
+        "coingecko_rwa_universe_gate": "CoinGecko broad RWA universe gate",
+        "cached_coingecko_categories": "CoinGecko categories",
+        "conservative_keyword_fallback": "Conservative keyword fallback",
+    }.get(normalized, normalized or "n/a")
+
+
+def rwa_reason_text(row) -> str:
+    source = clean_text(row.get("label_source"))
+    evidence_type = clean_text(row.get("evidence_type"))
+    category = clean_text(row.get("rwa_category"))
+    detail = parse_json_dict(row.get("evidence_detail_json"))
+    notes = clean_text(detail.get("notes"))
+    name = public_entity_name(row)
+    label = clean_text(row.get("rwa_label"))
+    reference_category = public_reference_category(row)
+
+    if source == "manual_override":
+        if label == "non_rwa":
+            return f"{name} is treated as non-RWA under a curated policy decision rather than automatic evidence matching."
+        if label == "core":
+            return f"{name} is treated as a core RWA asset under a curated policy decision."
+        if label == "related":
+            return f"{name} is treated as RWA-related under a curated policy decision."
+        return f"{name} is handled through a curated policy decision rather than automatic evidence matching."
+    if source == "seed_allowlist":
+        if label == "core":
+            if reference_category:
+                return f"{name} is treated as {reference_category} exposure based on the project's curated coverage of known on-chain asset exposures."
+            return f"{name} is treated as a tokenized real-world asset based on the project's curated coverage of known on-chain asset exposures."
+        if label == "related":
+            if reference_category:
+                return f"{name} is treated as RWA-related because it sits in the {reference_category} layer that supports real-world assets on-chain."
+            return f"{name} is treated as RWA-related because it is part of the infrastructure, protocol, or credit layer that supports real-world assets on-chain."
+        if label == "non_rwa":
+            return f"{name} is treated as non-RWA under the project's curated coverage policy."
+        return f"{name} is classified through the project's curated coverage baseline."
+    if evidence_type == "not_in_broad_rwa_universe":
+        return (
+            f"{name} is treated as a crypto-native token or general blockchain asset rather than a tokenized real-world asset. "
+            "It also does not appear in CoinGecko's broad RWA categories."
+        )
+
+    if evidence_type == "missing_coingecko_id":
+        return f"{name} is still under review because its market identity has not been resolved with enough confidence yet."
+    if evidence_type == "missing_coingecko_detail":
+        upstream_reason = clean_text(detail.get("reason"))
+        if "429" in upstream_reason:
+            return f"{name} is still under review because the reference data needed for a safer label was temporarily unavailable."
+        return f"{name} is still under review because the reference data needed for a safer label is incomplete or unavailable."
+    if evidence_type == "broad_rwa_candidate_unresolved":
+        return (
+            f"{name} appears close enough to the RWA theme to deserve review, but the available evidence is not strong enough yet "
+            "to place it confidently in Tokenized Assets or RWA Protocol."
+        )
+    if evidence_type == "keyword_ambiguous":
+        return f"{name} is still under review because the public wording around the project hints at RWA exposure, but not clearly enough for a confident label."
+    if evidence_type == "keyword_conflict":
+        return f"{name} is still under review because the available descriptions point to more than one plausible RWA interpretation."
+    if evidence_type == "coingecko_categories_conflict":
+        return f"{name} is still under review because category signals point to mixed RWA interpretations."
+    if evidence_type == "coingecko_categories_core":
+        matched_category = clean_text(detail.get("matched_category"))
+        ref = reference_category or "Tokenized Assets"
+        if matched_category:
+            return f"{name} is treated as a core RWA asset because its category profile points to direct {ref} exposure ({matched_category})."
+        return f"{name} is treated as a core RWA asset because its category profile points to direct {ref} exposure."
+    if evidence_type == "coingecko_categories_related":
+        matched_category = clean_text(detail.get("matched_category"))
+        ref = reference_category or "RWA Protocol"
+        if matched_category:
+            return f"{name} is treated as RWA-related because its category profile points to {ref} exposure connected to tokenized assets ({matched_category})."
+        return f"{name} is treated as RWA-related because its category profile points to {ref} exposure connected to tokenized assets."
+    if evidence_type == "keyword_core":
+        matched_text = clean_text(detail.get("matched_text"))
+        ref = reference_category or "Tokenized Assets"
+        if matched_text:
+            return f"{name} is treated as a core RWA asset because the project description points to direct {ref} exposure ({matched_text})."
+        return f"{name} is treated as a core RWA asset because the project description points to direct {ref} exposure."
+    if evidence_type == "keyword_related":
+        matched_text = clean_text(detail.get("matched_text"))
+        ref = reference_category or "RWA Protocol"
+        if matched_text:
+            return f"{name} is treated as RWA-related because the project description points to {ref} exposure ({matched_text})."
+        return f"{name} is treated as RWA-related because the project description points to {ref} exposure."
+    if evidence_type == "no_rwa_signals_found":
+        return f"{name} is treated as non-RWA because the available reference data does not show tokenized-asset exposure or RWA protocol exposure."
+
+    if category:
+        return f"{name} is currently grouped under {category}."
+    return f"{name} is labeled using the current RWA evidence model."
+
+
+def rwa_reason_display(row, historical_unavailable: bool = False) -> str:
+    label = clean_text(row.get("rwa_label"))
+    source = clean_text(row.get("label_source"))
+    evidence_type = clean_text(row.get("evidence_type"))
+    category = clean_text(row.get("rwa_category"))
+    detail = clean_text(row.get("evidence_detail_json"))
+    if any([label, source, evidence_type, category, detail]):
+        return rwa_reason_text(row)
+    if historical_unavailable:
+        return "Historical snapshot has no RWA labels yet."
+    return "No RWA label is available for this token in the selected snapshot."
+
+
+def broad_universe_category_names(detail: dict) -> list[str]:
+    categories_checked = detail.get("categories_checked") or []
+    names = []
+    for item in categories_checked:
+        name = clean_text(item.get("requested_name")) or clean_text(item.get("matched_name"))
+        if name and name not in names:
+            names.append(name)
+    return names
+
+
+def rwa_evidence_summary_lines(row, historical_unavailable: bool = False) -> list[str]:
+    label = clean_text(row.get("rwa_label"))
+    source = clean_text(row.get("label_source"))
+    evidence_type = clean_text(row.get("evidence_type"))
+    category = clean_text(row.get("rwa_category"))
+    detail = parse_json_dict(row.get("evidence_detail_json"))
+    notes = clean_text(detail.get("notes"))
+    name = public_entity_name(row)
+
+    if not any([label, source, evidence_type, category, detail]):
+        if historical_unavailable:
+            return [
+                "This historical snapshot does not have persisted RWA labels.",
+                "The dashboard shows a display fallback instead of a historical label.",
+            ]
+        return ["No RWA label is available for this token in the selected snapshot."]
+
+    if source == "manual_override":
+        lines = [
+            "Reviewed through a curated policy decision.",
+            "This label comes from maintained coverage rules rather than automatic matching.",
+        ]
+        if notes:
+            lines.append(notes)
+        return lines[:4]
+
+    if source == "seed_allowlist":
+        lines = [
+            "Covered in the project's curated RWA baseline.",
+            "Used for well-known assets or protocols where the business classification is already clear.",
+        ]
+        if category:
+            lines.append(f"Assigned category: {category}.")
+        if notes:
+            lines.append(notes)
+        return lines[:4]
+
+    if evidence_type == "not_in_broad_rwa_universe":
+        names = broad_universe_category_names(detail) or ["Real World Assets (RWA)", "RWA Protocol", "Tokenized Assets"]
+        lines = ["Checked against CoinGecko's broad RWA categories."]
+        lines.extend([f"No match found in {name}." for name in names[:3]])
+        return lines[:4]
+
+    if evidence_type == "missing_coingecko_id":
+        return [
+            "No stable market identity has been confirmed for this token yet.",
+            "The product avoids symbol-only labeling when identity is uncertain.",
+            "It stays in review until the mapping is confirmed.",
+        ]
+
+    if evidence_type == "missing_coingecko_detail":
+        reason = clean_text(detail.get("reason"))
+        lines = []
+        if clean_text(row.get("coingecko_id")):
+            lines.append("A stable market identity has been found for this token.")
+        if "429" in reason:
+            lines.append("Reference data was temporarily rate-limited during this run.")
+        else:
+            lines.append("Reference data was unavailable for this token in this run.")
+        lines.append("It stays in review until richer reference data is available.")
+        return lines[:4]
+
+    if evidence_type == "broad_rwa_candidate_unresolved":
+        lines = [
+            "It appears close enough to the RWA theme to deserve a closer look.",
+            "The available evidence is not strong enough yet for a confident tokenized-asset or RWA-protocol label.",
+            "It stays in review until stronger evidence is available.",
+        ]
+        if category:
+            lines.append(f"Current review category: {category}.")
+        return lines[:4]
+
+    if evidence_type == "keyword_ambiguous":
+        matched_terms = detail.get("matched_terms") or []
+        lines = [
+            "Public descriptions contain some RWA-like wording.",
+            "The wording is too broad or weak for a firm public label.",
+            "It stays in review instead of being force-classified.",
+        ]
+        if matched_terms:
+            lines.append(f"Examples of broad wording: {', '.join(map(clean_text, matched_terms[:3]))}.")
+        return lines[:4]
+
+    if evidence_type == "keyword_conflict":
+        return [
+            "Public descriptions point to mixed RWA interpretations.",
+            "The available signals conflict with each other.",
+            "It stays in review instead of forcing a label.",
+        ]
+
+    if evidence_type == "coingecko_categories_conflict":
+        return [
+            "Category signals point in mixed directions.",
+            "The available category evidence is not consistent enough for a final label.",
+            "It stays in review instead of forcing a label.",
+        ]
+
+    if evidence_type == "coingecko_categories_core":
+        matched_category = clean_text(detail.get("matched_category"))
+        lines = [
+            "Category evidence supports direct real-world asset exposure.",
+            "That is strong enough for a core RWA label.",
+        ]
+        if matched_category:
+            lines.append(f"Matched category: {matched_category}.")
+        return lines[:4]
+
+    if evidence_type == "coingecko_categories_related":
+        matched_category = clean_text(detail.get("matched_category"))
+        lines = [
+            "Category evidence supports RWA protocol or tokenization-infrastructure exposure.",
+            "That is strong enough for a related RWA label.",
+        ]
+        if matched_category:
+            lines.append(f"Matched category: {matched_category}.")
+        return lines[:4]
+
+    if evidence_type == "keyword_core":
+        matched_text = clean_text(detail.get("matched_text"))
+        lines = [
+            "Project description language supports direct real-world asset exposure.",
+            "That wording is strong enough for a core RWA label.",
+        ]
+        if matched_text:
+            lines.append(f"Matched wording: {matched_text}.")
+        return lines[:4]
+
+    if evidence_type == "keyword_related":
+        matched_text = clean_text(detail.get("matched_text"))
+        lines = [
+            "Project description language supports RWA protocol or tokenization infrastructure exposure.",
+            "That wording is strong enough for a related RWA label.",
+        ]
+        if matched_text:
+            lines.append(f"Matched wording: {matched_text}.")
+        return lines[:4]
+
+    if evidence_type == "no_rwa_signals_found":
+        return [
+            "No coverage, category, or description signal suggests RWA exposure.",
+            "It remains classified as non-RWA under the current policy.",
+        ]
+
+    lines = []
+    if category:
+        lines.append(f"Assigned category: {category}.")
+    if label:
+        lines.append(f"Current label: {rwa_badge(label) or label}.")
+    lines.append("No richer public evidence summary is available for this label yet.")
+    return lines[:4]
+
+
+def rwa_evidence_summary_display(row, historical_unavailable: bool = False) -> str:
+    return "\n".join(f"- {line}" for line in rwa_evidence_summary_lines(row, historical_unavailable))
+
+
+def market_metric_missing_reason(row, field: str) -> str:
+    match_status = clean_text(row.get("match_status"))
+    coingecko_id = clean_text(row.get("coingecko_id"))
+    if "ambiguous" in match_status:
+        return "No market match (ambiguous)"
+    if match_status.startswith("unmatched_"):
+        return "No market match"
+    if coingecko_id:
+        return {
+            "volume_24h_usd": "Upstream 24h volume unavailable",
+            "price_change_24h_pct": "Upstream 24h price change unavailable",
+            "market_cap_usd": "Upstream market cap unavailable",
+        }.get(field, "Upstream market data unavailable")
+    return "No token-level market metrics matched"
+
+
+def format_market_metric(row, field: str, formatter) -> str:
+    value = row.get(field)
+    formatted = formatter(value)
+    if formatted:
+        return formatted
+    return market_metric_missing_reason(row, field)
+
+
+def open_interest_display(value) -> str:
+    formatted = format_number(value)
+    return formatted or "Venue snapshot did not capture open interest"
+
+
+def fetch_status_display(value) -> str:
+    text = clean_text(value)
+    return text or "Historical snapshot predates fetch-status tracking"
+
+
+def freshness_display(value) -> str:
+    text = clean_text(value)
+    return text or "Historical snapshot predates freshness tracking"
+
+
+def merge_rwa_labels(df: pd.DataFrame, rwa_df: pd.DataFrame, token_col: str = "token") -> pd.DataFrame:
+    if df.empty or rwa_df.empty or token_col not in df.columns or "token" not in rwa_df.columns:
+        return df
+    label_cols = [
+        "token",
+        "rwa_label",
+        "rwa_category",
+        "protocol",
+        "label_source",
+        "evidence_type",
+        "evidence_detail_json",
+        "confidence",
+        "labeled_at",
+    ]
+    available = [col for col in label_cols if col in rwa_df.columns]
+    labels = rwa_df[available].drop_duplicates(subset=["token"])
+    merged = df.merge(labels, left_on=token_col, right_on="token", how="left", suffixes=("", "_rwa"))
+    if token_col != "token" and "token_rwa" in merged.columns:
+        merged = merged.drop(columns=["token_rwa"])
+    return merged
+
+
+def apply_rwa_filter(df: pd.DataFrame, rwa_filter: str, label_col: str = "rwa_label") -> pd.DataFrame:
+    if df.empty or rwa_filter == "All":
+        return df
+    if label_col not in df.columns:
+        return df.iloc[0:0].copy()
+    if rwa_filter == "RWA":
+        return df[df[label_col].isin(["core", "related"])].copy()
+    if rwa_filter == "Non-RWA":
+        return df[df[label_col] == "non_rwa"].copy()
+    if rwa_filter == "Review Pending":
+        return df[df[label_col] == "review_pending"].copy()
+    return df
+
+
+def prepare_recent_listings_table(df: pd.DataFrame, historical_rwa_unavailable: bool = False) -> pd.DataFrame:
     if df.empty:
         return df
     table = df.copy()
     table["Listed (SGT)"] = table["known_listing_time_utc"].apply(format_sgt_datetime)
+    table["RWA"] = safe_series(table, "rwa_label").apply(lambda value: rwa_badge_or_default(value, historical_rwa_unavailable))
+    table["Why this label"] = table.apply(lambda row: rwa_reason_display(row, historical_rwa_unavailable), axis=1)
     return table.rename(
         columns={
             "token": "Token",
@@ -148,22 +596,22 @@ def prepare_recent_listings_table(df: pd.DataFrame) -> pd.DataFrame:
             "settle_ccy": "Settle",
             "contract_type": "Contract",
         }
-    )[
-        ["Token", "Venue", "Symbol", "Listed (SGT)", "Quote", "Settle", "Contract"]
-    ]
+    )[["Token", "RWA", "Why this label", "Venue", "Symbol", "Listed (SGT)", "Quote", "Settle", "Contract"]]
 
 
-def prepare_leaderboard_table(df: pd.DataFrame) -> pd.DataFrame:
+def prepare_leaderboard_table(df: pd.DataFrame, historical_rwa_unavailable: bool = False) -> pd.DataFrame:
     if df.empty:
         return df
     table = df.copy()
-    table["24h Price Chg"] = table["price_change_24h_pct"].apply(format_pct)
-    table["24h Volume"] = table["volume_24h_usd"].apply(format_compact_usd)
-    table["Market Cap"] = table["market_cap_usd"].apply(format_compact_usd)
+    table["RWA"] = safe_series(table, "rwa_label").apply(lambda value: rwa_badge_or_default(value, historical_rwa_unavailable))
+    table["Why this label"] = table.apply(lambda row: rwa_reason_display(row, historical_rwa_unavailable), axis=1)
+    table["24h Price Chg"] = table.apply(lambda row: format_market_metric(row, "price_change_24h_pct", format_pct), axis=1)
+    table["24h Volume"] = table.apply(lambda row: format_market_metric(row, "volume_24h_usd", format_compact_usd), axis=1)
+    table["Market Cap"] = table.apply(lambda row: format_market_metric(row, "market_cap_usd", format_compact_usd), axis=1)
     table["Earliest Listing (SGT)"] = table["earliest_listing_time_utc"].apply(format_sgt_date)
     table["Venue Count"] = table["venue_count"].fillna(0).astype(int)
     return table.rename(columns={"token": "Token"})[
-        ["Token", "Venue Count", "24h Volume", "24h Price Chg", "Market Cap", "Earliest Listing (SGT)"]
+        ["Token", "RWA", "Why this label", "Venue Count", "24h Volume", "24h Price Chg", "Market Cap", "Earliest Listing (SGT)"]
     ]
 
 
@@ -191,13 +639,14 @@ def prepare_token_venue_metrics_table(df: pd.DataFrame) -> pd.DataFrame:
     if df.empty:
         return df
     table = df.copy()
+    table["RWA"] = safe_series(table, "rwa_label").apply(rwa_badge_or_default)
     table["Last Price"] = table["last_price"].apply(format_number)
     table["24h Price Chg"] = table["price_change_24h_pct"].apply(format_pct)
     table["24h Turnover (USD)"] = table["turnover_24h_usd"].apply(format_compact_usd)
-    table["Open Interest"] = table["open_interest"].apply(format_number)
+    table["Open Interest"] = table["open_interest"].apply(open_interest_display)
     table["Snapshot (SGT)"] = table["snapshot_time"].apply(format_sgt_datetime)
-    table["Fetch Status"] = table["fetch_status"].apply(clean_text)
-    table["Freshness"] = table["data_freshness"].apply(clean_text)
+    table["Fetch Status"] = safe_series(table, "fetch_status").apply(fetch_status_display)
+    table["Freshness"] = safe_series(table, "data_freshness").apply(freshness_display)
     return table.rename(
         columns={
             "venue": "Venue",
@@ -208,6 +657,7 @@ def prepare_token_venue_metrics_table(df: pd.DataFrame) -> pd.DataFrame:
         }
     )[
         [
+            "RWA",
             "Venue",
             "Symbol",
             "Quote",
@@ -224,11 +674,13 @@ def prepare_token_venue_metrics_table(df: pd.DataFrame) -> pd.DataFrame:
     ]
 
 
-def prepare_venue_listings_table(df: pd.DataFrame) -> pd.DataFrame:
+def prepare_venue_listings_table(df: pd.DataFrame, historical_rwa_unavailable: bool = False) -> pd.DataFrame:
     if df.empty:
         return df
     table = df.copy()
     table["Listed (SGT)"] = table["known_listing_time_utc"].apply(format_sgt_datetime)
+    table["RWA"] = safe_series(table, "rwa_label").apply(lambda value: rwa_badge_or_default(value, historical_rwa_unavailable))
+    table["Why this label"] = table.apply(lambda row: rwa_reason_display(row, historical_rwa_unavailable), axis=1)
     return table.rename(
         columns={
             "token": "Token",
@@ -237,8 +689,27 @@ def prepare_venue_listings_table(df: pd.DataFrame) -> pd.DataFrame:
             "settle_ccy": "Settle",
             "contract_type": "Contract",
         }
+    )[["Token", "RWA", "Why this label", "Symbol", "Quote", "Settle", "Contract", "Listed (SGT)"]]
+
+
+def prepare_rwa_review_queue_table(df: pd.DataFrame) -> pd.DataFrame:
+    if df.empty:
+        return df
+    table = df.copy()
+    table["RWA"] = safe_series(table, "rwa_label").apply(rwa_badge_or_default)
+    table["Reference category"] = table.apply(public_reference_category, axis=1)
+    table["Why this label"] = table.apply(rwa_reason_display, axis=1)
+    table["Evidence summary"] = table.apply(rwa_evidence_summary_display, axis=1)
+    table["Price (USD)"] = table["current_price_usd"].apply(lambda value: format_number(value, 4))
+    table["24h Volume"] = table["volume_24h_usd"].apply(format_compact_usd)
+    table["Market Cap"] = table["market_cap_usd"].apply(format_compact_usd)
+    return table.rename(
+        columns={
+            "token": "Token",
+            "coingecko_id": "CoinGecko ID",
+        }
     )[
-        ["Token", "Symbol", "Quote", "Settle", "Contract", "Listed (SGT)"]
+        ["Token", "RWA", "Reference category", "Why this label", "Evidence summary", "CoinGecko ID", "Price (USD)", "24h Volume", "Market Cap"]
     ]
 
 
@@ -255,10 +726,100 @@ def prepare_change_table(df: pd.DataFrame) -> pd.DataFrame:
     )
 
 
+def prepare_expansion_summary_table(df: pd.DataFrame) -> pd.DataFrame:
+    if df.empty:
+        return df
+    table = df.copy()
+    table["RWA"] = safe_series(table, "rwa_label").apply(rwa_badge_or_default)
+    table["Why this label"] = table.apply(rwa_reason_display, axis=1)
+    columns = []
+    if "token" in table.columns:
+        columns.append("token")
+    columns.extend(["RWA", "Why this label"])
+    columns.extend(
+        [
+            col
+            for col in ["first_snapshot_date", "latest_snapshot_date", "first_venue_count", "latest_venue_count", "venue_expansion"]
+            if col in table.columns
+        ]
+    )
+    renamed = table.rename(
+        columns={
+            "token": "Token",
+            "first_snapshot_date": "First Snapshot",
+            "latest_snapshot_date": "Latest Snapshot",
+            "first_venue_count": "First Venue Count",
+            "latest_venue_count": "Latest Venue Count",
+            "venue_expansion": "Venue Expansion",
+        }
+    )
+    selected_columns = []
+    column_name_map = {
+        "token": "Token",
+        "first_snapshot_date": "First Snapshot",
+        "latest_snapshot_date": "Latest Snapshot",
+        "first_venue_count": "First Venue Count",
+        "latest_venue_count": "Latest Venue Count",
+        "venue_expansion": "Venue Expansion",
+    }
+    for col in columns:
+        selected_columns.append(column_name_map.get(col, col))
+    return renamed[selected_columns]
+
+
 def load_csv_table(path: Path) -> pd.DataFrame:
     if not path.exists():
         return pd.DataFrame()
     return pd.read_csv(path)
+
+
+def render_token_market_missing_note(rwa_history_missing: bool = False):
+    if rwa_history_missing:
+        st.info("This historical snapshot does not have persisted RWA labels yet. RWA columns below show display fallbacks such as `Not labeled` and a historical-label note.")
+    st.caption(
+        "When `24h Volume`, `24h Price Chg`, or `Market Cap` show a reason instead of a number, the token either did not match a token-level CoinGecko market snapshot for that date or CoinGecko did not return that field."
+    )
+
+
+def render_venue_perp_column_guide():
+    st.caption("Open Interest: venue-level open interest when the snapshot captured it; otherwise the venue did not expose or we did not archive it.")
+    st.caption("Fetch Status: fetch result for that venue snapshot. Older archived snapshots may predate this status field and will say so explicitly.")
+    st.caption("Freshness: whether the row is fresh or a stale fallback reused from the previous successful ticker snapshot. Older snapshots may predate this field.")
+
+
+def render_quality_column_glossary():
+    with st.expander("Column glossary", expanded=False):
+        st.markdown("**How to read RWA labels**")
+        for line in rwa_public_definitions():
+            label, definition = line.split(": ", 1)
+            st.markdown(f"- `{label}`: {definition}")
+        st.markdown("")
+        st.markdown("**Supported public reference categories**")
+        for category in supported_public_categories():
+            family_text = f" Part of: {category.family_name}." if category.family_name else ""
+            st.markdown(f"- `{category.public_category_name}`: {category.short_definition}{family_text}")
+        st.markdown("")
+        st.markdown("**Override Decisions**")
+        st.markdown("- `Token`: local watchboard token symbol.")
+        st.markdown("- `CoinGecko ID`: chosen CoinGecko asset identifier used for token-level market data.")
+        st.markdown("- `Reason`: why this manual mapping override exists.")
+        st.markdown("")
+        st.markdown("**Latest Audit Sample / Ambiguous CoinGecko Matches**")
+        st.markdown("- `Candidate Count`: how many CoinGecko candidates matched this symbol before disambiguation.")
+        st.markdown("- `Match Status`: whether the token matched cleanly, remained ambiguous, or had no symbol candidate.")
+        st.markdown("- `Price (USD)`, `24h Volume`, `Market Cap`: token-level CoinGecko market fields used to understand business priority, not venue-specific perp metrics.")
+        st.markdown("- `Market Data As Of`: timestamp of the token-level market snapshot returned by CoinGecko.")
+        st.markdown("")
+        st.markdown("**Listing Coverage Audit**")
+        st.markdown("- `Dropped Stage`: pipeline stage where the token disappeared or was excluded.")
+        st.markdown("- `Audit Note`: short human explanation of the drop reason.")
+        st.markdown("")
+        st.markdown("**RWA Review Queue**")
+        st.markdown("- `RWA`: current public-facing label state, such as `RWA Core`, `RWA Related`, `Non-RWA`, or `Review Pending`.")
+        st.markdown("- `Reference category`: the public-facing business category, such as `Tokenized Commodities`, `Tokenized Treasury Bills (T-Bills)`, or `RWA Protocol`.")
+        st.markdown("- `Why this label`: one plain-language sentence that explains the current label or why the token remains in review.")
+        st.markdown("- `Evidence summary`: short business-friendly bullets that summarize the evidence without exposing raw internal JSON.")
+        st.markdown("- `Price (USD)`, `24h Volume`, `Market Cap`: token-level market fields used only to prioritize review order and business impact.")
 
 
 def top_row_by_numeric(df: pd.DataFrame, field: str, absolute: bool = False) -> pd.Series | None:
@@ -314,9 +875,9 @@ def ensure_query_layer_current():
         wq.rebuild_query_layer()
 
 
-def render_overview(snapshot_date: str):
+def render_overview(snapshot_date: str, rwa_filter: str):
     st.header("Overview")
-    route_caption("overview", snapshot_date)
+    route_caption("overview", snapshot_date, rwa=rwa_filter)
 
     summary = wq.snapshot_summary(snapshot_date)
     market_data_as_of = wq.snapshot_market_data_as_of(snapshot_date)
@@ -324,35 +885,46 @@ def render_overview(snapshot_date: str):
     hot_new_df = wq.leaderboard("hot_new", snapshot_date, limit=12)
     top_volume_df = wq.leaderboard("top_volume", snapshot_date, limit=12)
     top_movers_df = wq.top_movers(snapshot_date, limit=12)
+    rwa_df = wq.token_rwa_labels(snapshot_date)
+    rwa_history_missing = rwa_df.empty
+
+    recent_df = apply_rwa_filter(merge_rwa_labels(recent_df, rwa_df), rwa_filter)
+    hot_new_df = apply_rwa_filter(merge_rwa_labels(hot_new_df, rwa_df), rwa_filter)
+    top_volume_df = apply_rwa_filter(merge_rwa_labels(top_volume_df, rwa_df), rwa_filter)
+    top_movers_df = apply_rwa_filter(merge_rwa_labels(top_movers_df, rwa_df), rwa_filter)
 
     metric_cols = st.columns(4)
-    metric_cols[0].metric("New Listings 24h", recent_count)
+    metric_cols[0].metric("New Listings 24h", len(recent_df))
     metric_cols[1].metric("Hot New Tokens", len(hot_new_df))
     metric_cols[2].metric("Tracked Tokens", summary["tracked_tokens"])
     metric_cols[3].metric("Monitored Venues", summary["monitored_venues"])
+    st.caption(f"RWA Filter: `{rwa_filter}`")
+    st.caption("RWA here includes both tokenized assets and the protocols that support them.")
+    st.caption("Where relevant, the product uses public reference categories such as `Tokenized Assets` and `RWA Protocol` in its explanations.")
 
     if used_fallback:
         st.info("No listings fall inside the last 24 hours for the selected snapshot. Showing the most recent known listings instead.")
 
     st.subheader("Listing View")
-    st.dataframe(prepare_recent_listings_table(recent_df), width="stretch", hide_index=True)
+    st.dataframe(prepare_recent_listings_table(recent_df, historical_rwa_unavailable=rwa_history_missing), width="stretch", hide_index=True)
 
     st.subheader("Token Market View")
     market_note = TOKEN_MARKET_SCOPE_NOTE
     if market_data_as_of:
         market_note += f" Market data as of: {format_sgt_datetime(market_data_as_of)}."
     st.caption(market_note)
+    render_token_market_missing_note(rwa_history_missing=rwa_history_missing)
 
     left, right = st.columns(2)
     with left:
         st.markdown("**Hot New Tokens**")
-        st.dataframe(prepare_leaderboard_table(hot_new_df), width="stretch", hide_index=True)
+        st.dataframe(prepare_leaderboard_table(hot_new_df, historical_rwa_unavailable=rwa_history_missing), width="stretch", hide_index=True)
 
     with right:
         st.markdown("**Top Volume 24h**")
-        st.dataframe(prepare_leaderboard_table(top_volume_df), width="stretch", hide_index=True)
+        st.dataframe(prepare_leaderboard_table(top_volume_df, historical_rwa_unavailable=rwa_history_missing), width="stretch", hide_index=True)
         st.markdown("**Top Movers 24h**")
-        st.dataframe(prepare_leaderboard_table(top_movers_df), width="stretch", hide_index=True)
+        st.dataframe(prepare_leaderboard_table(top_movers_df, historical_rwa_unavailable=rwa_history_missing), width="stretch", hide_index=True)
 
 
 def render_token_page(snapshot_date: str, selected_token: str):
@@ -383,15 +955,43 @@ def render_token_page(snapshot_date: str, selected_token: str):
     info_cols[0].caption(f"CoinGecko ID: `{clean_text(profile['coingecko_id']) or 'n/a'}`")
     info_cols[1].caption(f"Match Status: `{clean_text(profile['match_status']) or 'n/a'}`")
     info_cols[2].caption(f"Market Data As Of: `{format_sgt_datetime(profile['market_data_as_of']) or 'n/a'}`")
+    rwa_badge_text = rwa_badge(profile.get("rwa_label"))
+    if rwa_badge_text:
+        st.subheader("RWA View")
+        st.caption("RWA here includes both tokenized assets and the protocols that support them.")
+        reference_category = public_reference_category(profile) or "n/a"
+        reference_definition = public_reference_definition(profile)
+        evidence_cols = st.columns(2)
+        evidence_cols[0].metric("RWA Status", rwa_badge_text)
+        evidence_cols[1].metric("Reference category", reference_category)
+        if reference_definition:
+            st.caption(reference_definition)
+        with st.expander("How to read these RWA labels", expanded=False):
+            for line in rwa_public_definitions():
+                label, definition = line.split(": ", 1)
+                st.markdown(f"- `{label}`: {definition}")
+            st.markdown("")
+            st.markdown("**Public reference categories used in this product**")
+            for category in supported_public_categories():
+                family_text = f" Part of: {category.family_name}." if category.family_name else ""
+                st.markdown(f"- `{category.public_category_name}`: {category.short_definition}{family_text}")
+        st.markdown("**Why this label**")
+        st.info(rwa_reason_text(profile))
+        st.markdown("**Evidence summary**")
+        for line in rwa_evidence_summary_lines(profile):
+            st.markdown(f"- {line}")
 
     st.subheader("Listing Coverage")
     st.dataframe(prepare_token_coverage_table(coverage_df), width="stretch", hide_index=True)
 
     st.subheader("Venue Perp View")
     st.caption(VENUE_PERP_SCOPE_NOTE)
+    render_venue_perp_column_guide()
     if venue_metrics_df.empty:
         st.info("No venue-level perp metrics are available for this token in the selected snapshot.")
     else:
+        if not safe_series(venue_metrics_df, "fetch_status").replace("", pd.NA).notna().any():
+            st.info("This snapshot predates fetch-status and freshness tracking for venue ticker ingestion. Those columns below are display fallbacks.")
         stale_rows = int((venue_metrics_df["data_freshness"] == "stale_fallback").sum()) if "data_freshness" in venue_metrics_df.columns else 0
         if stale_rows:
             st.warning(f"{stale_rows} venue metric row(s) are using stale fallback data from the previous successful ticker snapshot.")
@@ -406,23 +1006,34 @@ def render_token_page(snapshot_date: str, selected_token: str):
         st.dataframe(expansion_df, width="stretch", hide_index=True)
 
 
-def render_venue_page(snapshot_date: str, selected_venue: str):
+def render_venue_page(snapshot_date: str, selected_venue: str, rwa_filter: str):
     st.header("Venue View")
-    route_caption("venue", snapshot_date, venue=selected_venue)
+    route_caption("venue", snapshot_date, venue=selected_venue, rwa=rwa_filter)
 
     listings_df = wq.venue_listings(selected_venue, snapshot_date)
     recent_additions_df = wq.venue_recent_additions(selected_venue, snapshot_date, limit=20)
     venue_ticker_df = wq.venue_ticker_metrics(selected_venue, snapshot_date)
+    rwa_df = wq.token_rwa_labels(snapshot_date)
+    rwa_history_missing = rwa_df.empty
+
+    listings_df = apply_rwa_filter(merge_rwa_labels(listings_df, rwa_df), rwa_filter)
+    recent_additions_df = apply_rwa_filter(merge_rwa_labels(recent_additions_df, rwa_df), rwa_filter)
+    venue_ticker_df = apply_rwa_filter(merge_rwa_labels(venue_ticker_df, rwa_df, token_col="base_token"), rwa_filter)
 
     metric_cols = st.columns(4)
     metric_cols[0].metric("Tracked Listings", len(listings_df))
     metric_cols[1].metric("Tracked Tokens", listings_df["token"].nunique() if not listings_df.empty else 0)
     metric_cols[2].metric("Recent Additions", len(recent_additions_df))
     metric_cols[3].metric("Venue Ticker Rows", len(venue_ticker_df))
+    st.caption(f"RWA Filter: `{rwa_filter}`")
+    st.caption("RWA here includes both tokenized assets and the protocols that support them.")
+    st.caption("Where relevant, the product uses public reference categories such as `Tokenized Assets` and `RWA Protocol` in its explanations.")
 
     st.subheader("Venue Listing View")
     st.markdown("**Recent Additions**")
-    st.dataframe(prepare_venue_listings_table(recent_additions_df), width="stretch", hide_index=True)
+    if rwa_history_missing:
+        st.info("This historical snapshot does not have persisted RWA labels yet. Venue listing tables below show `Not labeled` display fallbacks.")
+    st.dataframe(prepare_venue_listings_table(recent_additions_df, historical_rwa_unavailable=rwa_history_missing), width="stretch", hide_index=True)
 
     st.markdown("**Per-venue Listings**")
     token_filter = st.text_input("Filter tokens on this venue", value="")
@@ -433,13 +1044,16 @@ def render_venue_page(snapshot_date: str, selected_venue: str):
             filtered_df["token"].str.upper().str.contains(token_filter_upper, na=False)
             | filtered_df["symbol_raw"].str.upper().str.contains(token_filter_upper, na=False)
         ]
-    st.dataframe(prepare_venue_listings_table(filtered_df), width="stretch", hide_index=True)
+    st.dataframe(prepare_venue_listings_table(filtered_df, historical_rwa_unavailable=rwa_history_missing), width="stretch", hide_index=True)
 
     st.subheader("Venue Perp View")
     st.caption(VENUE_PERP_SCOPE_NOTE)
+    render_venue_perp_column_guide()
     if venue_ticker_df.empty:
         st.info("No venue ticker metrics are available for this venue in the selected snapshot.")
     else:
+        if not safe_series(venue_ticker_df, "fetch_status").replace("", pd.NA).notna().any():
+            st.info("This snapshot predates fetch-status and freshness tracking for venue ticker ingestion. Those columns below are display fallbacks.")
         stale_rows = int((venue_ticker_df["data_freshness"] == "stale_fallback").sum()) if "data_freshness" in venue_ticker_df.columns else 0
         if stale_rows:
             st.warning(f"{stale_rows} ticker row(s) are using stale fallback data because the latest venue fetch did not fully succeed.")
@@ -462,14 +1076,25 @@ def render_venue_page(snapshot_date: str, selected_venue: str):
         st.dataframe(prepare_token_venue_metrics_table(venue_ticker_df), width="stretch", hide_index=True)
 
 
-def render_history_page(snapshot_date: str, history_token: str):
+def render_history_page(snapshot_date: str, history_token: str, rwa_filter: str):
     st.header("History / Diff")
-    route_caption("history", snapshot_date, token=history_token)
+    route_caption("history", snapshot_date, token=history_token, rwa=rwa_filter)
 
     changes_df = wq.daily_change_counts()
     previous_snapshot = wq.previous_snapshot_date(snapshot_date)
     previous_snapshot, added_df, removed_df = wq.snapshot_diff(snapshot_date)
     expansion_summary_df = wq.token_expansion_summary(limit=50)
+    rwa_df = wq.token_rwa_labels(snapshot_date)
+    rwa_history_missing = rwa_df.empty
+
+    added_df = apply_rwa_filter(merge_rwa_labels(added_df, rwa_df), rwa_filter)
+    removed_df = apply_rwa_filter(merge_rwa_labels(removed_df, rwa_df), rwa_filter)
+    expansion_summary_df = apply_rwa_filter(merge_rwa_labels(expansion_summary_df, rwa_df), rwa_filter)
+    st.caption(f"RWA Filter: `{rwa_filter}`")
+    st.caption("RWA here includes both tokenized assets and the protocols that support them.")
+    st.caption("Where relevant, the product uses public reference categories such as `Tokenized Assets` and `RWA Protocol` in its explanations.")
+    if rwa_history_missing:
+        st.info("This historical snapshot does not have persisted RWA labels yet. History tables below show `Not labeled` display fallbacks for RWA columns.")
 
     st.subheader("Changes by Date")
     if changes_df.empty:
@@ -490,13 +1115,13 @@ def render_history_page(snapshot_date: str, history_token: str):
         left, right = st.columns(2)
         with left:
             st.markdown("**Added Since Previous Snapshot**")
-            st.dataframe(prepare_venue_listings_table(added_df), width="stretch", hide_index=True)
+            st.dataframe(prepare_venue_listings_table(added_df, historical_rwa_unavailable=rwa_history_missing), width="stretch", hide_index=True)
         with right:
             st.markdown("**Removed Since Previous Snapshot**")
-            st.dataframe(prepare_venue_listings_table(removed_df), width="stretch", hide_index=True)
+            st.dataframe(prepare_venue_listings_table(removed_df, historical_rwa_unavailable=rwa_history_missing), width="stretch", hide_index=True)
 
     st.subheader("Venue Expansion Summary")
-    st.dataframe(expansion_summary_df, width="stretch", hide_index=True)
+    st.dataframe(prepare_expansion_summary_table(expansion_summary_df), width="stretch", hide_index=True)
 
     if history_token:
         st.subheader(f"Venue Expansion Over Time: {history_token}")
@@ -528,6 +1153,7 @@ def render_quality_page(snapshot_date: str):
     metric_cols[0].metric("Override Decisions", len(override_df))
     metric_cols[1].metric("Sample Audit Tokens", len(token_audit_df))
     metric_cols[2].metric("Ambiguous CoinGecko Matches", len(ambiguous_df))
+    render_quality_column_glossary()
 
     st.subheader("Override Decisions")
     st.caption("Curated high-confidence CoinGecko mappings applied before symbol-based matching.")
@@ -579,6 +1205,26 @@ def render_quality_page(snapshot_date: str):
             hide_index=True,
         )
 
+    st.subheader("RWA Review Queue")
+    review_queue_df = wq.rwa_review_queue(snapshot_date, limit=200)
+    if review_queue_df.empty:
+        if snapshot_date < "2026-04-15":
+            st.info("This historical snapshot predates persisted RWA labels, so no RWA review queue exists for that date.")
+        else:
+            st.info("No review-pending RWA rows are available for the selected snapshot.")
+    else:
+        st.caption("Highest-priority `review_pending` tokens, ranked by 24h volume, market cap, then signal evidence.")
+        public_review_queue_df = prepare_rwa_review_queue_table(review_queue_df)
+        csv_payload = public_review_queue_df.to_csv(index=False).encode("utf-8")
+        st.download_button(
+            "Download RWA Review Queue CSV",
+            data=csv_payload,
+            file_name=f"token_rwa_review_queue_{snapshot_date}.csv",
+            mime="text/csv",
+            width="content",
+        )
+        st.dataframe(public_review_queue_df, width="stretch", hide_index=True)
+
 
 def main():
     st.title("Perp Listing Watchboard")
@@ -616,6 +1262,17 @@ def main():
         index=snapshot_dates.index(initial_snapshot),
     )
 
+    selected_rwa_filter = "All"
+    if selected_page_key in {"overview", "venue", "history"}:
+        initial_rwa_filter = query_params.get("rwa", "All")
+        if initial_rwa_filter not in RWA_FILTER_OPTIONS:
+            initial_rwa_filter = "All"
+        selected_rwa_filter = st.sidebar.radio(
+            "RWA Filter",
+            options=RWA_FILTER_OPTIONS,
+            index=RWA_FILTER_OPTIONS.index(initial_rwa_filter),
+        )
+
     selected_token = ""
     selected_venue = ""
 
@@ -641,10 +1298,16 @@ def main():
             index=venue_list.index(default_venue) if default_venue in venue_list else 0,
         ) if venue_list else ""
 
-    write_query_params(page=selected_page_key, snapshot=selected_snapshot, token=selected_token, venue=selected_venue)
+    write_query_params(
+        page=selected_page_key,
+        snapshot=selected_snapshot,
+        token=selected_token,
+        venue=selected_venue,
+        rwa=selected_rwa_filter if selected_page_key in {"overview", "venue", "history"} else "",
+    )
 
     if selected_page_key == "overview":
-        render_overview(selected_snapshot)
+        render_overview(selected_snapshot, selected_rwa_filter)
     elif selected_page_key == "token":
         if not selected_token:
             st.warning("No token is available for the selected snapshot.")
@@ -654,9 +1317,9 @@ def main():
         if not selected_venue:
             st.warning("No venue is available for the selected snapshot.")
         else:
-            render_venue_page(selected_snapshot, selected_venue)
+            render_venue_page(selected_snapshot, selected_venue, selected_rwa_filter)
     elif selected_page_key == "history":
-        render_history_page(selected_snapshot, selected_token)
+        render_history_page(selected_snapshot, selected_token, selected_rwa_filter)
     elif selected_page_key == "quality":
         render_quality_page(selected_snapshot)
 
