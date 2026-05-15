@@ -24,6 +24,11 @@ listing-monitor/
     coingecko_overrides.py
     rwa_allowlist.csv
 
+  docs/
+    architecture/
+      Listing Monitor架构walkthrough.md
+      listing_monitor_review_prompt.md
+
   src/
     ingestion/
       hl_listing_monitor.py
@@ -53,6 +58,14 @@ listing-monitor/
     history/
     db/
 ```
+
+## Architecture Notes
+
+Project architecture and review context are archived in `docs/architecture/`:
+- `Listing Monitor架构walkthrough.md`：comprehensive architecture walkthrough and Claude review output
+- `listing_monitor_review_prompt.md`：the review prompt used to generate the architecture assessment
+
+These files are documentation only; they do not affect the runtime pipeline.
 
 ## Environment
 

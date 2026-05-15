@@ -66,3 +66,23 @@ data/history/20*/listing_watchboard_enriched.csv
 
 data/db/*
 !data/db/.gitkeep
+
+# Private prompts / working notes
+CodeBuddy_Prompts.md
+*_Prompts.md
+*.private.md
+*.local.md
+docs/private/
+notes/private/
+
+# Internal planning drafts
+Auntie_AI_Project_Plan.docx
+*.draft.docx
+
+# Local-only demo artifacts
+recordings/private/
+docs/screenshots/private/
+
+# AI / tool workspace
+.codebuddy/
+.cursor/
