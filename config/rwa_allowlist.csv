@@ -1,0 +1,17 @@
+coingecko_id,rwa_label,rwa_category,protocol,force_override,notes
+tether,non_rwa,excluded-mainstream-stablecoin,Tether,true,Mainstream stablecoin excluded from RWA classification.
+usd-coin,non_rwa,excluded-mainstream-stablecoin,Circle,true,Mainstream stablecoin excluded from RWA classification.
+dai,non_rwa,excluded-mainstream-stablecoin,Maker,true,Mainstream stablecoin excluded from RWA classification.
+first-digital-usd,non_rwa,excluded-mainstream-stablecoin,First Digital,true,Mainstream stablecoin excluded from RWA classification.
+ondo-finance,core,rwa-protocol,Ondo,false,Seed allowlist for a core RWA protocol token.
+centrifuge,core,rwa-financing-protocol,Centrifuge,false,Seed allowlist for a core RWA financing protocol.
+tether-gold,core,tokenized-gold,Tether Gold,false,Seed allowlist for a tokenized gold asset.
+pax-gold,core,tokenized-gold,PAX Gold,false,Seed allowlist for a tokenized gold asset.
+mountain-protocol-usdm,related,yield-bearing-stablecoin,Mountain Protocol,false,Yield-bearing stablecoin is RWA-related, not core.
+clearpool,related,institutional-credit,Clearpool,false,Institutional credit / RWA-adjacent exposure.
+goldfinch,related,institutional-credit,Goldfinch,false,Private credit / RWA-adjacent exposure.
+maple,related,institutional-credit,Maple,false,Institutional credit exposure, treated as related in V1.
+truefi,related,institutional-credit,TrueFi,false,Credit exposure, treated as related in V1.
+plume,related,rwa-chain-infrastructure,Plume,false,RWA-focused chain / infrastructure token, treated as related in V1.
+polymesh,related,regulated-tokenization-infrastructure,Polymesh,false,Regulated asset tokenization infrastructure, treated as related in V1.
+creditcoin-2,related,institutional-credit,Creditcoin,false,Credit / financing network with RWA-adjacent relevance, treated as related in V1.

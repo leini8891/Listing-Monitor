@@ -1,0 +1,708 @@
+token,coingecko_id,current_price_usd,volume_24h_usd,market_cap_usd,label_source,evidence_type,evidence_detail_json,has_signal_evidence
+BTC,bitcoin,73870,49918503178.211479187012,1477985245653.286865234375,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ENJ,enjincoin,0.066718,502933237.057660877705,130871584.572821706533,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+RAVE,ravedao,15.21,404701773.175096809864,3711534779.712010383606,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SUI,sui,0.931914,294845384.870787382126,3684277049.662454605103,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+BARD,lombard-protocol,0.299657,286097630.209306418896,90728717.406078368425,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ZAMA,zama,0.03007719,218432741.293656021357,66161757.83924665302,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+BASED,based-one,0.075547,201108903.92878049612,17798014.30495364964,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+GIGGLE,giggle-fund,41.27,168669900.534793585539,40952321.593590863049,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+RLUSD,ripple-usd,0.999913,147586383.713156253099,1476434507.595485210419,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+XMR,monero,341.44,124430484.708121865988,6295675403.217027664185,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+WLD,worldcoin-wld,0.295338,118838641.595938682556,965961904.302654743195,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+RENDER,render-token,1.86,97102417.73703803122,961292241.630371332169,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+XLM,stellar,0.155836,86370375.348352044821,5158447477.915844917297,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ENA,ethena,0.095155,86273707.679860338569,831730507.69365799427,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+MYX,myx-finance,0.331626,81870173.861897990108,62247936.529360771179,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+FET,fetch-ai,0.225532,74007783.139133185148,509433919.280341029167,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SUN,sun-token,0.01819395,70701899.940415352583,349697857.574360132217,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+COAI,chainopera-ai,0.391556,69748577.380850866437,73573240.690640315413,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+HBAR,hedera-hashgraph,0.085212,65622488.464519746602,3690358676.892964363098,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+APR,apriori,0.271251,60818172.031223662198,58800736.510378450155,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+CAKE,pancakeswap-token,1.6,60570332.247296668589,523223706.097589790821,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+1000000MOG,og-fan-token,3.21,60103501.188676379621,14870616.797012673691,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+OG,og-fan-token,3.21,60103501.188676379621,14870616.797012673691,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+APT,aptos,0.859598,52174424.714726723731,692969804.725039124489,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+VIRTUAL,virtual-protocol,0.668844,49752493.753540568054,438856548.697188854218,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ETC,ethereum-classic,8.33,46698938.978068493307,1300918398.536907196045,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+BLESS,bless-2,0.02785105,46553438.822089932859,51365570.590363554657,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ZBT,zerobase,0.114703,43977368.288116358221,27944861.252056319267,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+INJ,injective-protocol,3.01,43820576.930180877447,300090981.001044273376,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+STO,stakestone,0.12277,41052417.817966014147,27657119.311967741698,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+RIVER,river,7.62,40825346.086609765887,149147651.193894803524,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ICP,internet-computer,2.41,38721438.16444452852,1327395750.711342573166,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+HEMI,hemi,0.00762346,38455593.207179769874,7437639.909908799455,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+CYS,cysic,0.367903,38227194.282608136535,58781769.414490684867,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+WCT,connect-token-wct,0.06348,37516999.398081667721,12065503.046664696187,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+JST,just,0.079071,36934658.005221366882,697297793.889723062515,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ZRO,layerzero,1.89,36067959.499945230782,477726134.833503186703,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+CHZ,chiliz,0.03680402,36050700.409866943955,379207194.622511327267,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SIGN,sign-global,0.02839388,35409231.557993136346,46421748.287812106311,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+DEXE,dexe,12.03,34786487.596026025712,568212879.815891623497,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+VVV,venice-token,8.64,34050720.91990879178,393212914.411096453667,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+KAITO,kaito,0.443195,29817929.198594421148,106887514.47977258265,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+TRADOOR,tradoor,5.43,29396404.19640384987,76353295.907293573022,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+COMP,compound-governance-token,21.55,29386088.106019187719,208112550.595567107201,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+IP,story-2,0.496618,28442779.53961083293,174975612.04865860939,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+IOST,iostoken,0.00111039,28365769.015885915607,36260040.512509852648,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ETHFI,ether-fi,0.423242,27304808.113622523844,332869883.02203977108,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+EDGE,edgex,1.008,26425873.632063824683,351824553.120381236076,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+0G,zero-gravity,0.593488,25899886.149363718927,126647370.932676583529,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+KAS,kaspa,0.03235525,25537339.260567955673,884154887.247076511383,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+XAN,anoma,0.01023464,24785191.850482258946,25470320.499559100717,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+PENDLE,pendle,1.046,23526612.644228577614,174291593.088009655476,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+MELANIA,melania-meme,0.102523,22804774.185183860362,97709814.768391564488,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ANKR,ankr,0.00507367,22056795.255958497524,50703296.058473929763,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+XDC,xdce-crowd-sale,0.03019525,21358301.071304805577,601631245.331171751022,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+STRK,starknet,0.03238417,21337669.168572600931,184346287.613211512566,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+AXS,axie-infinity,1.11,21007849.15177320689,188828750.928810805082,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SIREN,siren-2,0.705938,20745733.471121165901,514554239.67139929533,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+BGB,bitget-token,1.9,20562179.746975392103,1331993705.368041038513,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+XNY,codatta,0.00515076,20527074.836008965969,12927744.203939380124,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+MERL,merlin-chain,0.02912242,20256061.047707978636,34899125.446192204952,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+OKB,okb,84.38,19440715.516893673688,1771759473.794477701187,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SPK,spark-2,0.02195437,19425682.222864519805,55892616.440890751779,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+BR,bedrock-token,0.203763,19345976.37501046434,50748022.65385889262,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+RAY,raydium,0.642121,18847864.132183816284,172505733.286981523037,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+GALA,gala,0.00296275,18474523.916070833802,140876683.002986758947,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ORDI,ordinals,2.58,18087757.138053007424,54078902.025259397924,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ON,orochi-network,0.196634,17843997.510967992246,28550660.962634529918,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+BSB,block-street,0.227744,17690325.173451021314,48973792.192010492086,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ENS,ethereum-name-service,5.77,17541948.288874782622,221528376.321950942278,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+TOWNS,towns,0.00328117,17426296.670709293336,6968118.00307886675,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+RESOLV,resolv,0.03396985,16217201.85425003618,13155884.049358068034,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+MMT,momentum-3,0.135302,15995278.162782199681,27649462.498587463051,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+BERA,berachain-bera,0.394571,15839436.977144222707,96708982.425252586603,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+AVNT,avantis,0.130742,15503310.360158743337,41848205.75735361129,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+EIGEN,eigenlayer,0.160268,15444178.029657622799,110685975.709439530969,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+DUSK,dusk-network,0.15535,15377108.790756015107,77663243.007278457284,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+BLUR,blur,0.02033272,15210575.665754614398,56457447.711505010724,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+TSLAX,tesla-xstock,366.54,15196608.697885597125,52180368.435172252357,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+AR,arweave,1.76,14937370.243452968076,115331816.633992522955,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ARKM,arkham,0.10087,14911203.982175925747,60994726.365872353315,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+AERO,aerodrome-finance,0.365643,14793989.548444990069,335605066.044164478779,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ENSO,enso,0.875771,14596291.280002010986,18069769.072293523699,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+VET,vechain,0.00690897,14580933.087010907009,593241576.126628518105,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+THETA,theta-token,0.175034,14566690.975181922317,174652044.165768295527,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+TRB,tellor,15.96,14426556.747952258214,44323301.270584531128,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+PARTI,particle-network,0.04273502,14148676.664648413658,9958115.144966205582,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ROBO,robo-token-2,0.01867772,13928181.963735036552,41596607.587908163667,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+AIA,aia,0.098699,13797511.354504004121,9829196.718106100336,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+IMX,immutable-x,0.151987,13764573.045568374917,128013331.298695623875,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+AXL,axelar,0.04613055,13623748.761750964448,53176438.346321687102,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+OFC,onefootball-club,0.04453851,13596197.291822269559,7124206.385257567279,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+DRIFT,drift-protocol,0.04369831,13503794.197656674311,26710426.281735293567,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+PHA,pha,0.03766807,13478591.346613513306,31392467.38236868754,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SKYAI,skyai,0.1286,13420432.745877979323,128013221.813447967172,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+IRYS,irys,0.02929265,13274662.411025583744,58553278.378406383097,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+AZTEC,aztec,0.02163737,12858475.585764007643,64026859.418147720397,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+A,vaulta,0.07834,12844056.634153276682,128145363.534938037395,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+BANANAS31,banana-for-scale-2,0.01017255,12799152.553599020466,101697351.414357498288,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+STX,blockstack,0.220242,12467891.887147478759,405246464.398598372936,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+DOOD,doodles,0.00308011,12442377.19136848487,24014359.64178481698,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+POPCAT,popcat,0.051495,12405944.598814956844,50281274.350780375302,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+STG,stargate-finance,0.218588,12372531.973399238661,25493234.805710088462,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+JTO,jito-governance-token,0.315511,12347165.762790111825,144715831.806215196848,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+PIPPIN,pippin,0.02430652,12342944.062041003257,24302867.976371046156,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+TRIA,tria,0.02906921,12036075.117317661643,63206160.821508280933,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+LINEA,linea,0.00323718,11902905.044223962352,80548647.548670396209,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+YB,yield-basis,0.115592,11830346.806143142283,10158644.728085214272,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+HUMA,huma-finance,0.01737508,11494210.600904930383,30116797.519482646137,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+AIXBT,aixbt,0.0236621,11158710.3584019728,23526783.117678627372,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+BOME,book-of-meme,0.00041103,11155104.234638914466,28324490.193785391748,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+GRT,the-graph,0.0239371,11091600.579680269584,257601545.333375543356,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+EDU,edu-coin,0.04472783,10994353.889409132302,32929001.356764346361,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+CTSI,cartesi,0.03127704,10908404.281692607328,28469828.791613578796,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+TWT,trust-wallet-token,0.395284,10814416.273464810103,164621867.502437055111,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SNX,havven,0.292392,10806134.940351597965,100710627.458369806409,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+LPT,livepeer,2.08,10562555.724493779242,103146584.657187610865,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+BREV,brevis,0.122285,10509830.371837466955,30627393.679923575372,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+PYTH,pyth-network,0.04338884,10272917.469617022201,249446666.960287451744,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+QNT,quant-network,74.15,10184409.017334245145,1078380359.894358634949,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SYRUP,syrup,0.219528,9946161.723049938679,254536070.845231354237,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+KERNEL,kernel-2,0.08507,9945811.726943271235,24323503.505888402462,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+NIL,nillion,0.03576164,9863764.196722386405,15341614.098724901676,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+JASMY,jasmycoin,0.00527005,9660475.531526532024,260584729.270174980164,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SOLV,solv-protocol,0.00417525,9376351.851233137771,6191448.276758425869,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+LISTA,lista,0.080523,9250534.04094260186,26748194.089776694775,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ZK,zksync,0.01521519,9002149.030219882727,146067947.219325006008,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+IO,io,0.101567,8838100.975236162543,32202058.35590043664,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ALCH,alchemist-ai,0.066884,8832506.035257451236,56851326.761706247926,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+BIGTIME,big-time,0.01298185,8813078.423509802669,24771323.430103391409,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+UB,unibase,0.02338374,8685581.823893651366,58774585.218244925141,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+BSV,bitcoin-cash-sv,15.29,8668491.70534620434,305892139.483517110348,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+TUT,tutorial,0.01048488,8632192.309166498482,8754522.286681620404,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+RECALL,recall,0.04699385,8546069.406016828492,11634856.265593081713,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+1000TAG,tagger,0.00073035,8437775.046588692814,79562879.811607912183,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+TAG,tagger,0.00073035,8437775.046588692814,79562879.811607912183,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SAHARA,sahara-ai,0.02211834,8402286.3324216865,69472854.326398566365,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+PTB,portal-to-bitcoin,0.00117715,8349593.818203957751,2432870.10425254656,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+MBOX,mobox,0.01095124,8326129.540351325646,6020364.798629938625,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+EUL,euler,1.11,8151142.095651244745,26708390.523563627154,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ASR,as-roma-fan-token,1.27,8105532.030032075942,10709037.712582072243,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+FOLKS,folks,1.38,7948490.385037284344,19488205.658897634596,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+GUN,gunz,0.0158323,7855447.513421318494,27399335.353160891682,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SSV,ssv-network,2.21,7694743.881313702092,32493622.305900048465,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+FOGO,fogo,0.01883009,7663453.570013235323,71309152.570500060916,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+WAL,walrus-2,0.067453,7638942.996720545925,154763680.121551722288,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+IOTA,iota,0.054884,7637319.910346992314,241025671.665078163147,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ICNT,impossible-cloud-network-token,0.289425,7488308.015858685598,73120754.356746435165,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+QTUM,qtum,0.897079,7419025.022447911091,95056141.415637999773,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ZETA,zetachain,0.050201,7302881.023791525513,68449708.619723245502,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ALLO,allora,0.10703,7106811.70148773212,24085130.481537394226,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+HAEDAL,haedal,0.02883293,7019819.420044251718,5622551.682425150648,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ZBCN,zebec-network,0.0026153,6999397.150254608132,256391436.378991365433,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SWARMS,swarms,0.01475219,6987646.149166401476,14783577.762264100835,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ORCA,orca,0.880257,6942832.937163021415,53516394.495244190097,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+2Z,doublezero,0.080398,6911463.813580613583,279665651.050418257713,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ALPINE,alpine-f1-team-fan-token,0.416633,6864370.28005677741,4734693.258458536118,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+CGPT,chaingpt,0.02094807,6831276.306013858877,19276098.586781159043,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ELSA,elsa,0.07006,6802597.578332044184,16042491.492760924622,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+VELVET,velvet,0.08717,6707411.395332868211,31615388.113622017205,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+PROVE,succinct,0.226755,6682306.368138091639,44177240.301553674042,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ZORA,zora,0.01386957,6673108.680713937618,62066373.168097868562,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+MEW,cat-in-a-dogs-world,0.00056189,6624101.607811816968,49859106.346810288727,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+B2,bsquared-network,0.682151,6550251.058743706904,28195941.246988210827,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+IR,infrared-finance,0.04922032,6536013.190514444374,10188374.532504981384,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SPX,spx6900,0.318137,6491341.572694927454,296183183.532275080681,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+CATI,catizen,0.04858492,6258000.279887196608,19992018.381168883294,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SOMI,somnia,0.170959,6223088.565873781219,27418865.168759208173,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+NMR,numeraire,8.3,6085029.390748370439,57626492.508491508663,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+XCN,chain-2,0.00467142,6012545.857690827921,176493451.323539316654,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+IDOL,meet48,0.0214346,5998126.338620502502,38338452.448326572776,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+MANTA,manta-network,0.065932,5990955.449422344565,30535643.451484665275,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+KGEN,kgen,0.162318,5988322.766172527336,32271531.148967873305,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+AT,apro,0.172224,5701638.337796868756,39582857.623641073704,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+KSM,kusama,4.2,5653935.892010403797,75845025.828930854797,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+OGN,origin-protocol,0.02145662,5650431.622887806036,14244753.204422364011,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SAPIEN,sapien-2,0.074913,5620982.541945884004,18716724.77227172628,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+AEVO,aevo-exchange,0.02327849,5601379.03485373687,21314366.861868556589,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+RVN,ravencoin,0.00567748,5503653.407182252966,91785527.519381463528,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+NEWT,newton-protocol,0.073216,5462671.660478400066,15742493.418260224164,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ONG,ong,0.081975,5445597.971075007692,38346937.40865842998,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+PIEVERSE,pieverse,0.432733,5400947.034110259265,99563153.581711798906,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+YGG,yield-guild-games,0.03858691,5368105.143677490763,28247760.085120715201,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+GPS,goplus-security,0.00873839,5345274.467156495899,38503485.831245176494,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+RSR,reserve-rights-token,0.00149717,5332926.721771388315,93643722.506806507707,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ZIL,zilliqa,0.00389209,5317932.4366709264,75848776.187760099769,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+XPIN,xpin-network,0.00143819,5314687.459299122915,22365095.058176744729,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+CVX,convex-finance,1.76,5305488.271103364415,158347570.321277916431,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+MANTRA,mantra,0.01049707,5203045.410536242649,51147672.637475699186,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+GWEI,ethgas-2,0.067492,5153417.235485351644,118147994.987511262298,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+GMX,gmx,6.09,5081180.913980060257,63271268.145101755857,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+DYM,dymension,0.0170464,5073641.294210858643,8620647.096233382821,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+FIDA,bonfida,0.01651033,5070822.990037992597,16343444.855466773733,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+RLS,rayls,0.00280348,5068749.338558527641,3973845.644533323124,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+CROSS,cross-2,0.072915,5039532.945222462527,24425419.401877623051,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+PROM,prometeus,1.4,4998976.773884919472,25623268.605799593031,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+FHE,mind-network,0.01785917,4938866.74845982343,4446934.266924005933,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+GLM,golem,0.125391,4865512.896707379259,125389209.256525397301,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+AKE,akedo,0.00088462,4859949.710743847303,20178059.580512348562,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+API3,api3,0.284913,4844652.629992731847,40617634.315399885178,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+JELLYJELLY,jelly-my-jelly,0.04341429,4823346.425257524475,43476878.176528252661,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+KMNO,kamino,0.02044582,4794508.327808374539,89792812.728608593345,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+WAVES,waves,0.407633,4771550.680025380105,40726954.508169211447,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SXT,space-and-time,0.01613242,4757562.661557201296,41939269.310056634247,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+PUFFER,puffer-finance,0.02519112,4713093.606508383527,11051520.607460709289,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+XION,xion-2,0.114228,4690116.983924227767,8292139.435188697651,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+REZ,renzo,0.00364961,4659049.824394100346,29910867.47632869333,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+UMA,uma,0.421042,4607892.97480174154,38194093.301639050245,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+HOT,holotoken,0.00039534,4597254.794714125805,70157252.318919584155,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+EGLD,elrond-erd-2,3.77,4594995.294385898858,111956112.761900424957,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+MINA,mina-protocol,0.056548,4573442.053812552243,72489151.67804440856,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+AIOT,okzoo,0.060787,4496055.248813439161,15610855.845620498061,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+BAS,bas,0.00718352,4480627.339855141938,17910991.515145815909,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+XVS,venus,2.65,4458432.914576753974,44395090.899572722614,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+C98,coin98,0.01920491,4371759.018059989437,19191175.931988976896,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ZEREBRO,zerebro,0.00982786,4357761.89432137087,9820838.748638672754,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SAGA,saga-2,0.02664924,4353050.844091217965,10124703.153336342424,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+STEEM,steem,0.057198,4317215.826893094927,31152082.196202009916,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ACH,alchemy-pay,0.00598335,4314746.351683896035,29529325.039805356413,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+OXT,orchid-protocol,0.01082966,4198445.179497060366,6415864.037264605053,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+HMSTR,hamster-kombat,0.00014599,4180848.491924629547,9379410.141152527183,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+BAND,band-protocol,0.205427,4096819.427188605536,35796088.84402346611,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+1000XEC,ecash,0.0000069,4088223.244128146209,138142933.452342927456,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+TAIKO,taiko,0.11575,4042624.397657298017,22194207.196672894061,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+PYR,vulcan-forged,0.259178,4023592.24578586081,12212777.120341388509,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+DEGO,dego-finance,0.270197,3933737.165997157805,5673012.970804113895,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+STORJ,storj,0.09844,3887959.299782976042,14151416.056299488991,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SOSO,sosovalue,0.404117,3826462.563994273543,125985885.72508610785,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ESPORTS,yooldo-games,0.400947,3802715.551318966784,60688753.008732832968,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+MAGMA,magma-finance,0.194497,3791769.532161484938,36599990.530690312386,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+FLR,flare-networks,0.00795289,3769440.234308143612,681258413.338084578514,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+COTI,coti,0.01365965,3726389.428785934579,37941703.768215700984,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+DOLO,dolomite,0.03229267,3692051.146537391003,14975007.245287230238,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+FIO,fio-protocol,0.00296105,3692026.159055052791,2503887.174190838356,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+MITO,mitosis,0.03540747,3665818.557889823802,11837361.405631754547,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+HOME,home,0.01866968,3651449.03744316753,65774642.654126748443,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+PRL,perle,0.182837,3638754.063280371949,31968653.20384452492,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+GRIFFAIN,griffain,0.01438243,3634292.516407180578,14364172.433123460039,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SANTOS,santos-fc-fan-token,1.063,3615351.568026254419,17102460.244228757918,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+CAMP,camp-network,0.00201209,3579541.010570037644,4224175.180354053155,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+CARV,carv,0.053644,3531759.704453060869,28795309.501738023013,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ARPA,arpa,0.00935203,3487315.573758772109,9185032.267109725624,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+AERGO,aergo,0.054125,3461919.088322665542,25574001.389566481113,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail fetch failed for aergo: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/aergo?localization=false&tickers=false&market_data=false&community_data=false&developer_data=false&sparkline=false""}",false
+PORTAL,portal-2,0.00834784,3454733.866236494854,6350376.966931256466,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+TLM,alien-worlds,0.00163616,3395543.043347963598,10690862.970742890611,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+POWR,power-ledger,0.065459,3281678.841328167357,34660410.672755613923,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+CKB,nervos-network,0.00148153,3257497.790006452706,71950262.836672082543,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+CELO,celo,0.080279,3215431.138285838999,48041176.860316745937,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+LQTY,liquity,0.276553,3105054.048630552366,27201318.860173813999,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ILV,illuvium,4.18,3085444.657292858232,34628132.113138265908,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+AIOZ,aioz-network,0.056428,3075975.109273060691,70281727.641214519739,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SKL,skale,0.0062506,3067547.411217610352,37979971.384204491973,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+EVAA,evaa-protocol,0.783113,3036656.099376252852,5183076.123047299683,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+KNC,kyber-network-crystal,0.134363,2994879.753106265329,22850448.629150211811,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+MAVIA,heroes-of-mavia,0.03168862,2919654.453550572041,7740407.33096082788,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+FTT,ftx-token,0.288102,2777843.600585407577,0,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+HFT,hashflow,0.01310189,2759175.679531740025,10336651.615272037685,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+HNT,helium,1.002,2756866.549614512362,184636344.309857696295,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+RPL,rocket-pool,1.81,2756203.941601462197,40543512.000360362232,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+BICO,biconomy,0.02086718,2692783.001402517315,15156549.751417355612,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+CETUS,cetus-protocol,0.0199071,2590750.754541429225,18616022.830126740038,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+MLN,melon,3.11,2577455.065998116042,10176572.924453726038,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+VANA,vana,1.29,2560903.905628733803,39649876.041584976017,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+FLUID,instadapp,1.6,2532283.488221746869,124492358.092144981027,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+BLUAI,bluwhale,0.00912651,2449690.660499366,11207977.661400280893,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+LRC,loopring,0.01602921,2383579.673183516599,19967766.082559797913,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+DENT,dent,0.00015662,2337482.957577631809,14985732.416824072599,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+KAVA,kava,0.052289,2294259.726558815222,56608277.214475914836,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+OL,open-loot,0.00730984,2281885.538927605841,5702553.27847714629,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+TAKE,overtake,0.02633361,2216535.86449903762,6507474.322301089764,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+AWE,stp-network,0.052694,2137971.621319430415,102342355.33626845479,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SCRT,secret,0.087441,2118692.076111849397,29463169.380558855832,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ETHW,ethereum-pow-iou,0.257815,2058582.026404408272,27784560.250344783068,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+KOMA,koma-inu,0.00892562,2058277.554573262343,5394390.215121530928,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ES,eclipse-3,0.157632,2054226.114694023971,23643721.476051855832,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+10000QUBIC,qubic-network,0.000000770784,2048018.214629717171,105466227.117770567536,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SLP,smooth-love-potion,0.00061091,2031169.159634954762,22229451.664576593786,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SNT,status,0.00983145,1995185.199082731968,38928538.007505863905,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+VANRY,vanar-chain,0.00505192,1992854.521065708715,10782985.036160649732,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+LUMIA,lumia,0.084535,1986912.026283077663,11686126.36638334766,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SYS,syscoin,0.00928429,1982894.979980816133,8127753.397181344219,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+PUNDIX,pundi-x-2,0.145326,1892320.413391025737,37523162.421038515866,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SFP,safepal,0.296915,1870040.913249300094,148468292.502640604973,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+NAORIS,naoris,0.054716,1822414.208878316917,32759219.38826995343,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+HEI,heima,0.087823,1800042.891951456666,7730581.880007252097,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+RLC,iexec-rlc,0.410517,1778308.418416603236,29655228.641862809658,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+CVC,civic,0.02974243,1772727.599718772108,23819284.981427039951,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+CTK,certik,0.174045,1772526.178644482512,27426286.44726061821,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+CELR,celer-network,0.00237592,1769243.294992348878,13393349.702304605395,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ASP,aspecta,0.02781051,1693565.736666772282,8552297.438814599067,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+HIPPO,sudeng,0.00016075,1687048.071254679235,1606867.999664292904,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+LSK,lisk,0.125399,1597486.073287278181,28525542.854038543999,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+TAC,tac,0.00559433,1542385.233467590064,16513148.889873595908,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+NFP,nfprompt-token,0.01325793,1521078.459811002947,7087179.844420446083,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+MAV,maverick-protocol,0.01413684,1460344.114347374998,13131328.219454016536,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+REQ,request-network,0.067626,1387729.560673094122,50319036.28364636749,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+WAXP,wax,0.00650973,1381272.382472503465,29845142.001146994531,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ZKJ,polyhedra-network,0.01925933,1371296.979793701321,9201086.233450852334,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+PEAQ,peaq-2,0.01406864,1360724.49872065126,28617656.785270582885,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+VTHO,vethor-token,0.00056118,1310876.151863266714,55733104.983071222901,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+DIA,dia-data,0.176173,1293217.318723908393,21090675.415931288153,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+B3,b3,0.00029987,1186372.480383223621,28420425.059253599495,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+MOVR,moonriver,1.18,1130932.751269978005,13468332.330515619367,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+RLB,rollbit-coin,0.056023,1128178.87283645384,95486083.938568666577,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ICX,icon,0.03693555,1110703.844704701565,40461547.969850748777,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+MTL,metal,0.287017,1024315.22421191691,26004218.472925323993,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+VIC,tomochain,0.04937218,1003632.743706272682,6211420.320574854501,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+RDNT,radiant-capital,0.00205356,962823.004968454014,2653310.722660389729,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ROAM,roam-token,0.0185848,784848.836606129655,6415597.209700076841,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+MYRO,myro,0.00299795,628168.859241369297,2997892.964449244551,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+STRAX,stratis,0.0129974,525497.097562130773,27993545.969535537064,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+TA,trusta-ai,0.04327127,519861.68700805644,7789456.884368279018,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+BSU,baby-shark-universe,0.04179041,409734.262201292149,7033309.379182017408,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+EWT,energy-web-token,0.433177,387103.178974618437,26251649.765770103782,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+BNT,bancor,0.299957,210246.568602486688,32684054.30802507326,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+BLZ,bluzelle,0.0091098,201349.360159512056,4274002.673795187846,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+NTRN,neutron-3,0.00244654,182035.211791270849,2047364.121190915117,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+MKR,maker,1754.55,53056.467051417021,0,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+UNIBOT,unibot,0.927085,26980.07803692123,927084.972083362518,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+MA,mind-ai,0.00013653,18556.247178219128,14039.443162406971,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+COP,copiosa,0.00027855,13917.414983849874,0,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+XPT,xpt,0.00484519,10990.475051423466,4845097.36698986683,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+PUMPBTC,pumpbtc,70032,8238.909823864213,48172136.811880201101,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+AI16Z,ai16z,0.00051594,7933.007013928805,569876.947347801295,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+OM,mantra-dao,0.066868,6401.528330475703,325392840.101425111294,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+XPD,petrodollar-2,0.0000276,1550.263880404044,27616.476568158549,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+FTM,fantom,0.04539766,561.745451926783,0,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+CRCL,just-a-circle,0.00002419,457.132200240687,24179.881139606772,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+PANDORA,pandora,111.63,361.524778114749,1116436.607392098056,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+COST,costco-hot-dog,0.00022884,298.727494243856,217210.385082910099,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+FRIEND,friend-tech,0.00442489,251.942394532702,419521.152163860912,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+HOOD,hood,0.00000348,128.633634441049,2742.242577219125,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SHIA,shiba-saga,0.00011989,101.740864446963,33578.875982939302,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+OX,ox-fun,0.00002296,41.767548319423,59762.153107818885,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+BABA,baba,0.00001789,35.771397810263,17881.696287028859,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+SPY,smarty-pay,0.00023358,33.400348316211,0,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+ORCL,oracle-3,0.00145903,23.216255773545,30639.605052842773,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+CANTO,canto,0.00135454,10.837656977066,823976.456821188214,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+APP,moon-app,0.00004875,9.636203742295,96818.26503599131,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+TSLA,tsla6900,0.000000034738,5.091353593948,14613.759416461435,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+OXY,oxygen,0.00044558,4.410113011782,90105.014541177865,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+LOOM,loom-network-new,0.0001173,3.955689663009,145799.187989025144,conservative_keyword_fallback,missing_coingecko_detail,"{""reason"": ""CoinGecko detail cache entry is unavailable.""}",false
+1000000BABYDOGE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+1000000BOB,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+1000000CHEEMS,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+10000SATS,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+1000FLOKI,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+1000LUNC,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+1000NEIROCTO,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+1000PEPE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+1000TOSHI,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+1000TURBO,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+1MCHEEMS,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+AAPL,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ACE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ACN,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ACT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ADA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+AGI,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+AGT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+AI,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+AIN,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+AIO,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+AKT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ALGO,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ALICE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ALL,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ALT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+AMD,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+AMZN,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ANIME,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+APE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+APEX,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ARB,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ARC,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ARIA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ARK,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ARM,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ASML,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ASTER,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ASTR,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ATA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ATH,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ATOM,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+AUCTION,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+AVA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+AVAAI,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+AVAX,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+AVGO,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+B,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BABY,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BADGER,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BAN,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BANANA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BANK,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BAT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BB,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BCH,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BEAM,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BEAMX,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BEAT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BEL,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BIO,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BIRB,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BLAST,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BMT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BNB,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BOB,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BOBA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BOBBOB,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BONK,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BRETT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BROCCOLI,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BROCCOLI714,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BROCCOLIF3B,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BTCDOM,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BTR,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BULLA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+BZ,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+C,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+CC,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+CFX,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+CHILLGUY,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+CHR,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+CL,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+CLANKER,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+CLO,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+CLOUD,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+COIN,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+COLLECT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+COOKIE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+COPPER,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+CORE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+COS,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+COW,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+CRO,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+CRV,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+CRWV,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+CSCO,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+CYBER,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+D,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+DAM,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+DASH,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+DBR,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+DEEP,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+DEGEN,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+DODOX,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+DOG,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+DOGE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+DOGS,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+DOT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+DYDX,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+EDEN,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+EPIC,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ERA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ESP,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ETH,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ETHBTC,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+EUR,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+EWH,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+EWJ,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+EWY,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+F,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+FARTCOIN,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+"FARTCOIN,RAYDIUM,9BB6NFECJBCTNNLFKO2FQVQBQ8HHM13KCYYCDQBGPUMP",,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+FF,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+FIGHT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+FIL,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+FLOCK,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+FLOKI,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+FLOW,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+FLUX,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+FORM,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+FRAX,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+FUN,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+FUTU,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+FXS,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+G,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+GAS,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+GE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+GIGA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+GME,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+GMT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+GNO,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+GOAT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+GODS,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+GOOGL,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+GRASS,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+GTC,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+GUA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+H,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+HANA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+HIGH,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+HIVE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+HOLO,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+HPOS,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+HPOS10I,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+HYPE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+HYPER,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+IBM,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ID,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+IN,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+INDA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+INIT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+INTC,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+INX,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+IOTX,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+IWM,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+JCT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+JD,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+JELLY,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+JOE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+JUP,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+KAIA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+KAT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+kBONK,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+kDOGS,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+kFLOKI,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+KITE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+kLUNC,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+kNEIRO,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+kPEPE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+kSHIB,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+KWEB,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+LA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+LAB,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+LAUNCHCOIN,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+LAYER,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+LDO,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+LIGHT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+LINK,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+LIT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+LLY,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+LTC,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+LUNA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+LUNA2,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+LUNC,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+LYN,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+M,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MAGIC,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MANA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MASK,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MATIC,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MCD,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ME,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MEGA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MEME,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MET,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+META,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+METIS,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MIRA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MNRY,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MNT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MOCA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MOG,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MON,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MOODENG,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MORPHO,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MOVE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MRVL,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MSFT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MSTR,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MU,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+MUBARAK,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+NATGAS,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+NEAR,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+NEIRO,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+NEIROCTO,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+NEIROETH,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+NEO,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+NFLX,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+NFTI,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+NG,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+NIGHT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+NOM,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+NOT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+NVDA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+NXPC,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+OMNI,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ONE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ONT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+OP,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+OPEN,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+OPN,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ORBS,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ORDER,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+PAYP,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+PENGU,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+PEOPLE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+PEP,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+PEPE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+PHB,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+PI,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+PIXEL,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+PLAY,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+PLAYSOUT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+PLTR,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+PNUT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+POL,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+POWER,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+PROMPT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+PUMP,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+PUMPFUN,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+PURR,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+Q,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+QQQ,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+RARE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+RAYDIUM,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+RAYSOL,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+RDDT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+RED,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+RIF,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+RKLB,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+RNDR,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+RONIN,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ROSE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+RUNE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+S,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SAFE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SAND,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SATS,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SC,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SCR,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SEI,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SENT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SHELL,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SHIB,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SHIB1000,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SKR,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SKY,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SNDK,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SOL,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SOLAYER,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SONIC,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SOON,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SOPH,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SOXL,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SOXS,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SPACE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SPELL,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SPORTFUN,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SQD,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SQQQ,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+STABLE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+STBL,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SUPER,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SUSHI,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+SYN,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+T,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+TAO,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+THE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+TIA,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+TNSR,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+TON,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+TOSHI,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+TQQQ,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+TREE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+TRUMP,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+TRUST,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+TRUTH,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+TRX,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+TSM,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+TST,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+TSTBSC,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+TURBO,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+TURTLE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+UAI,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+UNH,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+UNI,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+UP,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+US,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+USD1,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+USDE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+USELESS,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+USTC,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+USUAL,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+VELO,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+VELODROME,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+VINE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+W,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+WET,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+WHITEWHALE,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+WIF,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+WLFI,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+WMT,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+WOO,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+WTI,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+XAG,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+XAI,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+XAU,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+XCU,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+XOM,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+XPL,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+XRP,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+XTZ,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+XVG,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+YFI,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+YZY,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ZEC,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ZEN,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ZKC,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ZKP,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+ZRX,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+币安人生,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+我踏马来了,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false
+龙虾,,,,,conservative_keyword_fallback,missing_coingecko_id,"{""reason"": ""No CoinGecko ID available; symbol-only classification is disallowed.""}",false

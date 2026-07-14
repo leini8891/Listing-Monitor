@@ -6,6 +6,7 @@ Build a lightweight SQLite history store from archived daily watchboard snapshot
 Modeling distinction:
   - listing_snapshots stores listing facts only.
   - token_market_metrics_daily stores CoinGecko token-level aggregated market data.
+  - token_rwa_labels_daily stores token-level RWA classification output.
   - venue_ticker_metrics_daily stores venue-specific ticker snapshots from exchange APIs.
 """
 
@@ -27,6 +28,7 @@ from src.common.paths import (
     HOT_NEW_FILE,
     TOKEN_MARKET_FILE,
     TOKEN_METRICS_FILE,
+    TOKEN_RWA_LABELS_FILE,
     TOP_GAINERS_FILE,
     TOP_LOSERS_FILE,
     TOP_VOLUME_FILE,
@@ -109,11 +111,13 @@ def create_schema(connection: sqlite3.Connection):
         """
         DROP VIEW IF EXISTS token_venue_history;
         DROP VIEW IF EXISTS latest_token_market_metrics;
+        DROP VIEW IF EXISTS latest_token_rwa_labels;
         DROP VIEW IF EXISTS latest_venue_ticker_metrics;
         DROP VIEW IF EXISTS latest_token_metrics;
 
         DROP TABLE IF EXISTS leaderboard_daily;
         DROP TABLE IF EXISTS token_metrics_daily;
+        DROP TABLE IF EXISTS token_rwa_labels_daily;
         DROP TABLE IF EXISTS venue_ticker_metrics_daily;
         DROP TABLE IF EXISTS token_market_metrics_daily;
         DROP TABLE IF EXISTS listing_snapshots;
@@ -151,6 +155,21 @@ def create_schema(connection: sqlite3.Connection):
             market_cap_usd REAL,
             market_data_as_of TEXT,
             match_status TEXT,
+            PRIMARY KEY (snapshot_date, token)
+        );
+
+        CREATE TABLE IF NOT EXISTS token_rwa_labels_daily (
+            snapshot_date TEXT NOT NULL,
+            token TEXT NOT NULL,
+            coingecko_id TEXT,
+            rwa_label TEXT NOT NULL,
+            rwa_category TEXT,
+            protocol TEXT,
+            confidence REAL,
+            evidence_type TEXT,
+            evidence_detail_json TEXT,
+            label_source TEXT,
+            labeled_at TEXT,
             PRIMARY KEY (snapshot_date, token)
         );
 
@@ -218,6 +237,12 @@ def create_schema(connection: sqlite3.Connection):
         CREATE INDEX IF NOT EXISTS idx_token_market_metrics_daily_token
             ON token_market_metrics_daily (token, snapshot_date);
 
+        CREATE INDEX IF NOT EXISTS idx_token_rwa_labels_daily_token
+            ON token_rwa_labels_daily (token, snapshot_date);
+
+        CREATE INDEX IF NOT EXISTS idx_token_rwa_labels_daily_label
+            ON token_rwa_labels_daily (rwa_label, snapshot_date);
+
         CREATE INDEX IF NOT EXISTS idx_venue_ticker_metrics_daily_lookup
             ON venue_ticker_metrics_daily (venue, snapshot_date, base_token);
 
@@ -250,6 +275,11 @@ def create_schema(connection: sqlite3.Connection):
         FROM token_market_metrics_daily
         WHERE snapshot_date = (SELECT MAX(snapshot_date) FROM token_market_metrics_daily);
 
+        CREATE VIEW latest_token_rwa_labels AS
+        SELECT *
+        FROM token_rwa_labels_daily
+        WHERE snapshot_date = (SELECT MAX(snapshot_date) FROM token_rwa_labels_daily);
+
         CREATE VIEW latest_venue_ticker_metrics AS
         SELECT *
         FROM venue_ticker_metrics_daily
@@ -267,6 +297,7 @@ def create_schema(connection: sqlite3.Connection):
 def clear_snapshot_date(connection: sqlite3.Connection, snapshot_date: str):
     connection.execute("DELETE FROM listing_snapshots WHERE snapshot_date = ?", (snapshot_date,))
     connection.execute("DELETE FROM token_market_metrics_daily WHERE snapshot_date = ?", (snapshot_date,))
+    connection.execute("DELETE FROM token_rwa_labels_daily WHERE snapshot_date = ?", (snapshot_date,))
     connection.execute("DELETE FROM venue_ticker_metrics_daily WHERE snapshot_date = ?", (snapshot_date,))
     connection.execute("DELETE FROM token_metrics_daily WHERE snapshot_date = ?", (snapshot_date,))
     connection.execute("DELETE FROM leaderboard_daily WHERE snapshot_date = ?", (snapshot_date,))
@@ -359,6 +390,33 @@ def ingest_venue_ticker_metrics(connection: sqlite3.Connection, snapshot_date: s
     )
 
 
+def ingest_token_rwa_labels(connection: sqlite3.Connection, snapshot_date: str, rows: list[dict]):
+    connection.executemany(
+        """
+        INSERT OR REPLACE INTO token_rwa_labels_daily (
+            snapshot_date, token, coingecko_id, rwa_label, rwa_category, protocol,
+            confidence, evidence_type, evidence_detail_json, label_source, labeled_at
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """,
+        [
+            (
+                snapshot_date,
+                row.get("token", ""),
+                row.get("coingecko_id", ""),
+                row.get("rwa_label", ""),
+                row.get("rwa_category", ""),
+                row.get("protocol", ""),
+                numeric_value(row.get("confidence")),
+                row.get("evidence_type", ""),
+                row.get("evidence_detail_json", ""),
+                row.get("label_source", ""),
+                row.get("labeled_at", ""),
+            )
+            for row in rows
+        ],
+    )
+
+
 def ingest_token_metrics(connection: sqlite3.Connection, snapshot_date: str, rows: list[dict]):
     connection.executemany(
         """
@@ -426,6 +484,7 @@ def ingest_snapshot_dir(connection: sqlite3.Connection, snapshot_dir: Path):
     snapshot_date = snapshot_dir.name
     clean_file = snapshot_dir / CLEAN_WATCHBOARD_FILE.name
     token_market_file = snapshot_dir / TOKEN_MARKET_FILE.name
+    token_rwa_labels_file = snapshot_dir / TOKEN_RWA_LABELS_FILE.name
     venue_ticker_file = snapshot_dir / VENUE_TICKER_FILE.name
     token_metrics_file = snapshot_dir / TOKEN_METRICS_FILE.name
 
@@ -442,6 +501,11 @@ def ingest_snapshot_dir(connection: sqlite3.Connection, snapshot_dir: Path):
     if token_market_file.exists():
         token_market_rows = read_csv_rows(token_market_file)
         ingest_token_market_metrics(connection, snapshot_date, token_market_rows)
+
+    token_rwa_label_rows = []
+    if token_rwa_labels_file.exists():
+        token_rwa_label_rows = read_csv_rows(token_rwa_labels_file)
+        ingest_token_rwa_labels(connection, snapshot_date, token_rwa_label_rows)
 
     venue_ticker_rows = []
     if venue_ticker_file.exists():
@@ -481,6 +545,7 @@ def ingest_snapshot_dir(connection: sqlite3.Connection, snapshot_dir: Path):
         f"Ingested {snapshot_date}: "
         f"{len(listing_rows)} listing rows, "
         f"{len(token_market_rows)} token market rows, "
+        f"{len(token_rwa_label_rows)} RWA label rows, "
         f"{len(venue_ticker_rows)} venue ticker rows, "
         f"{len(token_metric_rows)} token rows."
     )

@@ -1,8 +1,3 @@
 [server]
 headless = true
-address = "0.0.0.0"
-port = 8511
-
-[browser]
-serverAddress = "192.168.60.158"
-serverPort = 8511
+fileWatcherType = "none"

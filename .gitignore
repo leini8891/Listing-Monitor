@@ -2,6 +2,7 @@
 .env
 .env.*
 !.env.example
+.streamlit/secrets.toml
 *.pem
 *.key
 *.p12
@@ -13,6 +14,8 @@ Thumbs.db
 .idea/
 .vscode/
 .codex/
+.claude/
+.claire/
 
 # Python / local tooling
 __pycache__/
@@ -42,6 +45,9 @@ logs/
 data/raw/*
 !data/raw/.gitkeep
 
+data/cache/*
+!data/cache/.gitkeep
+
 data/processed/*
 !data/processed/.gitkeep
 
@@ -53,6 +59,30 @@ data/audits/*
 
 data/history/*
 !data/history/.gitkeep
+!data/history/20*/
+data/history/20*/*
+!data/history/20*/*.csv
+data/history/20*/listing_watchboard_enriched.csv
 
 data/db/*
 !data/db/.gitkeep
+
+# Private prompts / working notes
+CodeBuddy_Prompts.md
+*_Prompts.md
+*.private.md
+*.local.md
+docs/private/
+notes/private/
+
+# Internal planning drafts
+Auntie_AI_Project_Plan.docx
+*.draft.docx
+
+# Local-only demo artifacts
+recordings/private/
+docs/screenshots/private/
+
+# AI / tool workspace
+.codebuddy/
+.cursor/

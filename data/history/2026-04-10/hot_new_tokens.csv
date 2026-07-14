@@ -1,0 +1,14 @@
+token,venue_count,venues,earliest_listing_time_utc,earliest_listing_time_sgt,listing_age_days,coingecko_id,current_price_usd,price_change_24h_pct,volume_24h_usd,market_cap_usd,match_status
+BASED,4,"Binance, Bitget, Bybit, OKX",2026-03-30T08:23:42+00:00,2026-03-30 16:23:42 SGT,11,,,,,,unmatched_ambiguous_symbol_candidates
+BSB,4,"Binance, Bitget, Bybit, OKX",2026-03-25T11:45:00+00:00,2026-03-25 19:45:00 SGT,15.8,,,,,,unmatched_ambiguous_symbol_candidates
+EDGE,4,"Binance, Bitget, Bybit, OKX",2026-03-19T14:00:00+00:00,2026-03-19 22:00:00 SGT,21.7,,,,,,unmatched_ambiguous_symbol_candidates
+CFG,3,"Binance, Bitget, Bybit",2026-03-16T13:00:00+00:00,2026-03-16 21:00:00 SGT,24.8,,,,,,unmatched_ambiguous_symbol_candidates
+PRL,3,"Binance, Bitget, Bybit",2026-03-27T04:50:57+00:00,2026-03-27 12:50:57 SGT,14.1,,,,,,unmatched_ambiguous_symbol_candidates
+ORCL,2,"Bitget, OKX",2026-03-11T10:00:00+00:00,2026-03-11 18:00:00 SGT,29.9,oracle-3,0.0014146,1.551795605253,9.893968597419,29706.552049291236,matched_exact_symbol_unique
+BZ,2,"Bitget, OKX",2026-03-24T10:00:00+00:00,2026-03-24 18:00:00 SGT,16.9,,,,,,unmatched_no_symbol_candidate
+EWJ,2,"Bitget, OKX",2026-03-11T10:00:00+00:00,2026-03-11 18:00:00 SGT,29.9,,,,,,unmatched_no_symbol_candidate
+EWY,2,"Bitget, OKX",2026-03-11T10:00:00+00:00,2026-03-11 18:00:00 SGT,29.9,,,,,,unmatched_no_symbol_candidate
+TSM,2,"Bitget, OKX",2026-03-11T10:00:00+00:00,2026-03-11 18:00:00 SGT,29.9,,,,,,unmatched_no_symbol_candidate
+龙虾,2,"Binance, Bitget",2026-03-11T11:30:00+00:00,2026-03-11 19:30:00 SGT,29.8,,,,,,unmatched_no_symbol_candidate
+AMD,1,OKX,2026-03-11T10:00:00+00:00,2026-03-11 18:00:00 SGT,29.9,,,,,,unmatched_no_symbol_candidate
+NFLX,1,OKX,2026-03-11T10:00:00+00:00,2026-03-11 18:00:00 SGT,29.9,,,,,,unmatched_no_symbol_candidate

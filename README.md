@@ -2,7 +2,7 @@
 
 > 一个轻量、文件驱动的 perp listing intelligence 项目。
 
-从交易所抓取新上币信号，经过清洗、CoinGecko 富化、质量审计与归档，最终推送到 Lark 卡片并在 Streamlit dashboard 上可视化。整条 pipeline 以本地文件为中心，无需常驻服务。
+从交易所抓取新上币信号，经过清洗、CoinGecko 富化、RWA 标注、质量审计与归档，最终推送到 Lark 卡片并在 Streamlit dashboard 上可视化。整条 pipeline 以本地文件为中心，无需常驻服务。
 
 **🔗 Live Demo:** <https://mrperps-listing-monitor.streamlit.app/?page=overview>
 
@@ -18,32 +18,35 @@ ingestion ──► transform ──► quality ──► delivery / app
 | 目录              | 职责                                              |
 | ----------------- | ------------------------------------------------- |
 | `src/ingestion/`  | 交易所抓取与 listing 检测                         |
-| `src/transform/`  | 清洗、CoinGecko enrich、归档、SQLite query layer  |
+| `src/transform/`  | 清洗、CoinGecko enrich、RWA 标注、归档、SQLite query layer |
 | `src/quality/`    | 数据质量审计                                      |
 | `src/delivery/`   | Lark 推送层                                        |
 | `src/app/`        | Streamlit dashboard                               |
 | `config/`         | 显式配置，如 CoinGecko override map               |
-| `data/`           | raw / processed / marts / audits / history / db   |
+| `data/`           | raw / cache / processed / marts / audits / history / db |
 
 ## 目录
 
 - [Quick Start](#quick-start)
 - [Directory Layout](#directory-layout)
+- [Architecture Notes](#architecture-notes)
 - [Environment](#environment)
 - [Makefile](#makefile)
 - [Core Files](#core-files)
 - [Run The Pipeline](#run-the-pipeline)
+- [RWA Labeling](#rwa-labeling)
 - [Daily Snapshot And SQLite Query Layer](#daily-snapshot-and-sqlite-query-layer)
 - [Lark Delivery](#lark-delivery)
 - [Streamlit Dashboard](#streamlit-dashboard)
+- [Public Beta Deployment](#public-beta-deployment)
 - [Backward Compatibility Notes](#backward-compatibility-notes)
 - [Git Hygiene](#git-hygiene)
 
 ## Quick Start
 
 ```bash
-# 1. 安装依赖
-pip install requests python-dotenv pandas streamlit
+# 1. 安装锁定依赖
+pip install -r requirements.txt
 
 # 2. 配置环境变量
 cp .env.example .env   # 然后填入 LARK_WEBHOOK_URL 等
@@ -66,6 +69,12 @@ listing-monitor/
 
   config/
     coingecko_overrides.py
+    rwa_allowlist.csv
+
+  docs/
+    architecture/
+      Listing Monitor架构walkthrough.md
+      listing_monitor_review_prompt.md
 
   src/
     ingestion/
@@ -74,6 +83,7 @@ listing-monitor/
     transform/
       clean_watchboard.py
       enrich_watchboard_coingecko.py
+      label_rwa_tokens.py
       archive_daily_snapshot.py
       build_history_store.py
     quality/
@@ -88,6 +98,7 @@ listing-monitor/
 
   data/
     raw/
+    cache/
     processed/
     marts/
     audits/
@@ -95,12 +106,20 @@ listing-monitor/
     db/
 ```
 
+## Architecture Notes
+
+Project architecture and review context are archived in `docs/architecture/`:
+- `Listing Monitor架构walkthrough.md`：comprehensive architecture walkthrough and Claude review output
+- `listing_monitor_review_prompt.md`：the review prompt used to generate the architecture assessment
+
+These files are documentation only; they do not affect the runtime pipeline.
+
 ## Environment
 
 安装依赖：
 
 ```bash
-pip install requests python-dotenv pandas streamlit
+pip install -r requirements.txt
 ```
 
 创建 `.env`：
@@ -121,6 +140,7 @@ WATCHBOARD_HISTORY_DIFF_URL=http://localhost:8511/?page=history
 
 - 所有脚本都通过 `src/common/paths.py` 按项目根目录解析路径，不依赖当前工作目录。
 - `lark_listing_watchboard.py` 仍然支持 `--webhook` 显式覆盖 `.env`。
+- Streamlit Community Cloud 的 public beta 不需要 `.env` 或 Secrets。
 
 ## Makefile
 
@@ -131,6 +151,7 @@ WATCHBOARD_HISTORY_DIFF_URL=http://localhost:8511/?page=history
 | `make listings`  | 刷新 listing state 和 `data/raw/listing_watchboard.csv`，不推 Lark   |
 | `make clean`     | 清洗 watchboard                                                      |
 | `make market`    | CoinGecko enrich + 生成 leaderboard marts                           |
+| `make rwa`       | 生成 token-level RWA labels 与 review queue                         |
 | `make tickers`   | 抓取 venue ticker metrics                                            |
 | `make metrics`   | token metrics / leaderboard（由 `market` 步骤生成）                  |
 | `make audit`     | 数据质量审计                                                        |
@@ -139,7 +160,7 @@ WATCHBOARD_HISTORY_DIFF_URL=http://localhost:8511/?page=history
 | `make lark`      | 推送每日 Lark 卡片                                                   |
 | `make ui`        | 启动本地 Streamlit dashboard                                         |
 | `make ui-lan`    | 在局域网内启动 dashboard（`0.0.0.0:8511`）                           |
-| `make pipeline`  | `clean + market + tickers + metrics + audit + archive + db`         |
+| `make pipeline`  | `clean + market + rwa + tickers + metrics + audit + archive + db`   |
 | `make daily`     | `pipeline + lark`                                                    |
 | `make all`       | `listings + pipeline`                                                |
 
@@ -157,8 +178,11 @@ make ui      # 启动 dashboard
 
 - `data/raw/known_listings.json`
 - `data/raw/listing_watchboard.csv`
+- `data/cache/coingecko_coin_details_cache.json`
 - `data/processed/listing_watchboard_clean.csv`
 - `data/processed/token_market_metrics.csv`
+- `data/processed/token_rwa_labels.csv`
+- `data/processed/token_rwa_review_queue.csv`
 - `data/processed/venue_ticker_metrics.csv`
 - `data/processed/listing_watchboard_token_metrics.csv`
 - `data/marts/top_volume_tokens.csv`
@@ -173,6 +197,7 @@ make ui      # 启动 dashboard
 语义约定：
 
 - `token_market_metrics.csv` = CoinGecko token-level aggregated market data。
+- `token_rwa_labels.csv` = token-level RWA classification keyed primarily by `coingecko_id`。
 - `venue_ticker_metrics.csv` = exchange-specific perp/swap/futures metrics。
 - 不要把 CoinGecko `volume_24h_usd` 理解成某个交易所的 venue 成交量。
 
@@ -183,6 +208,7 @@ make ui      # 启动 dashboard
 ```bash
 python src/transform/clean_watchboard.py
 python src/transform/enrich_watchboard_coingecko.py
+python src/transform/label_rwa_tokens.py
 python src/ingestion/fetch_venue_ticker_metrics.py
 python src/quality/audit_watchboard_quality.py
 python src/transform/archive_daily_snapshot.py --overwrite
@@ -236,6 +262,41 @@ python src/transform/enrich_watchboard_coingecko.py
 - `data/audits/token_market_match_audit.csv`
 - `data/audits/token_market_metrics_audit.csv`
 
+### RWA Labeling
+
+```bash
+python src/transform/label_rwa_tokens.py
+```
+
+输出：
+
+- `data/processed/token_rwa_labels.csv`
+- `data/processed/token_rwa_review_queue.csv`
+- `data/cache/coingecko_coin_details_cache.json`
+
+V1 规则：
+
+- 主键优先使用 `coingecko_id`，不依赖 symbol 作为唯一分类键
+- 优先级严格为：
+  - `manual_override`
+  - `seed_allowlist`
+  - `cached_coingecko_categories`
+  - `conservative_keyword_fallback`
+- CoinGecko detail cache 只会对前两层都未命中的 coin ID 拉取并缓存
+- public CoinGecko 额度较紧时，detail cache 会按小批量渐进预热；一旦确认持续 `429`，本轮会停止继续拉取并直接落地标签结果
+- 主流稳定币默认排除为 `non_rwa`
+- 证据冲突或边界模糊时使用 `review_pending`
+- `token_rwa_review_queue.csv` 只聚焦 `review_pending`，并优先按 `24h volume`、`market cap`、再按是否存在 keyword/category 证据排序，便于运营先看高价值待复核 token
+
+当前 `config/rwa_allowlist.csv` schema：
+
+- `coingecko_id`
+- `rwa_label`
+- `rwa_category`
+- `protocol`
+- `force_override`
+- `notes`
+
 ### Venue Ticker Metrics
 
 ```bash
@@ -286,9 +347,55 @@ SQLite 文件：`data/db/listing_watchboard_history.sqlite`
 
 - `listing_snapshots`
 - `token_market_metrics_daily`
+- `token_rwa_labels_daily`
 - `venue_ticker_metrics_daily`
 - `token_metrics_daily`
 - `leaderboard_daily`
+
+RWA 查询例子：
+
+```sql
+-- 最新一版 review queue
+SELECT
+  snapshot_date,
+  token,
+  coingecko_id,
+  rwa_label,
+  rwa_category,
+  confidence,
+  label_source
+FROM token_rwa_labels_daily
+WHERE snapshot_date = (SELECT MAX(snapshot_date) FROM token_rwa_labels_daily)
+  AND rwa_label = 'review_pending'
+ORDER BY confidence ASC, token ASC;
+```
+
+```sql
+-- 某天的 core / related RWA token
+SELECT
+  l.snapshot_date,
+  l.token,
+  l.coingecko_id,
+  l.rwa_label,
+  l.rwa_category,
+  l.protocol,
+  t.venue_count,
+  t.volume_24h_usd
+FROM token_rwa_labels_daily l
+LEFT JOIN token_metrics_daily t
+  ON l.snapshot_date = t.snapshot_date
+ AND l.token = t.token
+WHERE l.snapshot_date = '2026-04-15'
+  AND l.rwa_label IN ('core', 'related')
+ORDER BY l.rwa_label, t.volume_24h_usd DESC, l.token ASC;
+```
+
+人工复核工作流：
+
+- 每天优先查看 `token_rwa_labels_daily` 中 `rwa_label = 'review_pending'` 的 token
+- 核对对应 `coingecko_id`、CoinGecko categories、项目描述与官网定位
+- 如果结论明确，把 coin ID 写入 `config/rwa_allowlist.csv`
+- 若必须强制纠偏，设置 `force_override = true`
 
 ## Lark Delivery
 
@@ -323,7 +430,7 @@ python src/delivery/lark_listing_watchboard.py --webhook "https://open.larksuite
 启动本地 dashboard：
 
 ```bash
-streamlit run src/app/streamlit_app.py
+python3 -m streamlit run src/app/streamlit_app.py
 # 或
 make ui
 ```
@@ -345,6 +452,19 @@ http://localhost:8511/?page=venue&snapshot=2026-04-14&venue=binance
 http://localhost:8511/?page=history&snapshot=2026-04-14&token=SUI
 http://localhost:8511/?page=quality&snapshot=2026-04-14
 ```
+
+## Public Beta Deployment
+
+部署路径为 `GitHub repository → Streamlit Community Cloud`。当前线上入口为 [Live Demo](https://mrperps-listing-monitor.streamlit.app/?page=overview)。
+
+| 配置项 | 值 |
+| --- | --- |
+| Branch | `codex/public-beta-streamlit` |
+| Main file | `src/app/streamlit_app.py` |
+| Data source | 已提交的 `data/history/YYYY-MM-DD/*.csv` 快照 |
+| Secrets | 当前 public beta 不需要 |
+
+Cloud 首次启动会从历史快照重建只读 SQLite query layer；不要提交本地 `.env`、Secrets、缓存或 SQLite 文件。
 
 ### Share Demo On Local Network
 
@@ -385,10 +505,13 @@ http://<your-lan-ip>:8511
 不建议提交：
 
 - `.env` 及其他 `.env.*` secrets 文件
+- `.streamlit/secrets.toml`
 - `*.sqlite` / `*.db` 本地数据库
 - `*.log`、`logs/` 等本地运行日志
-- `data/raw/*`、`data/processed/*`、`data/marts/*`、`data/audits/*`、`data/history/*`、`data/db/*`
+- `data/raw/*`、`data/cache/*`、`data/processed/*`、`data/marts/*`、`data/audits/*`、`data/db/*`
 - 本地 IDE / Python 缓存目录，如 `.vscode/`、`.idea/`、`__pycache__/`、`.venv/`
+
+public beta 的一个例外：可以提交少量 `data/history/YYYY-MM-DD/*.csv` 快照，作为 Streamlit Community Cloud 的只读展示数据来源。
 
 推荐初始化方式：
 

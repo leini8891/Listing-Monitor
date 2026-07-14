@@ -1,0 +1,14 @@
+token,venue_count,venues,earliest_listing_time_utc,earliest_listing_time_sgt,listing_age_days,coingecko_id,current_price_usd,price_change_24h_pct,volume_24h_usd,market_cap_usd,match_status
+BASED,4,"Binance, Bitget, Bybit, OKX",2026-03-30T08:23:42+00:00,2026-03-30 16:23:42 SGT,18,based-one,0.132771,17.247131002605,432770938.911184728146,31186432.209625158459,matched_override_map
+EDGE,4,"Binance, Bitget, Bybit, OKX",2026-03-19T14:00:00+00:00,2026-03-19 22:00:00 SGT,28.7,edgex,1.22,5.748140234433,31342826.018669657409,424278265.94255656004,matched_override_map
+BSB,4,"Binance, Bitget, Bybit, OKX",2026-03-25T11:45:00+00:00,2026-03-25 19:45:00 SGT,22.8,block-street,0.253077,6.450187058534,11943561.874522024766,54140853.915510907769,matched_override_map
+PRL,3,"Binance, Bitget, Bybit",2026-03-27T04:50:57+00:00,2026-03-27 12:50:57 SGT,21.1,perle,0.27699,47.233746922442,39450595.417325019836,48249674.776500694454,matched_override_map
+BZ,3,"Binance, Bitget, OKX",2026-03-24T10:00:00+00:00,2026-03-24 18:00:00 SGT,23.9,,,,,,unmatched_no_symbol_candidate
+GENIUS,3,"Binance, Bitget, Bybit",2026-04-16T03:30:00+00:00,2026-04-16 11:30:00 SGT,1.2,,,,,,unmatched_ambiguous_symbol_candidates
+NATGAS,2,"Binance, Bitget",2026-04-01T09:20:00+00:00,2026-04-01 17:20:00 SGT,15.9,,,,,,unmatched_no_symbol_candidate
+OFC,1,OKX,2026-04-09T11:00:00+00:00,2026-04-09 19:00:00 SGT,7.9,onefootball-club,0.05236,7.594282280617,78624257.836572781205,8355463.461335025728,matched_exact_symbol_unique
+CHIP,1,Binance,2026-04-16T07:15:00+00:00,2026-04-16 15:15:00 SGT,1,,,,,,unmatched_ambiguous_symbol_candidates
+CRWV,1,OKX,2026-04-10T12:00:00+00:00,2026-04-10 20:00:00 SGT,6.8,,,,,,unmatched_no_symbol_candidate
+IWM,1,OKX,2026-04-10T12:00:00+00:00,2026-04-10 20:00:00 SGT,6.8,,,,,,unmatched_no_symbol_candidate
+PAYP,1,Binance,2026-03-23T14:30:00+00:00,2026-03-23 22:30:00 SGT,24.7,,,,,,unmatched_no_symbol_candidate
+UP,1,OKX,2026-04-08T11:00:00+00:00,2026-04-08 19:00:00 SGT,8.9,,,,,,unmatched_ambiguous_symbol_candidates
