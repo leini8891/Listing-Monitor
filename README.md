@@ -6,6 +6,22 @@
 
 **🔗 Live Demo:** <https://mrperps-listing-monitor.streamlit.app/?page=overview>
 
+## 预览 / Screenshots
+
+> Live Demo 托管在 Streamlit 免费版，休眠时首次打开需约 30 秒唤醒。下面两张静态截图可先睹为快。
+
+**Venue View —— 规模与跨所覆盖**
+
+![Perp Listing Watchboard — Venue View overview](docs/img/watchboard-overview.png)
+
+统一的 SQLite query layer 驱动：602 条 tracked listings、563 个 token，跨 binance / bybit / okx / bitget / hyperliquid 多所监控。
+
+**Token Market View —— 透明的 RWA 分类逻辑**
+
+![Token Market View with RWA labels and per-token rationale](docs/img/token-market-view.png)
+
+每个 token 都带 RWA 标签（RWA Core / Non-RWA / Review Pending）与 “Why this label” 判定理由，分类结果对用户可解释、可追溯。
+
 ## Pipeline 概览
 
 ```text
