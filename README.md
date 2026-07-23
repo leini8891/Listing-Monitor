@@ -4,7 +4,7 @@
 
 从交易所抓取新上币信号，经过清洗、CoinGecko 富化、RWA 标注、质量审计与归档，最终推送到 Lark 卡片并在 Streamlit dashboard 上可视化。整条 pipeline 以本地文件为中心，无需常驻服务。
 
-**🔗 Live Demo:** <https://mrperps-listing-monitor.streamlit.app/?page=overview>
+**🔗 Live Demo:** <https://cross-exchange-listing-monitor.streamlit.app/?page=overview>
 
 ## 预览 / Screenshots
 
@@ -441,7 +441,7 @@ python src/delivery/lark_listing_watchboard.py --webhook "https://open.larksuite
 
 ## Streamlit Dashboard
 
-> 在线体验：<https://mrperps-listing-monitor.streamlit.app/?page=overview>
+> 在线体验：<https://cross-exchange-listing-monitor.streamlit.app/?page=overview>
 
 启动本地 dashboard：
 
@@ -471,7 +471,7 @@ http://localhost:8511/?page=quality&snapshot=2026-04-14
 
 ## Public Beta Deployment
 
-部署路径为 `GitHub repository → Streamlit Community Cloud`。当前线上入口为 [Live Demo](https://mrperps-listing-monitor.streamlit.app/?page=overview)。
+部署路径为 `GitHub repository → Streamlit Community Cloud`。当前线上入口为 [Live Demo](https://cross-exchange-listing-monitor.streamlit.app/?page=overview)。
 
 | 配置项 | 值 |
 | --- | --- |
